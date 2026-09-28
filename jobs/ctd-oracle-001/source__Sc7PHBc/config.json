@@ -1,0 +1,8 @@
+{
+    "task": {
+        "path": "tasks/ctd-cast-processing/source"
+    },
+    "trial_name": "source__Sc7PHBc",
+    "trials_dir": "jobs/ctd-oracle-001",
+    "job_id": "69ecf2ea-7ded-4739-8fee-342db3175cf9"
+}

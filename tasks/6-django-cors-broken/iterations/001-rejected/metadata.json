@@ -1,0 +1,16 @@
+{
+  "task": "django-cors-broken",
+  "iteration": 1,
+  "status": "rejected",
+  "archive": "6-django-cors-broken.zip",
+  "sha256": "0f93d18de85a98c13a9bb79adef71185b5cedd8919181994fbdafc6e758b0082",
+  "platform": {
+    "stage_1": "not_submitted",
+    "stage_2": "not_run",
+    "stage_3": "not_run",
+    "notes": [
+      "Rejected locally because it used a legacy task layout and had severe difficulty and leakage risks."
+    ]
+  },
+  "folder": "6-django-cors-broken"
+}

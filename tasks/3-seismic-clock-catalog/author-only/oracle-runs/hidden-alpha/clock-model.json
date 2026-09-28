@@ -1,0 +1,75 @@
+{
+  "assigned_pick_count": 8,
+  "assignments": [
+    {
+      "event_id": "EV000001",
+      "pick_id": "AP01692",
+      "recorded_us": 1379998,
+      "true_arrival_us": 1500000
+    },
+    {
+      "event_id": "EV000002",
+      "pick_id": "AP09611",
+      "recorded_us": 2129998,
+      "true_arrival_us": 2250000
+    },
+    {
+      "event_id": "EV000003",
+      "pick_id": "AP17530",
+      "recorded_us": 3179997,
+      "true_arrival_us": 3300000
+    },
+    {
+      "event_id": "EV000004",
+      "pick_id": "AP25449",
+      "recorded_us": 4720001,
+      "true_arrival_us": 4500000
+    },
+    {
+      "event_id": "EV000005",
+      "pick_id": "AP33368",
+      "recorded_us": 5570001,
+      "true_arrival_us": 5350000
+    },
+    {
+      "event_id": "EV000006",
+      "pick_id": "AP41287",
+      "recorded_us": 6520002,
+      "true_arrival_us": 6300000
+    },
+    {
+      "event_id": "EV000007",
+      "pick_id": "AP49206",
+      "recorded_us": 7170000,
+      "true_arrival_us": 7500000
+    },
+    {
+      "event_id": "EV000009",
+      "pick_id": "AP57125",
+      "recorded_us": 8970000,
+      "true_arrival_us": 9300000
+    }
+  ],
+  "faulty_station_id": "AQ030",
+  "schema_version": "1.0",
+  "segments": [
+    {
+      "offset_us": -120000,
+      "rate_den": 1000000,
+      "rate_num": 999999,
+      "start_us": 0
+    },
+    {
+      "offset_us": 220000,
+      "rate_den": 1000000,
+      "rate_num": 1000001,
+      "start_us": 4000000
+    },
+    {
+      "offset_us": -330000,
+      "rate_den": 1,
+      "rate_num": 1,
+      "start_us": 7000000
+    }
+  ]
+}

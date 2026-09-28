@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "files": [
+    {"name": "normalized-input.json", "stage": "ingest", "format": "json"},
+    {"name": "frame-index.jsonl", "stage": "scan", "format": "jsonl"},
+    {"name": "dedup-manifest.jsonl", "stage": "dedup", "format": "jsonl"},
+    {"name": "merged-series.jsonl", "stage": "merge", "format": "jsonl"},
+    {"name": "validation-report.json", "stage": "validate", "format": "json"},
+    {"name": "gap-report.json", "stage": "gap", "format": "json"},
+    {"name": "provenance.json", "stage": "export", "format": "json"}
+  ],
+  "sort_keys": {
+    "frame-index.jsonl": ["frame_id"],
+    "dedup-manifest.jsonl": ["frame_id"],
+    "merged-series.jsonl": ["timestamp_ns", "seq"]
+  },
+  "replacement": "A command computes all files it owns in a temporary sibling directory and atomically replaces them only after successful validation. `run` replaces the complete listed set and removes no unlisted path.",
+  "stages": {
+    "ingest": {"requires": [], "produces": ["normalized-input.json"]},
+    "scan": {"requires": ["normalized-input.json"], "produces": ["frame-index.jsonl"]},
+    "dedup": {"requires": ["normalized-input.json", "frame-index.jsonl"], "produces": ["dedup-manifest.jsonl"]},
+    "merge": {"requires": ["dedup-manifest.jsonl", "frame-index.jsonl"], "produces": ["merged-series.jsonl"]},
+    "validate": {"requires": ["merged-series.jsonl"], "produces": ["validation-report.json"]},
+    "gap": {"requires": ["merged-series.jsonl"], "produces": ["gap-report.json"]},
+    "export": {
+      "requires": ["dedup-manifest.jsonl", "validation-report.json", "gap-report.json"],
+      "produces": ["provenance.json"]
+    }
+  }
+}

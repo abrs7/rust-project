@@ -1,0 +1,4 @@
+batch_id,line_id,entry_ref,trade_date,settle_date,gross_minor,fee_minor,currency,status
+AB001,AL01,AE001,2024-06-03,2024-06-05,10000,50,USD,posted
+AB005,AL01,AE005,2024-06-06,2024-06-07,2500,0,GBP,posted
+AB003,AL01,AE003,2024-06-05,2024-06-07,-500,0,USD,posted

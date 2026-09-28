@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "files": [
+    {"name": "normalized-input.json", "stage": "ingest", "format": "json"},
+    {"name": "normalized-entries.jsonl", "stage": "normalize", "format": "jsonl"},
+    {"name": "matched-pairs.jsonl", "stage": "match", "format": "jsonl"},
+    {"name": "settlement-schedule.jsonl", "stage": "settle", "format": "jsonl"},
+    {"name": "rounded-amounts.jsonl", "stage": "round", "format": "jsonl"},
+    {"name": "reconciliation.json", "stage": "reconcile", "format": "json"},
+    {"name": "exceptions.jsonl", "stage": "reconcile", "format": "jsonl"},
+    {"name": "final-report.jsonl", "stage": "export", "format": "jsonl"},
+    {"name": "provenance.json", "stage": "export", "format": "json"}
+  ],
+  "sort_keys": {
+    "normalized-entries.jsonl": ["trade_date", "account_id", "entry_id"],
+    "matched-pairs.jsonl": ["entry_id", "batch_id", "line_id"],
+    "settlement-schedule.jsonl": ["entry_id", "batch_id", "line_id"],
+    "rounded-amounts.jsonl": ["kind", "trade_date", "account_id", "entry_id", "batch_id", "line_id"],
+    "exceptions.jsonl": ["type", "account_id", "entry_id", "batch_id", "line_id"],
+    "final-report.jsonl": ["account_id"]
+  },
+  "replacement": "A command computes all files it owns in a temporary sibling directory and atomically replaces them only after successful validation. `run` replaces the complete listed set and removes no unlisted path.",
+  "stages": {
+    "ingest": {"requires": [], "produces": ["normalized-input.json"]},
+    "normalize": {"requires": ["normalized-input.json"], "produces": ["normalized-entries.jsonl"]},
+    "match": {"requires": ["normalized-input.json", "normalized-entries.jsonl"], "produces": ["matched-pairs.jsonl"]},
+    "settle": {"requires": ["normalized-input.json", "matched-pairs.jsonl"], "produces": ["settlement-schedule.jsonl"]},
+    "round": {"requires": ["normalized-input.json", "normalized-entries.jsonl", "matched-pairs.jsonl"], "produces": ["rounded-amounts.jsonl"]},
+    "reconcile": {"requires": ["normalized-input.json", "normalized-entries.jsonl", "matched-pairs.jsonl", "settlement-schedule.jsonl", "rounded-amounts.jsonl"], "produces": ["reconciliation.json", "exceptions.jsonl"]},
+    "export": {"requires": ["normalized-input.json", "reconciliation.json", "exceptions.jsonl"], "produces": ["final-report.jsonl", "provenance.json"]}
+  }
+}

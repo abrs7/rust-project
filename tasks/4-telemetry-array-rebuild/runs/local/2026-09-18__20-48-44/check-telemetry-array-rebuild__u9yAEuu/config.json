@@ -1,0 +1,12 @@
+{
+    "task": {
+        "path": "/tmp/harbor-check-xwu7xs4w/check-telemetry-array-rebuild"
+    },
+    "trial_name": "check-telemetry-array-rebuild__u9yAEuu",
+    "trials_dir": "jobs/2026-09-18__20-48-44",
+    "agent": {
+        "name": "claude-code",
+        "model_name": "claude-sonnet-4-6"
+    },
+    "job_id": "fc840389-038d-44cb-8c45-50014861bd0c"
+}

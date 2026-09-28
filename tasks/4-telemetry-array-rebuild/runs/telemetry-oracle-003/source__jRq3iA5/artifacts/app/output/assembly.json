@@ -1,0 +1,47 @@
+{
+  "campaigns": [
+    {
+      "accepted_fragments": 4,
+      "assembled_octets": 503,
+      "campaign": "andromeda-scan",
+      "rejected_fragments": 1,
+      "stream_sha256": "e55ad07e6b9c24fcbc360af99cbb79fcbb65cd308bc79567f0c730655b6fdf40"
+    },
+    {
+      "accepted_fragments": 4,
+      "assembled_octets": 525,
+      "campaign": "cassiopeia-drift",
+      "rejected_fragments": 1,
+      "stream_sha256": "972e0805f23b8effe9585b4d203deb7bb77406fdd175a67fb6865acd0f1ae30e"
+    },
+    {
+      "accepted_fragments": 3,
+      "assembled_octets": 349,
+      "campaign": "fornax-night",
+      "rejected_fragments": 1,
+      "stream_sha256": "79df2fcb9a2451ba45403177b8d658bc88323ec8f683bd3afef7d7e3cd9cc388"
+    },
+    {
+      "accepted_fragments": 4,
+      "assembled_octets": 518,
+      "campaign": "lyra-crossfeed",
+      "rejected_fragments": 1,
+      "stream_sha256": "44e7ae7ea4e624c594ffc641c18099627c39d0f0d56fe93c25a4d306ed41fb1c"
+    },
+    {
+      "accepted_fragments": 3,
+      "assembled_octets": 352,
+      "campaign": "mensa-survey",
+      "rejected_fragments": 1,
+      "stream_sha256": "2a53daa317c0d64cf9643d7139bfaa8fe4a62ea7a5a0be1239b7c3215bcfaeec"
+    },
+    {
+      "accepted_fragments": 4,
+      "assembled_octets": 508,
+      "campaign": "vela-transit",
+      "rejected_fragments": 1,
+      "stream_sha256": "996d2282ff7e6735fc42732c4abfa7dc3d78613fcbcafc11f4fe396082f19f64"
+    }
+  ],
+  "schema_version": 1
+}

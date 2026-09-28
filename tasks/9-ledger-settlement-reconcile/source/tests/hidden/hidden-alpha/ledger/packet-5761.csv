@@ -1,0 +1,3 @@
+entry_id,account_id,trade_date,amount_minor,currency,side
+AE002,AA002,2024-06-04,8500,EUR,DR
+AE003,AA001,2024-06-05,500,USD,CR

@@ -1,0 +1,26 @@
+{
+  "partitions": [
+    {
+      "committed_offset": 3,
+      "high_watermark": 7,
+      "latest_snapshot_id": "feed-b-late-a0",
+      "partition": 0,
+      "topic": "feed-b-alpha"
+    },
+    {
+      "committed_offset": 2,
+      "high_watermark": 4,
+      "latest_snapshot_id": "feed-b-late-a1",
+      "partition": 1,
+      "topic": "feed-b-alpha"
+    },
+    {
+      "committed_offset": 1,
+      "high_watermark": 7,
+      "latest_snapshot_id": "feed-b-late-b0",
+      "partition": 0,
+      "topic": "feed-b-beta"
+    }
+  ],
+  "schema_version": "1.0"
+}

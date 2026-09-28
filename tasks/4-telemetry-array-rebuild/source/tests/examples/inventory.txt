@@ -1,0 +1,6 @@
+A faded sticker strip named three recorder consoles and their
+two-octet marks. Every other label on the strip was unreadable.
+
+alpha  a5 5a
+beta   7e b7
+gamma  c3 3c

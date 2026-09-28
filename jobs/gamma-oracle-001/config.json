@@ -1,0 +1,8 @@
+{
+    "job_name": "gamma-oracle-001",
+    "tasks": [
+        {
+            "path": "tasks/gamma-spectrum-calibration/source"
+        }
+    ]
+}

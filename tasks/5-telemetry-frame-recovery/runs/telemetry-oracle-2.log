@@ -1,0 +1,23 @@
+  1/1 Mean: 1.000 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 0:00:53 0:00:00
+
+adhoc • oracle
+┏━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━┓
+┃ Trials ┃ Exceptions ┃  Mean ┃
+┡━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━┩
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┏━━━━━━━━┳━━━━━━━┓
+┃ Reward ┃ Count ┃
+┡━━━━━━━━╇━━━━━━━┩
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 53s
+Results written to jobs/2026-09-17__21-57-32/result.json
+Inspect results by running `harbor view jobs`
+Share results by running `harbor upload jobs/2026-09-17__21-57-32`
+
+
+WALL_SECONDS=68.38

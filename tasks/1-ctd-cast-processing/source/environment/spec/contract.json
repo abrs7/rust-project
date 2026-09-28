@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "rounding": "round_half_away",
+  "csv": {
+    "encoding": "utf-8",
+    "dialect": "excel",
+    "header_required": true,
+    "unknown_columns": "error",
+    "blank_rows": "ignored"
+  },
+  "ingestion": {
+    "row_identity": "sample_id",
+    "exact_duplicate": "collapse_and_count",
+    "conflicting_duplicate": "fatal",
+    "canonical_order": ["time_s", "pressure_dbar", "temperature_c", "conductivity_mS", "sample_id"]
+  },
+  "scales": {
+    "time_s": 1000,
+    "pressure_dbar": 1000,
+    "temperature_c": 1000,
+    "conductivity_mS": 1000000,
+    "depth_m": 1000000,
+    "salinity_milli_psu": 1000,
+    "density_micro_kg_m3": 1
+  },
+  "rational": {
+    "latitude_deg": "Reduced positive fraction num/den in degrees.",
+    "bin_size_m": "Reduced positive fraction num/den in metres."
+  },
+  "gravity": {
+    "formula": "g(lat_deg)=G0*(1+A*lat^2+B*lat^4) with lat in degrees as an exact rational.",
+    "G0_num": 9780318,
+    "G0_den": 1000000,
+    "A_num": 5278895,
+    "A_den": 1000000000,
+    "B_num": 23462,
+    "B_den": 1000000000
+  },
+  "depth": {
+    "formula": "depth_micro_m = round_half_away(pressure_mdb * K_NUM * g_den, K_DEN * g_num)",
+    "K_num": 1019716,
+    "K_den": 1000000,
+    "note": "pressure_mdb is the scaled integer in pressure_dbar; g_num/g_den comes from gravity."
+  },
+  "salinity": {
+    "formula": "salinity_milli = round_half_away(C_uS * S_C_NUM + T_mdc * S_T_NUM, S_C_DEN * S_T_DEN)",
+    "S_C_num": 700,
+    "S_C_den": 1,
+    "S_T_num": -25,
+    "S_T_den": 1,
+    "note": "C_uS is scaled conductivity; T_mdc is scaled temperature."
+  },
+  "density": {
+    "formula": "rho_micro = BASE + SAL_TERM*salinity_milli + TEMP_TERM*T_mdc + DEPTH_TERM*depth_micro_m",
+    "BASE": 1025000000,
+    "SAL_TERM": 800,
+    "TEMP_TERM": -6400,
+    "DEPTH_TERM": 400
+  },
+  "downcast": {
+    "rule": "Sort profile rows by (time_s, pressure_dbar, temperature_c, conductivity_mS). The downcast is the longest prefix whose pressures are non-decreasing and whose last pressure equals the campaign maximum pressure. If no prefix reaches the maximum, the downcast is empty and the stage fails. Ties on length are broken by higher ending pressure, then earlier start time_s.",
+    "upcast": "All rows not in the downcast are discarded and recorded only in provenance counts."
+  },
+  "binning": {
+    "rule": "bin_floor_micro_m = floor(depth_micro_m * bin_den / (bin_num * depth_scale)) * bin_num * depth_scale / bin_den",
+    "aggregation": "Arithmetic mean of depth_micro_m, temperature_mdc, salinity_milli, density_micro within each bin; means use round_half_away."
+  },
+  "latitude_diagnosis": {
+    "candidates": "Every reduced fraction listed in cast.toml candidate_latitudes_deg plus the header latitude_deg.",
+    "objective": [
+      "minimize_density_inversion_count",
+      "minimize_survey_tie_mse_micro",
+      "lexicographically_minimize_latitude_fraction"
+    ],
+    "density_inversion": "A binned row whose density_micro_kg_m3 is strictly less than the previous binned row.",
+    "survey_tie_mse": "Mean of squared (predicted_density - tie_density) over examples/survey-tie-points.csv rows whose latitude_deg matches the candidate and whose tie depth converts to pressure not exceeding the downcast maximum, rounded half away from zero. Each prediction uses the nearest downcast sample by expected pressure at the candidate latitude. A candidate with no such rows in range scores 9223372036854775807.",
+    "uniqueness": "The optimum before the latitude tie breaker MUST be unique."
+  },
+  "qc_flags": {
+    "density_inversion": "Emitted at each binned depth where density decreases with depth.",
+    "header_latitude_mismatch": "Emitted when inferred latitude differs from cast.toml latitude_deg."
+  },
+  "json": {
+    "encoding": "utf-8",
+    "indent": 2,
+    "sort_keys": true,
+    "line_ending": "LF",
+    "jsonl": "One compact sort-key-ordered JSON object per LF-terminated line."
+  }
+}

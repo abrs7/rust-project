@@ -1,0 +1,18 @@
+{
+  "task": "ctd-cast-processing",
+  "folder": "1-ctd-cast-processing",
+  "iteration": 7,
+  "status": "rejected",
+  "created_at": "2026-09-27T08:51:35.453980+00:00",
+  "archive": "1-ctd-cast-processing.zip",
+  "sha256": "b680974a24688c906cbacc0dc09c3b0749fd9fb56cb772846a39069157c7fb77",
+  "platform": {
+    "stage_1": null,
+    "stage_2": null,
+    "stage_3": null,
+    "notes": [
+      "Superseded by 008: G06 IT02 persisted across both reviews of v7 (R013 /app/output deliverable unmapped); also carried the contract RMS-vs-MSE contradiction and the tests/spec/api-contract.md canary advisory"
+    ]
+  },
+  "finalized_at": "2026-09-27T20:13:43.646449+00:00"
+}

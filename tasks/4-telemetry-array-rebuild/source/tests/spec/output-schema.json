@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "files": [
+    {"name": "fragment-index.jsonl", "stage": "ingest", "format": "jsonl"},
+    {"name": "assembly.json", "stage": "assemble", "format": "json"},
+    {"name": "decoded-records.jsonl", "stage": "decode", "format": "jsonl"},
+    {"name": "clock-models.json", "stage": "fit-clock", "format": "json"},
+    {"name": "calibration.json", "stage": "calibrate", "format": "json"},
+    {"name": "records.jsonl", "stage": "reconcile", "format": "jsonl"},
+    {"name": "observations.jsonl", "stage": "reconcile", "format": "jsonl"},
+    {"name": "manifest.json", "stage": "export", "format": "json"},
+    {"name": "provenance.json", "stage": "export", "format": "json"}
+  ],
+  "stream_files": {
+    "pattern": "streams/{campaign}.bin",
+    "stage": "assemble",
+    "note": "One raw assembled recorder stream per recovered campaign name. These files are part of the exact output set."
+  },
+  "sort_keys": {
+    "fragment-index.jsonl": ["campaign", "stream_offset", "payload_octets", "final_piece"],
+    "decoded-records.jsonl": ["campaign", "stream_offset", "dialect", "sequence"],
+    "records.jsonl": ["campaign", "stream_offset", "dialect", "sequence", "kind"],
+    "observations.jsonl": ["campaign", "timestamp_ms", "sequence", "sample_index", "channel"]
+  },
+  "replacement": "A command computes all files it owns in a temporary sibling directory and atomically replaces them only after successful validation. run replaces the complete listed set, including stream binaries, and removes no unlisted path.",
+  "stages": {
+    "ingest": {"requires": [], "produces": ["fragment-index.jsonl"]},
+    "assemble": {"requires": ["fragment-index.jsonl"], "produces": ["assembly.json", "streams/*.bin"]},
+    "decode": {"requires": ["assembly.json", "streams/*.bin"], "produces": ["decoded-records.jsonl"]},
+    "fit-clock": {"requires": ["decoded-records.jsonl"], "produces": ["clock-models.json"]},
+    "calibrate": {"requires": ["decoded-records.jsonl"], "produces": ["calibration.json"]},
+    "reconcile": {"requires": ["decoded-records.jsonl", "clock-models.json", "calibration.json"], "produces": ["records.jsonl", "observations.jsonl"]},
+    "export": {"requires": ["fragment-index.jsonl", "assembly.json", "decoded-records.jsonl", "clock-models.json", "calibration.json", "records.jsonl", "observations.jsonl"], "produces": ["manifest.json", "provenance.json"]}
+  },
+  "json": {
+    "encoding": "utf-8",
+    "indent": 2,
+    "sort_keys": true,
+    "line_ending": "LF",
+    "jsonl": "One compact sort-key-ordered JSON object per LF-terminated line."
+  }
+}

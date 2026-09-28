@@ -1,0 +1,12 @@
+{
+  "correction": {
+    "den": 3766111,
+    "num": 15496111
+  },
+  "event_count": 510,
+  "first_timestamp_us": 21045556,
+  "last_timestamp_us": 83030000,
+  "live_time_us": 15064444,
+  "schema_version": "1.0",
+  "total_span_us": 61984444
+}

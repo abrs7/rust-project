@@ -1,0 +1,10 @@
+Flight-recorder quote-loop probe (synchronization disabled)
+
+input body:  01 d3 02 db 03 7e 04
+wire body:   01 db f3 02 db fb 03 db 5e 04
+decoded:     01 d3 02 db 03 7e 04
+
+Header probe before trailer:
+
+type=30 payload_octets=03 tick=32123 sequence=32123 payload=01d391
+body=b2 30 03 7d 7b 7d 7b 01 d3 91

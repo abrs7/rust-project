@@ -1,0 +1,6 @@
+account_id,currency,name
+BA001,USD,B_Merchant_USD
+BA002,EUR,B_Merchant_EUR
+BA003,JPY,B_Merchant_JPY
+BA004,GBP,B_Merchant_GBP
+BA005,USD,B_Pending_USD

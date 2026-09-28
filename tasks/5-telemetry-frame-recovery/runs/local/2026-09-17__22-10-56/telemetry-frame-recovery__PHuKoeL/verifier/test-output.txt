@@ -1,0 +1,192 @@
+test_01_candidate_artifact_exists (__main__.TelemetryVerifierTests.test_01_candidate_artifact_exists) ... FAIL
+test_02_privilege_boundary_blocks_answer_key_and_reward (__main__.TelemetryVerifierTests.test_02_privilege_boundary_blocks_answer_key_and_reward) ... FAIL
+test_03_visible_events_match_frozen_truth (__main__.TelemetryVerifierTests.test_03_visible_events_match_frozen_truth) ... FAIL
+test_04_visible_calibration_matches_frozen_truth (__main__.TelemetryVerifierTests.test_04_visible_calibration_matches_frozen_truth) ... FAIL
+test_05_visible_manifest_matches_frozen_truth (__main__.TelemetryVerifierTests.test_05_visible_manifest_matches_frozen_truth) ... FAIL
+test_06_visible_output_has_exact_file_set (__main__.TelemetryVerifierTests.test_06_visible_output_has_exact_file_set) ... FAIL
+test_07_hidden_candidate_run_succeeds (__main__.TelemetryVerifierTests.test_07_hidden_candidate_run_succeeds) ... FAIL
+test_08_hidden_events_match_varied_sessions (__main__.TelemetryVerifierTests.test_08_hidden_events_match_varied_sessions) ... FAIL
+test_09_hidden_calibration_matches_varied_sessions (__main__.TelemetryVerifierTests.test_09_hidden_calibration_matches_varied_sessions) ... FAIL
+test_10_hidden_manifest_checks_noise_and_corruption (__main__.TelemetryVerifierTests.test_10_hidden_manifest_checks_noise_and_corruption) ... FAIL
+test_11_repeated_run_is_byte_deterministic (__main__.TelemetryVerifierTests.test_11_repeated_run_is_byte_deterministic) ... FAIL
+test_12_malformed_ledger_is_rejected (__main__.TelemetryVerifierTests.test_12_malformed_ledger_is_rejected) ... FAIL
+test_13_missing_input_is_rejected (__main__.TelemetryVerifierTests.test_13_missing_input_is_rejected) ... FAIL
+test_14_unusable_channel_calibration_is_rejected (__main__.TelemetryVerifierTests.test_14_unusable_channel_calibration_is_rejected) ... FAIL
+test_15_output_write_failure_is_nonzero (__main__.TelemetryVerifierTests.test_15_output_write_failure_is_nonzero) ... FAIL
+
+======================================================================
+FAIL: test_01_candidate_artifact_exists (__main__.TelemetryVerifierTests.test_01_candidate_artifact_exists)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 30, in test_01_candidate_artifact_exists
+    self.assertEqual(self.first_run.returncode, 0, self.first_run.stderr[-500:])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : telemetry recovery implementation is missing
+
+
+======================================================================
+FAIL: test_02_privilege_boundary_blocks_answer_key_and_reward (__main__.TelemetryVerifierTests.test_02_privilege_boundary_blocks_answer_key_and_reward)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 33, in test_02_privilege_boundary_blocks_answer_key_and_reward
+    self.assertEqual(self.first_run.returncode, 0, self.first_run.stderr[-500:])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : telemetry recovery implementation is missing
+
+
+======================================================================
+FAIL: test_03_visible_events_match_frozen_truth (__main__.TelemetryVerifierTests.test_03_visible_events_match_frozen_truth)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 38, in test_03_visible_events_match_frozen_truth
+    verify.load_events(verify.VISIBLE / "events.jsonl"),
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/verify.py", line 58, in load_events
+    raise CheckFailure(f"missing {path}")
+verify.CheckFailure: missing /app/output/events.jsonl
+
+======================================================================
+FAIL: test_04_visible_calibration_matches_frozen_truth (__main__.TelemetryVerifierTests.test_04_visible_calibration_matches_frozen_truth)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 43, in test_04_visible_calibration_matches_frozen_truth
+    actual = verify.load_json(verify.VISIBLE / "calibration.json")
+  File "/tests/verify.py", line 75, in load_json
+    raise CheckFailure(f"missing {path}")
+verify.CheckFailure: missing /app/output/calibration.json
+
+======================================================================
+FAIL: test_05_visible_manifest_matches_frozen_truth (__main__.TelemetryVerifierTests.test_05_visible_manifest_matches_frozen_truth)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 51, in test_05_visible_manifest_matches_frozen_truth
+    actual = verify.load_json(verify.VISIBLE / "manifest.json")
+  File "/tests/verify.py", line 75, in load_json
+    raise CheckFailure(f"missing {path}")
+verify.CheckFailure: missing /app/output/manifest.json
+
+======================================================================
+FAIL: test_06_visible_output_has_exact_file_set (__main__.TelemetryVerifierTests.test_06_visible_output_has_exact_file_set)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 59, in test_06_visible_output_has_exact_file_set
+    self.assertEqual(
+    ~~~~~~~~~~~~~~~~^
+        sorted(path.name for path in verify.VISIBLE.iterdir()),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ["calibration.json", "events.jsonl", "manifest.json"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+AssertionError: Lists differ: [] != ['calibration.json', 'events.jsonl', 'manifest.json']
+
+Second list contains 3 additional elements.
+First extra element 0:
+'calibration.json'
+
+- []
++ ['calibration.json', 'events.jsonl', 'manifest.json']
+
+======================================================================
+FAIL: test_07_hidden_candidate_run_succeeds (__main__.TelemetryVerifierTests.test_07_hidden_candidate_run_succeeds)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 65, in test_07_hidden_candidate_run_succeeds
+    self.assertEqual(
+    ~~~~~~~~~~~~~~~~^
+        self.first_run.returncode,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        0,
+        ^^
+        self.first_run.stderr[-500:],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+AssertionError: 1 != 0 : telemetry recovery implementation is missing
+
+
+======================================================================
+FAIL: test_08_hidden_events_match_varied_sessions (__main__.TelemetryVerifierTests.test_08_hidden_events_match_varied_sessions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 73, in test_08_hidden_events_match_varied_sessions
+    verify.load_events(self.first / "events.jsonl"),
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/verify.py", line 58, in load_events
+    raise CheckFailure(f"missing {path}")
+verify.CheckFailure: missing /tmp/telemetry-tests-hf1ej2fk/output-one/events.jsonl
+
+======================================================================
+FAIL: test_09_hidden_calibration_matches_varied_sessions (__main__.TelemetryVerifierTests.test_09_hidden_calibration_matches_varied_sessions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 78, in test_09_hidden_calibration_matches_varied_sessions
+    actual = verify.load_json(self.first / "calibration.json")
+  File "/tests/verify.py", line 75, in load_json
+    raise CheckFailure(f"missing {path}")
+verify.CheckFailure: missing /tmp/telemetry-tests-hf1ej2fk/output-one/calibration.json
+
+======================================================================
+FAIL: test_10_hidden_manifest_checks_noise_and_corruption (__main__.TelemetryVerifierTests.test_10_hidden_manifest_checks_noise_and_corruption)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 86, in test_10_hidden_manifest_checks_noise_and_corruption
+    actual = verify.load_json(self.first / "manifest.json")
+  File "/tests/verify.py", line 75, in load_json
+    raise CheckFailure(f"missing {path}")
+verify.CheckFailure: missing /tmp/telemetry-tests-hf1ej2fk/output-one/manifest.json
+
+======================================================================
+FAIL: test_11_repeated_run_is_byte_deterministic (__main__.TelemetryVerifierTests.test_11_repeated_run_is_byte_deterministic)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 94, in test_11_repeated_run_is_byte_deterministic
+    self.assertEqual(self.second_run.returncode, 0, self.second_run.stderr[-500:])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : telemetry recovery implementation is missing
+
+
+======================================================================
+FAIL: test_12_malformed_ledger_is_rejected (__main__.TelemetryVerifierTests.test_12_malformed_ledger_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 99, in test_12_malformed_ledger_is_rejected
+    self.assertEqual(self.first_run.returncode, 0, self.first_run.stderr[-500:])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : telemetry recovery implementation is missing
+
+
+======================================================================
+FAIL: test_13_missing_input_is_rejected (__main__.TelemetryVerifierTests.test_13_missing_input_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 109, in test_13_missing_input_is_rejected
+    self.assertEqual(self.first_run.returncode, 0, self.first_run.stderr[-500:])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : telemetry recovery implementation is missing
+
+
+======================================================================
+FAIL: test_14_unusable_channel_calibration_is_rejected (__main__.TelemetryVerifierTests.test_14_unusable_channel_calibration_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 118, in test_14_unusable_channel_calibration_is_rejected
+    self.assertEqual(self.first_run.returncode, 0, self.first_run.stderr[-500:])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : telemetry recovery implementation is missing
+
+
+======================================================================
+FAIL: test_15_output_write_failure_is_nonzero (__main__.TelemetryVerifierTests.test_15_output_write_failure_is_nonzero)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 134, in test_15_output_write_failure_is_nonzero
+    self.assertEqual(self.first_run.returncode, 0, self.first_run.stderr[-500:])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : telemetry recovery implementation is missing
+
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.232s
+
+FAILED (failures=15)

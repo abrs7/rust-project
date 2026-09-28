@@ -1,0 +1,4 @@
+{"count":5,"key":"sensor-v-01","partition":0,"topic":"telemetry-v-alpha"}
+{"count":4,"key":"sensor-v-02","partition":0,"topic":"telemetry-v-beta"}
+{"count":3,"key":"sensor-v-03","partition":1,"topic":"telemetry-v-alpha"}
+{"count":2,"key":"sensor-v-04","partition":0,"topic":"telemetry-v-beta"}

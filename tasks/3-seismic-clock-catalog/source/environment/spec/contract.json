@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "time_unit": "signed_int64_microseconds",
+  "rounding": "round_half_away_from_zero",
+  "csv": {
+    "encoding": "utf-8",
+    "dialect": "excel",
+    "header_required": true,
+    "unknown_columns": "error",
+    "blank_rows": "ignored"
+  },
+  "ingestion": {
+    "pick_identity": "pick_id",
+    "exact_duplicate": "collapse_and_count",
+    "conflicting_duplicate": "fatal",
+    "canonical_order": ["station_id", "recorded_us", "pick_id"]
+  },
+  "diagnosis_objective": [
+    "maximize_surveyed_events_recovered",
+    "maximize_stable_events_recovered",
+    "maximize_stable_picks_accepted",
+    "minimize_faulty_station_id"
+  ],
+  "diagnosis_uniqueness": "The optimum before the final station-id tie breaker MUST contain exactly one station; the station-id item only fixes serialization order.",
+  "stable_event": "A source_id/origin_us pair with exact implied-origin agreement at at least min_stable_stations distinct non-excluded stations. At most one pick per station is selected, by pick_id.",
+  "residual": "recorded_us-origin_us-travel_us",
+  "residual_lattice": {
+    "nodes": "Every faulty pick/event pair whose residual lies in [residual_min_us,residual_max_us].",
+    "path": "Assignments are one-to-one and strictly increasing in both (true_arrival_us,event_id) and (recorded_us,pick_id).",
+    "objective": [
+      "maximize_assigned_faulty_picks",
+      "minimize_clock_segments",
+      "lexicographically_minimize_segment_tuples",
+      "lexicographically_minimize_assignment_pairs"
+    ],
+    "uniqueness": "The optimum before lexicographic serialization tie breakers MUST be unique."
+  },
+  "clock_model": {
+    "domain": "true arrival microseconds",
+    "boundary_rule": "A segment starts at campaign_start_us or an allowed boundary. A true arrival equal to a boundary belongs to the segment starting there.",
+    "segment_formula": "recorded_us = true_us + offset_us + round_half_away_from_zero((rate_num-rate_den)*(true_us-start_us)/rate_den)",
+    "rate": "rate_num/rate_den is positive, reduced, and listed in campaign.toml.",
+    "jump": "offset_us is independent at each segment start.",
+    "offset_bounds": "Each segment offset_us lies in [residual_min_us,residual_max_us]."
+  },
+  "reconciliation": {
+    "accepted_stable": "recorded_us equals origin_us plus travel_us",
+    "accepted_faulty": "The fitted model maps origin_us plus travel_us exactly to recorded_us.",
+    "corrected_us": "origin_us plus travel_us",
+    "dispositions": ["accepted", "rejected_duplicate_decoy", "rejected_unassociated", "rejected_faulty_decoy"]
+  },
+  "integers": {
+    "minimum": -9223372036854775808,
+    "maximum": 9223372036854775807
+  },
+  "json": {
+    "encoding": "utf-8",
+    "indent": 2,
+    "sort_keys": true,
+    "line_ending": "LF",
+    "jsonl": "One compact sort-key-ordered JSON object per LF-terminated line."
+  }
+}

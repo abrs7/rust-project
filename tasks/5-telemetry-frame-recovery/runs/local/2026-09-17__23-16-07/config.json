@@ -1,0 +1,13 @@
+{
+    "job_name": "2026-09-17__23-16-07",
+    "agents": [
+        {
+            "name": "nop"
+        }
+    ],
+    "tasks": [
+        {
+            "path": "/home/abraham/workspace/rustlabs/telemetry-frame-recovery"
+        }
+    ]
+}

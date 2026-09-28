@@ -1,0 +1,7 @@
+{
+  "schema_version": "1.0",
+  "task": "measurement-wal-recover",
+  "language": "go",
+  "frame_magic": "MWAL",
+  "checksum": "crc32-ieee"
+}

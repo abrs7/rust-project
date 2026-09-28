@@ -1,0 +1,4 @@
+obs_id,source_id,timestamp,quantity,magnitude,unit_symbol
+AO002,ASRC-A,1000,net_force,-10/1,lb_f
+AO001,ASRC-A,1000,net_force,10/1,lb_f
+AO006,ASRC-B,2000,heat_in,1/1,cal

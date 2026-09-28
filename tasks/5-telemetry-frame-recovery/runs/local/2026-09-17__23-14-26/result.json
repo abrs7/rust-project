@@ -1,0 +1,39 @@
+{
+    "id": "0b23dcbc-6177-41b4-b039-518d8099152c",
+    "started_at": "2026-09-17T23:14:26.946881",
+    "updated_at": "2026-09-17T23:15:18.932799",
+    "finished_at": "2026-09-17T23:15:18.932799",
+    "n_total_trials": 1,
+    "stats": {
+        "n_completed_trials": 1,
+        "n_errored_trials": 0,
+        "n_running_trials": 0,
+        "n_pending_trials": 0,
+        "n_cancelled_trials": 0,
+        "n_retries": 0,
+        "evals": {
+            "oracle__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 1.0
+                    }
+                ],
+                "pass_at_k": {},
+                "reward_stats": {
+                    "reward": {
+                        "1.0": [
+                            "telemetry-frame-recovery__vLNWrBg"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        },
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null
+    }
+}

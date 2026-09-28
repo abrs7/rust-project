@@ -1,0 +1,10 @@
+{
+    "job_name": "seismic-oracle-preflight-3",
+    "jobs_dir": "/home/abraham/workspace/rustlabs/tasks/seismic-clock-catalog/runs",
+    "n_concurrent_trials": 1,
+    "tasks": [
+        {
+            "path": "/home/abraham/workspace/rustlabs/tasks/seismic-clock-catalog/source"
+        }
+    ]
+}

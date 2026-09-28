@@ -1,0 +1,10 @@
+{
+    "job_name": "telemetry-oracle-002b",
+    "jobs_dir": "/home/abraham/workspace/rustlabs/tasks/telemetry-array-rebuild/runs",
+    "n_concurrent_trials": 1,
+    "tasks": [
+        {
+            "path": "/home/abraham/workspace/rustlabs/tasks/telemetry-array-rebuild/source"
+        }
+    ]
+}

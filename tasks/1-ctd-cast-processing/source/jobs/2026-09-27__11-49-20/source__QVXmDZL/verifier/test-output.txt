@@ -1,0 +1,178 @@
+test_01_visible_full_staged_and_public_apis (__main__.Verifier.test_01_visible_full_staged_and_public_apis) ... FAIL
+test_02_hidden_alpha_frozen_outputs (__main__.Verifier.test_02_hidden_alpha_frozen_outputs) ... FAIL
+test_03_hidden_beta_frozen_outputs (__main__.Verifier.test_03_hidden_beta_frozen_outputs) ... FAIL
+test_04_shuffled_shards_hash_determinism (__main__.Verifier.test_04_shuffled_shards_hash_determinism) ... FAIL
+test_05_rejects_bad_inputs_without_clobbering_output (__main__.Verifier.test_05_rejects_bad_inputs_without_clobbering_output) ... ok
+test_06_downcast_reaches_campaign_max_pressure (__main__.Verifier.test_06_downcast_reaches_campaign_max_pressure) ... ok
+test_07_duplicate_collapse_count (__main__.Verifier.test_07_duplicate_collapse_count) ... ok
+test_08_bin_floors_align_with_cast_bin_size (__main__.Verifier.test_08_bin_floors_align_with_cast_bin_size) ... ok
+test_09_depth_formula_example_matches_contract (__main__.Verifier.test_09_depth_formula_example_matches_contract) ... ok
+test_10_survey_tie_points_are_self_consistent (__main__.Verifier.test_10_survey_tie_points_are_self_consistent) ... ok
+test_11_export_uses_inferred_latitude_not_header_on_beta (__main__.Verifier.test_11_export_uses_inferred_latitude_not_header_on_beta) ... ok
+test_12_qc_flags_sorted_and_canonical (__main__.Verifier.test_12_qc_flags_sorted_and_canonical) ... ok
+test_13_provenance_counts_match_segment (__main__.Verifier.test_13_provenance_counts_match_segment) ... ok
+test_14_stage_artifacts_immutable_after_profile_removal (__main__.Verifier.test_14_stage_artifacts_immutable_after_profile_removal) ... FAIL
+test_15_empty_qc_flags_file_is_valid_jsonl (__main__.Verifier.test_15_empty_qc_flags_file_is_valid_jsonl) ... ok
+test_16_hidden_alpha_latitude_matches_header (__main__.Verifier.test_16_hidden_alpha_latitude_matches_header) ... ok
+test_17_final_profile_bins_are_monotone_in_depth (__main__.Verifier.test_17_final_profile_bins_are_monotone_in_depth) ... ok
+test_18_rejects_empty_downcast_without_clobbering_output (__main__.Verifier.test_18_rejects_empty_downcast_without_clobbering_output) ... ok
+test_19_rejects_non_unique_latitude_without_clobbering_output (__main__.Verifier.test_19_rejects_non_unique_latitude_without_clobbering_output) ... ok
+test_20_rejects_output_replacement_failure_without_clobbering_output (__main__.Verifier.test_20_rejects_output_replacement_failure_without_clobbering_output) ... ok
+test_21_leaves_campaign_examples_and_spec_unmodified (__main__.Verifier.test_21_leaves_campaign_examples_and_spec_unmodified) ... FAIL
+test_22_creates_output_directory_when_absent (__main__.Verifier.test_22_creates_output_directory_when_absent) ... FAIL
+test_23_products_are_locale_invariant (__main__.Verifier.test_23_products_are_locale_invariant) ... FAIL
+
+======================================================================
+FAIL: test_01_visible_full_staged_and_public_apis (__main__.Verifier.test_01_visible_full_staged_and_public_apis)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 251, in test_01_visible_full_staged_and_public_apis
+    require_success(self.candidate.cli("run", campaign, full, hash_seed="11"), "visible full run")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 43, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: visible full run failed (1)
+stdout:
+
+stderr:
+rebuild the CTD cast processing pipeline
+
+
+======================================================================
+FAIL: test_02_hidden_alpha_frozen_outputs (__main__.Verifier.test_02_hidden_alpha_frozen_outputs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 284, in test_02_hidden_alpha_frozen_outputs
+    require_success(self.candidate.cli("run", campaign, output, hash_seed="123"), "hidden-alpha")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 43, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: hidden-alpha failed (1)
+stdout:
+
+stderr:
+rebuild the CTD cast processing pipeline
+
+
+======================================================================
+FAIL: test_03_hidden_beta_frozen_outputs (__main__.Verifier.test_03_hidden_beta_frozen_outputs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 290, in test_03_hidden_beta_frozen_outputs
+    require_success(self.candidate.cli("run", campaign, output, hash_seed="456"), "hidden-beta")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 43, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: hidden-beta failed (1)
+stdout:
+
+stderr:
+rebuild the CTD cast processing pipeline
+
+
+======================================================================
+FAIL: test_04_shuffled_shards_hash_determinism (__main__.Verifier.test_04_shuffled_shards_hash_determinism)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 301, in test_04_shuffled_shards_hash_determinism
+    require_success(self.candidate.cli("run", campaign, output_a, hash_seed="1"), "shuffled run seed 1")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 43, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: shuffled run seed 1 failed (1)
+stdout:
+
+stderr:
+rebuild the CTD cast processing pipeline
+
+
+======================================================================
+FAIL: test_14_stage_artifacts_immutable_after_profile_removal (__main__.Verifier.test_14_stage_artifacts_immutable_after_profile_removal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 429, in test_14_stage_artifacts_immutable_after_profile_removal
+    require_success(self.candidate.cli("ingest", campaign, staged), "ingest for stage check")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 43, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: ingest for stage check failed (1)
+stdout:
+
+stderr:
+rebuild the CTD cast processing pipeline
+
+
+======================================================================
+FAIL: test_21_leaves_campaign_examples_and_spec_unmodified (__main__.Verifier.test_21_leaves_campaign_examples_and_spec_unmodified)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 527, in test_21_leaves_campaign_examples_and_spec_unmodified
+    require_success(self.candidate.cli("run", campaign, output, hash_seed="17"), "immutable sources run")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 43, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: immutable sources run failed (1)
+stdout:
+
+stderr:
+rebuild the CTD cast processing pipeline
+
+
+======================================================================
+FAIL: test_22_creates_output_directory_when_absent (__main__.Verifier.test_22_creates_output_directory_when_absent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 536, in test_22_creates_output_directory_when_absent
+    require_success(
+    ~~~~~~~~~~~~~~~^
+        self.candidate.cli("run", campaign, output, hash_seed="22"),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "run with absent output directory",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/tests/test_outputs.py", line 43, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: run with absent output directory failed (1)
+stdout:
+
+stderr:
+rebuild the CTD cast processing pipeline
+
+
+======================================================================
+FAIL: test_23_products_are_locale_invariant (__main__.Verifier.test_23_products_are_locale_invariant)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 550, in test_23_products_are_locale_invariant
+    require_success(result, f"locale {locale} run")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 43, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: locale C run failed (1)
+stdout:
+
+stderr:
+rebuild the CTD cast processing pipeline
+
+
+----------------------------------------------------------------------
+Ran 23 tests in 2.777s
+
+FAILED (failures=8)

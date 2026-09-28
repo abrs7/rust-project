@@ -1,0 +1,4 @@
+{"count":6,"key":"node-a-01","partition":0,"topic":"stream-a-alpha"}
+{"count":5,"key":"node-a-02","partition":0,"topic":"stream-a-beta"}
+{"count":3,"key":"node-a-03","partition":1,"topic":"stream-a-alpha"}
+{"count":2,"key":"node-a-04","partition":0,"topic":"stream-a-beta"}

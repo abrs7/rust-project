@@ -1,0 +1,6 @@
+{"account_id":"BA001","amount_minor":14925,"currency":"USD","entry_id":"BE001","side":"DR","signed_amount_minor":14925,"trade_date":"2024-06-03"}
+{"account_id":"BA002","amount_minor":8500,"currency":"EUR","entry_id":"BE002","side":"DR","signed_amount_minor":8500,"trade_date":"2024-06-04"}
+{"account_id":"BA001","amount_minor":500,"currency":"USD","entry_id":"BE003","side":"CR","signed_amount_minor":-500,"trade_date":"2024-06-05"}
+{"account_id":"BA004","amount_minor":2500,"currency":"GBP","entry_id":"BE005","side":"DR","signed_amount_minor":2500,"trade_date":"2024-06-06"}
+{"account_id":"BA003","amount_minor":150000,"currency":"JPY","entry_id":"BE004","side":"DR","signed_amount_minor":150000,"trade_date":"2024-06-07"}
+{"account_id":"BA005","amount_minor":333,"currency":"USD","entry_id":"BE006","side":"DR","signed_amount_minor":333,"trade_date":"2024-06-10"}

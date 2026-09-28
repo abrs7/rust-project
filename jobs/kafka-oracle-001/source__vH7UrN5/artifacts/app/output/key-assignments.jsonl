@@ -1,0 +1,14 @@
+{"key":"sensor-v-01","message_id":"M000002","partition":0,"seq":1,"topic":"telemetry-v-alpha"}
+{"key":"sensor-v-01","message_id":"M000003","partition":0,"seq":2,"topic":"telemetry-v-alpha"}
+{"key":"sensor-v-01","message_id":"M000004","partition":0,"seq":3,"topic":"telemetry-v-alpha"}
+{"key":"sensor-v-01","message_id":"M000005","partition":0,"seq":4,"topic":"telemetry-v-alpha"}
+{"key":"sensor-v-01","message_id":"M000006","partition":0,"seq":5,"topic":"telemetry-v-alpha"}
+{"key":"sensor-v-03","message_id":"M000007","partition":1,"seq":1,"topic":"telemetry-v-alpha"}
+{"key":"sensor-v-03","message_id":"M000008","partition":1,"seq":2,"topic":"telemetry-v-alpha"}
+{"key":"sensor-v-03","message_id":"M000009","partition":1,"seq":3,"topic":"telemetry-v-alpha"}
+{"key":"sensor-v-02","message_id":"M000012","partition":0,"seq":1,"topic":"telemetry-v-beta"}
+{"key":"sensor-v-02","message_id":"M000013","partition":0,"seq":2,"topic":"telemetry-v-beta"}
+{"key":"sensor-v-02","message_id":"M000014","partition":0,"seq":3,"topic":"telemetry-v-beta"}
+{"key":"sensor-v-02","message_id":"M000015","partition":0,"seq":4,"topic":"telemetry-v-beta"}
+{"key":"sensor-v-04","message_id":"M000010","partition":0,"seq":1,"topic":"telemetry-v-beta"}
+{"key":"sensor-v-04","message_id":"M000011","partition":0,"seq":2,"topic":"telemetry-v-beta"}

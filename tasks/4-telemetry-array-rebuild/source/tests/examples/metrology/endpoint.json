@@ -1,0 +1,14 @@
+{
+  "segment_start": 100,
+  "segments": [
+    {
+      "tick_end": 100,
+      "tick_start": 0
+    },
+    {
+      "tick_end": 200,
+      "tick_start": 100
+    }
+  ],
+  "tick": 100
+}

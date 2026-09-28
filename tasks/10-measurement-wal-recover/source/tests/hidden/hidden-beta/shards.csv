@@ -1,0 +1,4 @@
+shard_id,path
+trace-b-01,shards/trace-b-01.wal
+trace-b-03,shards/trace-b-03.wal
+trace-b-02,shards/trace-b-02.wal

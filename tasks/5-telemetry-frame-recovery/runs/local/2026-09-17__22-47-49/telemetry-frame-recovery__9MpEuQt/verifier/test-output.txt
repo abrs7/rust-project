@@ -1,0 +1,20 @@
+test_01_candidate_artifact_exists (__main__.TelemetryVerifierTests.test_01_candidate_artifact_exists) ... ok
+test_02_privilege_boundary_blocks_answer_key_and_reward (__main__.TelemetryVerifierTests.test_02_privilege_boundary_blocks_answer_key_and_reward) ... ok
+test_03_visible_events_match_frozen_truth (__main__.TelemetryVerifierTests.test_03_visible_events_match_frozen_truth) ... ok
+test_04_visible_calibration_matches_frozen_truth (__main__.TelemetryVerifierTests.test_04_visible_calibration_matches_frozen_truth) ... ok
+test_05_visible_manifest_matches_frozen_truth (__main__.TelemetryVerifierTests.test_05_visible_manifest_matches_frozen_truth) ... ok
+test_06_visible_output_has_exact_file_set (__main__.TelemetryVerifierTests.test_06_visible_output_has_exact_file_set) ... ok
+test_07_hidden_candidate_run_succeeds (__main__.TelemetryVerifierTests.test_07_hidden_candidate_run_succeeds) ... ok
+test_08_hidden_events_match_varied_sessions (__main__.TelemetryVerifierTests.test_08_hidden_events_match_varied_sessions) ... ok
+test_09_hidden_calibration_matches_varied_sessions (__main__.TelemetryVerifierTests.test_09_hidden_calibration_matches_varied_sessions) ... ok
+test_10_hidden_manifest_checks_noise_and_corruption (__main__.TelemetryVerifierTests.test_10_hidden_manifest_checks_noise_and_corruption) ... ok
+test_11_repeated_run_is_byte_deterministic (__main__.TelemetryVerifierTests.test_11_repeated_run_is_byte_deterministic) ... ok
+test_12_malformed_ledger_is_rejected (__main__.TelemetryVerifierTests.test_12_malformed_ledger_is_rejected) ... ok
+test_13_missing_input_is_rejected (__main__.TelemetryVerifierTests.test_13_missing_input_is_rejected) ... ok
+test_14_unusable_channel_calibration_is_rejected (__main__.TelemetryVerifierTests.test_14_unusable_channel_calibration_is_rejected) ... ok
+test_15_output_write_failure_is_nonzero (__main__.TelemetryVerifierTests.test_15_output_write_failure_is_nonzero) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.743s
+
+OK

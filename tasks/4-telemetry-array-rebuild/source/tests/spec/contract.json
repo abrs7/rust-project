@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "time_unit": "signed_int64_milliseconds_or_ticks",
+  "rounding": "round_half_even",
+  "fragment_index": {
+    "fields": {
+      "campaign": "ledger campaign name",
+      "stream_offset": "unsigned integer payload placement in the assembled stream",
+      "payload_octets": "unsigned integer",
+      "final_piece": "boolean",
+      "accepted": "boolean",
+      "payload_sha256": "lowercase SHA-256 of the container payload when accepted, otherwise null",
+      "payload_hex": "lowercase hex of the container payload when accepted, otherwise empty string"
+    },
+    "duplicate_containers": "byte-identical containers collapse to one index row before accounting",
+    "overlap": "accepted payloads that overlap must agree octet-for-octet",
+    "assembly": "the reconstructed stream begins at offset zero and ends at the unique accepted final piece"
+  },
+  "assembly": {
+    "top_level_fields": ["schema_version", "campaigns"],
+    "schema_version": 1,
+    "campaign_fields": {
+      "campaign": "string",
+      "assembled_octets": "stream length",
+      "stream_sha256": "lowercase SHA-256 of streams/{campaign}.bin",
+      "accepted_fragments": "accepted unique containers",
+      "rejected_fragments": "complete containers assigned to the campaign but rejected"
+    }
+  },
+  "decoded_records": {
+    "fields": {
+      "campaign": "string",
+      "stream_offset": "offset of the selected record sync in the assembled stream",
+      "dialect": "recovered dialect name",
+      "sequence": "unsigned integer",
+      "kind": "clock, reference, science, science_block, or unsupported",
+      "tick_raw": "recorder tick as stored on the wire, before unwrap",
+      "payload_sha256": "lowercase SHA-256 of the decoded logical payload",
+      "payload_hex": "lowercase hex of the decoded logical payload"
+    },
+    "include": "every integrity-valid complete record, including unsupported kinds, after duplicate collapse"
+  },
+  "clock_models": {
+    "top_level_fields": ["schema_version", "campaigns"],
+    "schema_version": 1,
+    "unwrap": "walk decoded records in assembled-stream order and add 2^24 after a backward tick transition larger than half the recorder range",
+    "segments": "consecutive clock records after unwrap define piecewise linear oscillator segments; no extrapolation",
+    "endpoint": "a tick equal to a shared segment endpoint uses the later segment",
+    "timestamp": "utc_start_ms + round_half_even((tick-tick_start)*rate_numerator, rate_denominator)"
+  },
+  "calibration": {
+    "top_level_fields": ["schema_version", "campaigns"],
+    "schema_version": 1,
+    "fit": "unique quadratic through recovered low, mid, and high converter observations and the ledger physical references",
+    "temperature": "add temperature_coefficient * (sample_temperature_milli_c - reference_temperature_milli_c) / 1000 after the quadratic",
+    "arithmetic": "exact decimal or rational arithmetic; round coefficients only when serialized; evaluate observations from unrounded coefficients, then round once"
+  },
+  "records": {
+    "fields": ["campaign", "stream_offset", "dialect", "sequence", "kind", "tick", "payload_sha256"],
+    "include": "supported kinds after duplicate collapse",
+    "tick": "unwrapped recorder tick"
+  },
+  "observations": {
+    "fields": ["campaign", "sequence", "sample_index", "timestamp_ms", "channel", "raw", "temperature_milli_c", "calibrated", "source_kind"],
+    "source_kind": "science or science_block",
+    "calibrated": "decimal string with exactly four fractional digits"
+  },
+  "manifest": {
+    "top_level_fields": ["schema_version", "campaigns"],
+    "schema_version": 1,
+    "campaign_fields": [
+      "campaign",
+      "fragment_files",
+      "accepted_fragments",
+      "rejected_fragments",
+      "assembled_octets",
+      "stream_sha256",
+      "dialects",
+      "valid_records",
+      "rejected_records",
+      "unsupported_records",
+      "duplicate_records",
+      "science_observations",
+      "first_timestamp_ms",
+      "last_timestamp_ms"
+    ]
+  },
+  "provenance": {
+    "fields": [
+      "schema_version",
+      "campaign_count",
+      "accepted_fragment_count",
+      "valid_record_count",
+      "observation_count",
+      "product_sha256"
+    ],
+    "product_sha256": "SHA-256 of the canonical JSON of assembly, decoded records, clock models, calibration, records, observations, and manifest"
+  },
+  "duplicates": {
+    "identity": ["campaign", "dialect", "sequence", "kind"],
+    "identical": "keep the lowest stream_offset",
+    "conflicting": "fatal"
+  },
+  "serialization": {
+    "coefficients": "twelve fractional digits",
+    "temperature_coefficient": "eight fractional digits",
+    "ledger_references": "four fractional digits",
+    "calibrated": "four fractional digits"
+  },
+  "self_consistency": {
+    "clock": "Applying the fitted model to an unwrapped clock tick recovers that record's UTC milliseconds exactly.",
+    "reference": "Evaluating the unrounded calibration at a recovered reference raw count and the ledger reference temperature recovers the corresponding ledger physical value."
+  }
+}

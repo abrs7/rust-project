@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "/home/abraham/workspace/rustlabs/telemetry-frame-recovery"
+    },
+    "trial_name": "telemetry-frame-recovery__6WyxQ68",
+    "trials_dir": "jobs/2026-09-17__23-16-07",
+    "agent": {
+        "name": "nop"
+    },
+    "job_id": "9f403ba4-2146-47d2-b6b0-271ba9863779"
+}

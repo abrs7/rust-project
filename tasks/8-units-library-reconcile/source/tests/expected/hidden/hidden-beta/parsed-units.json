@@ -1,0 +1,41 @@
+{
+  "symbols": [
+    {
+      "convention_group": "FORCE_POUND",
+      "dimension": "force",
+      "symbol": "lbf",
+      "unit_id": "U001"
+    },
+    {
+      "convention_group": "FORCE_POUND",
+      "dimension": "force",
+      "symbol": "lb_f",
+      "unit_id": "U002"
+    },
+    {
+      "convention_group": null,
+      "dimension": "force",
+      "symbol": "N",
+      "unit_id": "U003"
+    },
+    {
+      "convention_group": "CAL_THERMO",
+      "dimension": "energy",
+      "symbol": "cal",
+      "unit_id": "U004"
+    },
+    {
+      "convention_group": "CAL_THERMO",
+      "dimension": "energy",
+      "symbol": "calorie",
+      "unit_id": "U005"
+    },
+    {
+      "convention_group": null,
+      "dimension": "energy",
+      "symbol": "J",
+      "unit_id": "U006"
+    }
+  ],
+  "unknown_rejected": false
+}

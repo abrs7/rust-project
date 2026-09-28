@@ -1,0 +1,12 @@
+{
+    "task": {
+        "path": "/tmp/harbor-check-6pqmducm/check-telemetry-frame-recovery"
+    },
+    "trial_name": "check-telemetry-frame-recovery__dNS35e5",
+    "trials_dir": "jobs/2026-09-17__21-42-13",
+    "agent": {
+        "name": "claude-code",
+        "model_name": "claude-sonnet-4-6"
+    },
+    "job_id": "46834aa3-8a46-4bdd-902a-0761024cecd7"
+}

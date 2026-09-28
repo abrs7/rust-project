@@ -1,0 +1,12 @@
+{
+  "downcast_sample_count": 17,
+  "inferred_latitude_deg": {
+    "den": 1,
+    "num": 52
+  },
+  "input_sample_count": 33,
+  "product_sha256": "24fbb01e4e0f910853e6a4a833c69d39a79668d12185c2ca3fa11da08e6bcd94",
+  "qc_flag_count": 0,
+  "schema_version": "1.0",
+  "upcast_discarded_count": 16
+}

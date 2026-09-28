@@ -1,0 +1,5 @@
+{"centroid_channel":1156,"expected_energy_mkeV":300000,"fitted_energy_mkeV":299912,"integrated_counts":45781,"line_id":"BL01","peak_channel":1156}
+{"centroid_channel":1862,"expected_energy_mkeV":477100,"fitted_energy_mkeV":477191,"integrated_counts":50876,"line_id":"BL02","peak_channel":1862}
+{"centroid_channel":2597,"expected_energy_mkeV":661657,"fitted_energy_mkeV":661753,"integrated_counts":55940,"line_id":"BL03","peak_channel":2597}
+{"centroid_channel":3319,"expected_energy_mkeV":843200,"fitted_energy_mkeV":843050,"integrated_counts":114883,"line_id":"BL04","peak_channel":3319}
+{"centroid_channel":3546,"expected_energy_mkeV":900000,"fitted_energy_mkeV":900051,"integrated_counts":66113,"line_id":"BL05","peak_channel":3546}

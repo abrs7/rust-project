@@ -1,0 +1,13 @@
+{
+    "job_name": "kafka-nop-001",
+    "agents": [
+        {
+            "name": "nop"
+        }
+    ],
+    "tasks": [
+        {
+            "path": "tasks/7-kafka-ingest-repair/source"
+        }
+    ]
+}

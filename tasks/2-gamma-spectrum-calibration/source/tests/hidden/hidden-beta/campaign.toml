@@ -1,0 +1,11 @@
+schema_version = "1.0"
+channel_min = 0
+channel_max = 4095
+peak_min_counts = 800
+peak_min_separation = 12
+saturation_fwhm_min = 12
+saturation_plateau_delta = 2
+saturation_plateau_min_width = 5
+deadtime_tau_us = 68000
+line_match_max_delta = 20
+integration_half_width = 8

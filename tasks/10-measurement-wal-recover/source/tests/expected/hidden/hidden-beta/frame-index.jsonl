@@ -1,0 +1,17 @@
+{"byte_offset":0,"crc_ok":true,"frame_id":"F000001","seq":1,"shard_id":"trace-b-01","timestamp_ns":1000000000,"value":-35}
+{"byte_offset":28,"crc_ok":true,"frame_id":"F000002","seq":2,"shard_id":"trace-b-01","timestamp_ns":1171886588,"value":294}
+{"byte_offset":56,"crc_ok":true,"frame_id":"F000003","seq":2,"shard_id":"trace-b-01","timestamp_ns":1364447302,"value":295}
+{"byte_offset":84,"crc_ok":true,"frame_id":"F000004","seq":3,"shard_id":"trace-b-01","timestamp_ns":1364447302,"value":-384}
+{"byte_offset":112,"crc_ok":true,"frame_id":"F000005","seq":4,"shard_id":"trace-b-01","timestamp_ns":1493967094,"value":-135}
+{"byte_offset":140,"crc_ok":true,"frame_id":"F000006","seq":5,"shard_id":"trace-b-01","timestamp_ns":1662288052,"value":-212}
+{"byte_offset":168,"crc_ok":true,"frame_id":"F000007","seq":6,"shard_id":"trace-b-01","timestamp_ns":1813280559,"value":-141}
+{"byte_offset":0,"crc_ok":true,"frame_id":"F000008","seq":7,"shard_id":"trace-b-02","timestamp_ns":2013634677,"value":-296}
+{"byte_offset":28,"crc_ok":true,"frame_id":"F000009","seq":8,"shard_id":"trace-b-02","timestamp_ns":2324234959,"value":-438}
+{"byte_offset":56,"crc_ok":true,"frame_id":"F000010","seq":9,"shard_id":"trace-b-02","timestamp_ns":2606935806,"value":-103}
+{"byte_offset":84,"crc_ok":false,"frame_id":"F000011","seq":10,"shard_id":"trace-b-02","timestamp_ns":2794175973,"value":-103}
+{"byte_offset":112,"crc_ok":true,"frame_id":"F000012","seq":10,"shard_id":"trace-b-02","timestamp_ns":2744175973,"value":-455}
+{"byte_offset":140,"crc_ok":true,"frame_id":"F000013","seq":11,"shard_id":"trace-b-02","timestamp_ns":2996337233,"value":120}
+{"byte_offset":0,"crc_ok":true,"frame_id":"F000014","seq":12,"shard_id":"trace-b-03","timestamp_ns":3107074523,"value":467}
+{"byte_offset":28,"crc_ok":true,"frame_id":"F000015","seq":13,"shard_id":"trace-b-03","timestamp_ns":3216282401,"value":-207}
+{"byte_offset":56,"crc_ok":true,"frame_id":"F000016","seq":14,"shard_id":"trace-b-03","timestamp_ns":3587666938,"value":152}
+{"byte_offset":84,"crc_ok":true,"frame_id":"F000017","seq":15,"shard_id":"trace-b-03","timestamp_ns":3765606305,"value":429}

@@ -1,0 +1,358 @@
+{
+  "cast": {
+    "bin_size_m": {
+      "den": 2,
+      "num": 5
+    },
+    "candidate_latitudes_deg": [
+      {
+        "den": 1,
+        "num": 43
+      },
+      {
+        "den": 1,
+        "num": 45
+      },
+      {
+        "den": 1,
+        "num": 47
+      }
+    ],
+    "cast_id": "V-CAST-001",
+    "latitude_deg": {
+      "den": 1,
+      "num": 45
+    }
+  },
+  "samples": [
+    {
+      "conductivity_mS": 586,
+      "duplicate_count": 1,
+      "pressure_dbar": 0,
+      "sample_id": "S000001",
+      "temperature_c": 15000,
+      "time_s": 0
+    },
+    {
+      "conductivity_mS": 577,
+      "duplicate_count": 1,
+      "pressure_dbar": 5174395985,
+      "sample_id": "S000002",
+      "temperature_c": 14750,
+      "time_s": 1500
+    },
+    {
+      "conductivity_mS": 568,
+      "duplicate_count": 1,
+      "pressure_dbar": 10348791970,
+      "sample_id": "S000003",
+      "temperature_c": 14500,
+      "time_s": 3055
+    },
+    {
+      "conductivity_mS": 559,
+      "duplicate_count": 2,
+      "pressure_dbar": 15523187955,
+      "sample_id": "S000004",
+      "temperature_c": 14250,
+      "time_s": 4588
+    },
+    {
+      "conductivity_mS": 550,
+      "duplicate_count": 1,
+      "pressure_dbar": 20697583940,
+      "sample_id": "S000005",
+      "temperature_c": 14000,
+      "time_s": 6099
+    },
+    {
+      "conductivity_mS": 542,
+      "duplicate_count": 1,
+      "pressure_dbar": 25871979925,
+      "sample_id": "S000006",
+      "temperature_c": 13750,
+      "time_s": 7665
+    },
+    {
+      "conductivity_mS": 533,
+      "duplicate_count": 1,
+      "pressure_dbar": 31046375911,
+      "sample_id": "S000007",
+      "temperature_c": 13500,
+      "time_s": 9209
+    },
+    {
+      "conductivity_mS": 524,
+      "duplicate_count": 1,
+      "pressure_dbar": 36220771896,
+      "sample_id": "S000008",
+      "temperature_c": 13250,
+      "time_s": 10731
+    },
+    {
+      "conductivity_mS": 515,
+      "duplicate_count": 1,
+      "pressure_dbar": 41395167881,
+      "sample_id": "S000009",
+      "temperature_c": 13000,
+      "time_s": 12231
+    },
+    {
+      "conductivity_mS": 506,
+      "duplicate_count": 1,
+      "pressure_dbar": 46569563866,
+      "sample_id": "S000010",
+      "temperature_c": 12750,
+      "time_s": 13786
+    },
+    {
+      "conductivity_mS": 497,
+      "duplicate_count": 1,
+      "pressure_dbar": 51743959851,
+      "sample_id": "S000011",
+      "temperature_c": 12500,
+      "time_s": 15319
+    },
+    {
+      "conductivity_mS": 488,
+      "duplicate_count": 1,
+      "pressure_dbar": 56918355836,
+      "sample_id": "S000012",
+      "temperature_c": 12250,
+      "time_s": 16830
+    },
+    {
+      "conductivity_mS": 480,
+      "duplicate_count": 1,
+      "pressure_dbar": 62092751821,
+      "sample_id": "S000013",
+      "temperature_c": 12000,
+      "time_s": 18396
+    },
+    {
+      "conductivity_mS": 471,
+      "duplicate_count": 1,
+      "pressure_dbar": 67267147806,
+      "sample_id": "S000014",
+      "temperature_c": 11750,
+      "time_s": 19940
+    },
+    {
+      "conductivity_mS": 462,
+      "duplicate_count": 1,
+      "pressure_dbar": 72441543791,
+      "sample_id": "S000015",
+      "temperature_c": 11500,
+      "time_s": 21462
+    },
+    {
+      "conductivity_mS": 453,
+      "duplicate_count": 1,
+      "pressure_dbar": 77615939776,
+      "sample_id": "S000016",
+      "temperature_c": 11250,
+      "time_s": 22962
+    },
+    {
+      "conductivity_mS": 444,
+      "duplicate_count": 1,
+      "pressure_dbar": 82790335761,
+      "sample_id": "S000017",
+      "temperature_c": 11000,
+      "time_s": 24517
+    },
+    {
+      "conductivity_mS": 435,
+      "duplicate_count": 1,
+      "pressure_dbar": 87964731746,
+      "sample_id": "S000018",
+      "temperature_c": 10750,
+      "time_s": 26050
+    },
+    {
+      "conductivity_mS": 427,
+      "duplicate_count": 1,
+      "pressure_dbar": 93139127732,
+      "sample_id": "S000019",
+      "temperature_c": 10500,
+      "time_s": 27561
+    },
+    {
+      "conductivity_mS": 418,
+      "duplicate_count": 1,
+      "pressure_dbar": 98313523717,
+      "sample_id": "S000020",
+      "temperature_c": 10250,
+      "time_s": 29127
+    },
+    {
+      "conductivity_mS": 409,
+      "duplicate_count": 1,
+      "pressure_dbar": 103487919702,
+      "sample_id": "S000021",
+      "temperature_c": 10000,
+      "time_s": 30671
+    },
+    {
+      "conductivity_mS": 418,
+      "duplicate_count": 1,
+      "pressure_dbar": 98313520717,
+      "sample_id": "S000022",
+      "temperature_c": 10350,
+      "time_s": 32193
+    },
+    {
+      "conductivity_mS": 427,
+      "duplicate_count": 1,
+      "pressure_dbar": 93139124232,
+      "sample_id": "S000023",
+      "temperature_c": 10600,
+      "time_s": 33393
+    },
+    {
+      "conductivity_mS": 435,
+      "duplicate_count": 1,
+      "pressure_dbar": 87964727746,
+      "sample_id": "S000024",
+      "temperature_c": 10850,
+      "time_s": 34593
+    },
+    {
+      "conductivity_mS": 444,
+      "duplicate_count": 1,
+      "pressure_dbar": 82790331261,
+      "sample_id": "S000025",
+      "temperature_c": 11100,
+      "time_s": 35793
+    },
+    {
+      "conductivity_mS": 453,
+      "duplicate_count": 1,
+      "pressure_dbar": 77615934776,
+      "sample_id": "S000026",
+      "temperature_c": 11350,
+      "time_s": 36993
+    },
+    {
+      "conductivity_mS": 462,
+      "duplicate_count": 1,
+      "pressure_dbar": 72441538291,
+      "sample_id": "S000027",
+      "temperature_c": 11600,
+      "time_s": 38193
+    },
+    {
+      "conductivity_mS": 471,
+      "duplicate_count": 1,
+      "pressure_dbar": 67267141806,
+      "sample_id": "S000028",
+      "temperature_c": 11850,
+      "time_s": 39393
+    },
+    {
+      "conductivity_mS": 480,
+      "duplicate_count": 1,
+      "pressure_dbar": 62092745321,
+      "sample_id": "S000029",
+      "temperature_c": 12100,
+      "time_s": 40593
+    },
+    {
+      "conductivity_mS": 488,
+      "duplicate_count": 1,
+      "pressure_dbar": 56918348836,
+      "sample_id": "S000030",
+      "temperature_c": 12350,
+      "time_s": 41793
+    },
+    {
+      "conductivity_mS": 497,
+      "duplicate_count": 1,
+      "pressure_dbar": 51743952351,
+      "sample_id": "S000031",
+      "temperature_c": 12600,
+      "time_s": 42993
+    },
+    {
+      "conductivity_mS": 506,
+      "duplicate_count": 1,
+      "pressure_dbar": 46569555866,
+      "sample_id": "S000032",
+      "temperature_c": 12850,
+      "time_s": 44193
+    },
+    {
+      "conductivity_mS": 515,
+      "duplicate_count": 1,
+      "pressure_dbar": 41395159381,
+      "sample_id": "S000033",
+      "temperature_c": 13100,
+      "time_s": 45393
+    },
+    {
+      "conductivity_mS": 524,
+      "duplicate_count": 1,
+      "pressure_dbar": 36220762896,
+      "sample_id": "S000034",
+      "temperature_c": 13350,
+      "time_s": 46593
+    },
+    {
+      "conductivity_mS": 533,
+      "duplicate_count": 1,
+      "pressure_dbar": 31046366411,
+      "sample_id": "S000035",
+      "temperature_c": 13600,
+      "time_s": 47793
+    },
+    {
+      "conductivity_mS": 542,
+      "duplicate_count": 1,
+      "pressure_dbar": 25871969925,
+      "sample_id": "S000036",
+      "temperature_c": 13850,
+      "time_s": 48993
+    },
+    {
+      "conductivity_mS": 550,
+      "duplicate_count": 1,
+      "pressure_dbar": 20697573440,
+      "sample_id": "S000037",
+      "temperature_c": 14100,
+      "time_s": 50193
+    },
+    {
+      "conductivity_mS": 559,
+      "duplicate_count": 1,
+      "pressure_dbar": 15523176955,
+      "sample_id": "S000038",
+      "temperature_c": 14350,
+      "time_s": 51393
+    },
+    {
+      "conductivity_mS": 568,
+      "duplicate_count": 1,
+      "pressure_dbar": 10348780470,
+      "sample_id": "S000039",
+      "temperature_c": 14600,
+      "time_s": 52593
+    },
+    {
+      "conductivity_mS": 577,
+      "duplicate_count": 1,
+      "pressure_dbar": 5174383985,
+      "sample_id": "S000040",
+      "temperature_c": 14850,
+      "time_s": 53793
+    },
+    {
+      "conductivity_mS": 586,
+      "duplicate_count": 1,
+      "pressure_dbar": 0,
+      "sample_id": "S000041",
+      "temperature_c": 15100,
+      "time_s": 54993
+    }
+  ],
+  "schema_version": "1.0"
+}

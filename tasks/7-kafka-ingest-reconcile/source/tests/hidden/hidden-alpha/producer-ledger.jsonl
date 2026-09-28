@@ -1,0 +1,4 @@
+{"expected_count":5,"key":"node-a-01","max_seq":5,"partition":0,"topic":"stream-a-alpha"}
+{"expected_count":4,"key":"node-a-02","max_seq":4,"partition":0,"topic":"stream-a-beta"}
+{"expected_count":3,"key":"node-a-03","max_seq":3,"partition":1,"topic":"stream-a-alpha"}
+{"expected_count":2,"key":"node-a-04","max_seq":2,"partition":0,"topic":"stream-a-beta"}

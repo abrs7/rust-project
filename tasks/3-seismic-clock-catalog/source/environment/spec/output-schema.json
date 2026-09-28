@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "files": [
+    {"name": "normalized-input.json", "stage": "ingest", "format": "json"},
+    {"name": "network-diagnosis.json", "stage": "diagnose", "format": "json"},
+    {"name": "stable-catalogue.jsonl", "stage": "catalogue", "format": "jsonl"},
+    {"name": "residual-alternatives.jsonl", "stage": "residuals", "format": "jsonl"},
+    {"name": "clock-model.json", "stage": "fit-clock", "format": "json"},
+    {"name": "corrected-assignments.jsonl", "stage": "reconcile", "format": "jsonl"},
+    {"name": "rejections.jsonl", "stage": "reconcile", "format": "jsonl"},
+    {"name": "final-catalogue.jsonl", "stage": "export", "format": "jsonl"},
+    {"name": "provenance.json", "stage": "export", "format": "json"}
+  ],
+  "sort_keys": {
+    "stable-catalogue.jsonl": ["origin_us", "source_id", "event_id"],
+    "residual-alternatives.jsonl": ["pick_id", "true_arrival_us", "event_id"],
+    "corrected-assignments.jsonl": ["event_id", "station_id", "pick_id"],
+    "rejections.jsonl": ["pick_id"],
+    "final-catalogue.jsonl": ["origin_us", "source_id", "event_id"]
+  },
+  "replacement": "A command computes all files it owns in a temporary sibling directory and atomically replaces them only after successful validation. `run` replaces the complete listed set and removes no unlisted path.",
+  "stages": {
+    "ingest": {"requires": [], "produces": ["normalized-input.json"]},
+    "diagnose": {"requires": ["normalized-input.json"], "produces": ["network-diagnosis.json"]},
+    "catalogue": {"requires": ["normalized-input.json", "network-diagnosis.json"], "produces": ["stable-catalogue.jsonl"]},
+    "residuals": {"requires": ["normalized-input.json", "network-diagnosis.json", "stable-catalogue.jsonl"], "produces": ["residual-alternatives.jsonl"]},
+    "fit-clock": {"requires": ["normalized-input.json", "network-diagnosis.json", "stable-catalogue.jsonl", "residual-alternatives.jsonl"], "produces": ["clock-model.json"]},
+    "reconcile": {"requires": ["normalized-input.json", "network-diagnosis.json", "stable-catalogue.jsonl", "clock-model.json"], "produces": ["corrected-assignments.jsonl", "rejections.jsonl"]},
+    "export": {"requires": ["normalized-input.json", "network-diagnosis.json", "stable-catalogue.jsonl", "clock-model.json", "corrected-assignments.jsonl", "rejections.jsonl"], "produces": ["final-catalogue.jsonl", "provenance.json"]}
+  }
+}

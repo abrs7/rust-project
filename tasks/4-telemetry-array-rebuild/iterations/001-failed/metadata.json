@@ -1,0 +1,36 @@
+{
+  "task": "telemetry-array-rebuild",
+  "iteration": 1,
+  "status": "failed",
+  "archive": "4-telemetry-array-rebuild.zip",
+  "sha256": "35a4ca5ea52df935f43d4cf28788e076968f088e0140f83332fdf41a41b22e0b",
+  "local_validation": {
+    "harbor_version": "0.23.0",
+    "oracle_rewards": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "packaged_oracle_reward": 1.0,
+    "nop_reward": 0.0,
+    "verifier_tests": 23,
+    "attack_rewards": {
+      "nop": 0.0,
+      "reject": 0.0,
+      "constant": 0.0,
+      "tamper": 0.0
+    }
+  },
+  "platform": {
+    "stage_1": null,
+    "stage_2": null,
+    "stage_3": null,
+    "notes": [
+      "Long-horizon predicate requires a platform pilot.",
+      "Stage 1: all 6 gates passed.",
+      "Stage 2 FAIL on long_horizon: median assistant turns 44.5 (required >80); difficulty met with 0/8 full-credit rollouts."
+    ]
+  },
+  "finalized_at": "2026-09-19T08:35:18.816515+00:00",
+  "folder": "4-telemetry-array-rebuild"
+}

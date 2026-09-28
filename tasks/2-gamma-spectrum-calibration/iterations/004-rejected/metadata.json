@@ -1,0 +1,18 @@
+{
+  "task": "gamma-spectrum-calibration",
+  "folder": "2-gamma-spectrum-calibration",
+  "iteration": 4,
+  "status": "rejected",
+  "created_at": "2026-09-24T18:34:35.800513+00:00",
+  "archive": "2-gamma-spectrum-calibration.zip",
+  "sha256": "07fb5ca8fcf7896ca48470949de9d6ac92038814e0d310b22c84a0b6300b5ee8",
+  "platform": {
+    "stage_1": null,
+    "stage_2": null,
+    "stage_3": null,
+    "notes": [
+      "Superseded by 005: contract calibration model omitted intercept_den from the slope term, and residual_sum_sq_mkeV2 was computed with that mis-stated model"
+    ]
+  },
+  "finalized_at": "2026-09-27T20:00:21.919453+00:00"
+}

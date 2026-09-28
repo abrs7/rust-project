@@ -1,0 +1,10 @@
+{
+    "job_name": "seismic-oracle-preflight-2",
+    "jobs_dir": "tasks/seismic-clock-catalog/runs",
+    "n_concurrent_trials": 1,
+    "tasks": [
+        {
+            "path": "tasks/seismic-clock-catalog/source"
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+topic,partition,offset,payload_hash,payload
+telemetry-v-beta,0,2,0d54e3258cd2dfcc0795ea8c3dc855db008dfb2cc432cad0b74ff3391a614fd3,"{""key"":""sensor-v-04"",""reading"":117,""seq"":2}"
+telemetry-v-alpha,0,3,79122d5ad4b5f3400b90c6dff46df6e1c6b7eb0f266c74d82fde77c831886233,"{""key"":""sensor-v-01"",""reading"":110,""seq"":1}"
+telemetry-v-beta,0,7,cf3c13e57709eb44420279b99a3481ed0f0ec7976d05b4cfc2ba1558f07804cd,"{""key"":""sensor-v-02"",""reading"":124,""seq"":3}"
+telemetry-v-alpha,1,4,a8c264a310b758eb939c87f70bc8ce9d93bf41793bb8ee4ba7d244664f59e8a2,"{""key"":""sensor-v-03"",""reading"":124,""seq"":3}"
+telemetry-v-beta,0,1,8a5b52b6d7fb1cad1a847a7df2fdeafc02a001f6fdc0dba9756320fca28f6f78,"{""key"":""sensor-v-04"",""reading"":110,""seq"":1}"

@@ -1,0 +1,22 @@
+[
+  {
+    "denominator": 2,
+    "numerator": 3,
+    "result": 2
+  },
+  {
+    "denominator": 2,
+    "numerator": -3,
+    "result": -2
+  },
+  {
+    "denominator": 4,
+    "numerator": 5,
+    "result": 1
+  },
+  {
+    "denominator": 4,
+    "numerator": -5,
+    "result": -1
+  }
+]

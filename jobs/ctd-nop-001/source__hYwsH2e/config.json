@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "tasks/ctd-cast-processing/source"
+    },
+    "trial_name": "source__hYwsH2e",
+    "trials_dir": "jobs/ctd-nop-001",
+    "agent": {
+        "name": "nop"
+    },
+    "job_id": "d0c156b1-c058-469f-b449-1225400b2353"
+}

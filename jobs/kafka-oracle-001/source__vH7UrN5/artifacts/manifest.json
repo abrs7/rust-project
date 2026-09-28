@@ -1,0 +1,34 @@
+[
+  {
+    "source": "/logs/artifacts",
+    "destination": "artifacts/logs/artifacts",
+    "type": "directory",
+    "status": "empty",
+    "service": null,
+    "exclude": []
+  },
+  {
+    "source": "/app/ingestrepair",
+    "destination": "artifacts/app/ingestrepair",
+    "type": "directory",
+    "status": "ok",
+    "service": null,
+    "exclude": []
+  },
+  {
+    "source": "/app/campaign",
+    "destination": "artifacts/app/campaign",
+    "type": "directory",
+    "status": "ok",
+    "service": null,
+    "exclude": []
+  },
+  {
+    "source": "/app/output",
+    "destination": "artifacts/app/output",
+    "type": "directory",
+    "status": "ok",
+    "service": null,
+    "exclude": []
+  }
+]

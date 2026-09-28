@@ -1,0 +1,8 @@
+{
+    "job_name": "ctd-oracle-001",
+    "tasks": [
+        {
+            "path": "tasks/ctd-cast-processing/source"
+        }
+    ]
+}

@@ -1,0 +1,222 @@
+{
+  "schema_version": "1.0",
+  "files": [
+    {
+      "name": "normalized-input.json",
+      "stage": "ingest",
+      "format": "json"
+    },
+    {
+      "name": "peak-candidates.jsonl",
+      "stage": "peaks",
+      "format": "jsonl"
+    },
+    {
+      "name": "line-exclusions.jsonl",
+      "stage": "fit-cal",
+      "format": "jsonl"
+    },
+    {
+      "name": "calibration-fit.json",
+      "stage": "fit-cal",
+      "format": "json"
+    },
+    {
+      "name": "deadtime-correction.json",
+      "stage": "deadtime",
+      "format": "json"
+    },
+    {
+      "name": "corrected-spectrum.jsonl",
+      "stage": "correct",
+      "format": "jsonl"
+    },
+    {
+      "name": "line-integrations.jsonl",
+      "stage": "integrate",
+      "format": "jsonl"
+    },
+    {
+      "name": "final-report.jsonl",
+      "stage": "export",
+      "format": "jsonl"
+    },
+    {
+      "name": "provenance.json",
+      "stage": "export",
+      "format": "json"
+    }
+  ],
+  "sort_keys": {
+    "peak-candidates.jsonl": [
+      "channel"
+    ],
+    "line-exclusions.jsonl": [
+      "line_id"
+    ],
+    "corrected-spectrum.jsonl": [
+      "channel"
+    ],
+    "line-integrations.jsonl": [
+      "line_id"
+    ],
+    "final-report.jsonl": [
+      "line_id"
+    ]
+  },
+  "replacement": "A command computes all files it owns in a temporary sibling directory and atomically replaces them only after successful validation. `run` replaces the complete listed set and removes no unlisted path.",
+  "stages": {
+    "ingest": {
+      "requires": [],
+      "produces": [
+        "normalized-input.json"
+      ]
+    },
+    "peaks": {
+      "requires": [
+        "normalized-input.json"
+      ],
+      "produces": [
+        "peak-candidates.jsonl"
+      ]
+    },
+    "fit-cal": {
+      "requires": [
+        "normalized-input.json",
+        "peak-candidates.jsonl"
+      ],
+      "produces": [
+        "calibration-fit.json",
+        "line-exclusions.jsonl"
+      ]
+    },
+    "deadtime": {
+      "requires": [
+        "normalized-input.json"
+      ],
+      "produces": [
+        "deadtime-correction.json"
+      ]
+    },
+    "correct": {
+      "requires": [
+        "normalized-input.json",
+        "calibration-fit.json",
+        "deadtime-correction.json"
+      ],
+      "produces": [
+        "corrected-spectrum.jsonl"
+      ]
+    },
+    "integrate": {
+      "requires": [
+        "normalized-input.json",
+        "calibration-fit.json",
+        "corrected-spectrum.jsonl"
+      ],
+      "produces": [
+        "line-integrations.jsonl"
+      ]
+    },
+    "export": {
+      "requires": [
+        "normalized-input.json",
+        "calibration-fit.json",
+        "line-exclusions.jsonl",
+        "deadtime-correction.json",
+        "line-integrations.jsonl",
+        "peak-candidates.jsonl"
+      ],
+      "produces": [
+        "final-report.jsonl",
+        "provenance.json"
+      ]
+    }
+  },
+  "products": {
+    "field_order": "Every JSON object is emitted with sort_keys, so field order is lexicographic by key name.",
+    "normalized-input.json": {
+      "schema_version": "the string 1.0",
+      "campaign": "every scalar from campaign.toml, as integers: channel_min, channel_max, peak_min_counts, peak_min_separation, saturation_fwhm_min, saturation_plateau_delta, saturation_plateau_min_width, deadtime_tau_us, line_match_max_delta, integration_half_width",
+      "calibration_lines": {
+        "line_id": "identifier copied from calibration_lines.csv",
+        "energy_mkeV": "integer milli-electronvolts copied from calibration_lines.csv",
+        "order": "ascending by line_id"
+      },
+      "calibration_histogram": {
+        "channel": "integer channel",
+        "count": "summed counts for that channel across all calib shards",
+        "order": "ascending by channel"
+      },
+      "spectrum_histogram": {
+        "channel": "integer channel",
+        "count": "summed counts for that channel across all histogram shards",
+        "order": "ascending by channel"
+      },
+      "timestamps": {
+        "timestamp_us": "integer microseconds",
+        "order": "ascending"
+      }
+    },
+    "peak-candidates.jsonl": {
+      "channel": "channel of the retained local maximum",
+      "counts": "counts at that channel",
+      "fwhm": "contract saturation_evidence.fwhm",
+      "plateau_width": "contract saturation_evidence.plateau width",
+      "saturated": "boolean from contract saturation_evidence.exclusion"
+    },
+    "calibration-fit.json": {
+      "schema_version": "the string 1.0",
+      "slope": "fitted slope as a reduced positive fraction object {num, den}, both integers",
+      "intercept": "fitted intercept as a reduced positive fraction object {num, den}, both integers",
+      "included_lines": "array of line_id strings used in the fit, ascending",
+      "residual_sum_sq_mkeV2": "contract calibration_fit.residual"
+    },
+    "line-exclusions.jsonl": {
+      "line_id": "the excluded line",
+      "channel": "matched peak channel",
+      "fwhm": "matched peak fwhm",
+      "plateau_width": "matched peak plateau width",
+      "reason": "the string excluded_saturation"
+    },
+    "deadtime-correction.json": {
+      "schema_version": "the string 1.0",
+      "event_count": "number of timestamps",
+      "first_timestamp_us": "earliest timestamp",
+      "last_timestamp_us": "latest timestamp",
+      "total_span_us": "last_timestamp_us minus first_timestamp_us",
+      "live_time_us": "contract deadtime.formula",
+      "correction": "contract deadtime.correction as a reduced positive fraction object {num, den}, both integers"
+    },
+    "corrected-spectrum.jsonl": {
+      "channel": "integer channel from spectrum_histogram",
+      "observed_count": "count as normalized",
+      "corrected_count": "contract deadtime.count_correction",
+      "energy_mkeV": "contract calibration_fit.model evaluated at this channel"
+    },
+    "line-integrations.jsonl": {
+      "line_id": "the calibration line",
+      "expected_energy_mkeV": "the line's catalogue energy",
+      "peak_channel": "contract integration.search result",
+      "centroid_channel": "contract integration.centroid",
+      "integrated_counts": "contract integration.window sum",
+      "fitted_energy_mkeV": "contract calibration_fit.model evaluated at centroid_channel"
+    },
+    "final-report.jsonl": {
+      "line_id": "the calibration line",
+      "expected_energy_mkeV": "from line-integrations.jsonl",
+      "fitted_energy_mkeV": "from line-integrations.jsonl",
+      "residual_mkeV": "fitted_energy_mkeV minus expected_energy_mkeV",
+      "integrated_counts": "from line-integrations.jsonl",
+      "excluded": "true when the line appears in line-exclusions.jsonl, otherwise false"
+    },
+    "provenance.json": {
+      "schema_version": "the string 1.0",
+      "input_event_count": "number of entries in normalized-input.json timestamps",
+      "peak_count": "number of lines in peak-candidates.jsonl",
+      "excluded_line_count": "number of lines in line-exclusions.jsonl",
+      "included_line_count": "length of calibration-fit.json included_lines",
+      "product_sha256": "lowercase hex sha256 of the UTF-8 bytes of json.dumps({\"fit\": <calibration-fit.json>, \"exclusions\": <line-exclusions.jsonl as an array of objects>, \"deadtime\": <deadtime-correction.json>, \"integrations\": <line-integrations.jsonl as an array of objects>, \"peaks\": <peak-candidates.jsonl as an array of objects>}, ensure_ascii=True, indent=2, sort_keys=True) followed by one newline"
+    }
+  }
+}

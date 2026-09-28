@@ -1,0 +1,26 @@
+{
+  "checks": [
+    {
+      "actual_sum_si": "0/1",
+      "constraint_id": "BC01",
+      "observation_windows": 1,
+      "pass": true,
+      "quantity": "net_force"
+    },
+    {
+      "actual_sum_si": "8368/1",
+      "constraint_id": "BC02",
+      "observation_windows": 1,
+      "pass": true,
+      "quantity": "heat_in"
+    },
+    {
+      "actual_sum_si": "12552/1",
+      "constraint_id": "BC03",
+      "observation_windows": 1,
+      "pass": true,
+      "quantity": "stored_energy"
+    }
+  ],
+  "pass": true
+}

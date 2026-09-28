@@ -1,0 +1,14 @@
+{
+    "job_name": "2026-09-17__21-42-13",
+    "agents": [
+        {
+            "name": "claude-code",
+            "model_name": "claude-sonnet-4-6"
+        }
+    ],
+    "tasks": [
+        {
+            "path": "/tmp/harbor-check-6pqmducm/check-telemetry-frame-recovery"
+        }
+    ]
+}

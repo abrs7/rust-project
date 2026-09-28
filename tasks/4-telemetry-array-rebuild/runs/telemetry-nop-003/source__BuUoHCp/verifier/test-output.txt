@@ -1,0 +1,347 @@
+test_01_privilege_boundary_hides_tests_and_reward (__main__.Verifier.test_01_privilege_boundary_hides_tests_and_reward) ... ok
+test_02_visible_frozen_set_including_streams (__main__.Verifier.test_02_visible_frozen_set_including_streams) ... FAIL
+test_03_hidden_frozen_set_including_streams (__main__.Verifier.test_03_hidden_frozen_set_including_streams) ... FAIL
+test_04_staged_cli_after_deleting_fragments_matches_run (__main__.Verifier.test_04_staged_cli_after_deleting_fragments_matches_run) ... FAIL
+test_05_staged_api_after_deleting_fragments_matches_run (__main__.Verifier.test_05_staged_api_after_deleting_fragments_matches_run) ... FAIL
+test_06_decoy_fragments_after_ingest_do_not_change_products (__main__.Verifier.test_06_decoy_fragments_after_ingest_do_not_change_products) ... FAIL
+test_07_public_round_half_even_ties_including_negatives (__main__.Verifier.test_07_public_round_half_even_ties_including_negatives) ... ok
+test_08_independent_invariants (__main__.Verifier.test_08_independent_invariants) ... FAIL
+test_09_hash_seed_determinism (__main__.Verifier.test_09_hash_seed_determinism) ... FAIL
+test_10_shuffled_renamed_fragments_match_hidden (__main__.Verifier.test_10_shuffled_renamed_fragments_match_hidden) ... FAIL
+test_11_malformed_incomplete_missing_and_empty_inputs_rejected (__main__.Verifier.test_11_malformed_incomplete_missing_and_empty_inputs_rejected) ... ok
+test_12_missing_stage_requirements_rejected (__main__.Verifier.test_12_missing_stage_requirements_rejected) ... FAIL
+test_13_failure_preserves_previous_successful_outputs_including_streams (__main__.Verifier.test_13_failure_preserves_previous_successful_outputs_including_streams) ... ok
+test_14_success_keeps_unlisted_stale_txt (__main__.Verifier.test_14_success_keeps_unlisted_stale_txt) ... FAIL
+test_15_example_hex_does_not_appear_as_campaign_payload_hex (__main__.Verifier.test_15_example_hex_does_not_appear_as_campaign_payload_hex) ... skipped 'example directory is absent'
+
+======================================================================
+FAIL: test_02_visible_frozen_set_including_streams (__main__.Verifier.test_02_visible_frozen_set_including_streams)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 572, in test_02_visible_frozen_set_including_streams
+    output = self.run_full(
+        "visible-full",
+    ...<3 lines>...
+        hash_seed="11",
+    )
+  File "/tests/test_outputs.py", line 500, in run_full
+    require_success(result, name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 41, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: visible-full failed (1)
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import sys; sys.path.insert(0, '/tmp/telemetry-verifier-85f5sc0l/app'); from telemetry.__main__ import main; raise SystemExit(main())
+                                                                                                                                  ~~~~^^
+  File "/tmp/telemetry-verifier-85f5sc0l/app/telemetry/__main__.py", line 26, in main
+    function(*parsed.args)
+    ~~~~~~~~^^^^^^^^^^^^^^
+  File "/tmp/telemetry-verifier-85f5sc0l/app/telemetry/pipeline.py", line 7, in _missing
+    raise NotImplementedError("rebuild the array telemetry pipeline")
+NotImplementedError: rebuild the array telemetry pipeline
+
+
+======================================================================
+FAIL: test_03_hidden_frozen_set_including_streams (__main__.Verifier.test_03_hidden_frozen_set_including_streams)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 582, in test_03_hidden_frozen_set_including_streams
+    output = self.run_full(
+        "hidden-full",
+    ...<3 lines>...
+        hash_seed="123",
+    )
+  File "/tests/test_outputs.py", line 500, in run_full
+    require_success(result, name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 41, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: hidden-full failed (1)
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import sys; sys.path.insert(0, '/tmp/telemetry-verifier-85f5sc0l/app'); from telemetry.__main__ import main; raise SystemExit(main())
+                                                                                                                                  ~~~~^^
+  File "/tmp/telemetry-verifier-85f5sc0l/app/telemetry/__main__.py", line 26, in main
+    function(*parsed.args)
+    ~~~~~~~~^^^^^^^^^^^^^^
+  File "/tmp/telemetry-verifier-85f5sc0l/app/telemetry/pipeline.py", line 7, in _missing
+    raise NotImplementedError("rebuild the array telemetry pipeline")
+NotImplementedError: rebuild the array telemetry pipeline
+
+
+======================================================================
+FAIL: test_04_staged_cli_after_deleting_fragments_matches_run (__main__.Verifier.test_04_staged_cli_after_deleting_fragments_matches_run)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 592, in test_04_staged_cli_after_deleting_fragments_matches_run
+    full = self.run_full(
+        "visible-run-for-cli",
+    ...<3 lines>...
+        hash_seed="41",
+    )
+  File "/tests/test_outputs.py", line 500, in run_full
+    require_success(result, name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 41, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: visible-run-for-cli failed (1)
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import sys; sys.path.insert(0, '/tmp/telemetry-verifier-85f5sc0l/app'); from telemetry.__main__ import main; raise SystemExit(main())
+                                                                                                                                  ~~~~^^
+  File "/tmp/telemetry-verifier-85f5sc0l/app/telemetry/__main__.py", line 26, in main
+    function(*parsed.args)
+    ~~~~~~~~^^^^^^^^^^^^^^
+  File "/tmp/telemetry-verifier-85f5sc0l/app/telemetry/pipeline.py", line 7, in _missing
+    raise NotImplementedError("rebuild the array telemetry pipeline")
+NotImplementedError: rebuild the array telemetry pipeline
+
+
+======================================================================
+FAIL: test_05_staged_api_after_deleting_fragments_matches_run (__main__.Verifier.test_05_staged_api_after_deleting_fragments_matches_run)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 609, in test_05_staged_api_after_deleting_fragments_matches_run
+    full = self.run_full(
+        "visible-run-for-api",
+    ...<4 lines>...
+        api=True,
+    )
+  File "/tests/test_outputs.py", line 500, in run_full
+    require_success(result, name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 41, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: visible-run-for-api failed (1)
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import sys; sys.path.insert(0, '/tmp/telemetry-verifier-85f5sc0l/app'); from telemetry.pipeline import run; run('/tmp/telemetry-verifier-85f5sc0l/visible-run-for-api-input/fragments', '/tmp/telemetry-verifier-85f5sc0l/visible-run-for-api-input/campaigns.csv', '/tmp/telemetry-verifier-85f5sc0l/visible-run-for-api-input/references.csv', '/tmp/telemetry-verifier-85f5sc0l/visible-run-for-api')
+                                                                                                                ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/telemetry-verifier-85f5sc0l/app/telemetry/pipeline.py", line 7, in _missing
+    raise NotImplementedError("rebuild the array telemetry pipeline")
+NotImplementedError: rebuild the array telemetry pipeline
+
+
+======================================================================
+FAIL: test_06_decoy_fragments_after_ingest_do_not_change_products (__main__.Verifier.test_06_decoy_fragments_after_ingest_do_not_change_products)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 628, in test_06_decoy_fragments_after_ingest_do_not_change_products
+    full = self.run_full(
+        "visible-run-for-decoy",
+    ...<3 lines>...
+        hash_seed="53",
+    )
+  File "/tests/test_outputs.py", line 500, in run_full
+    require_success(result, name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 41, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: visible-run-for-decoy failed (1)
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import sys; sys.path.insert(0, '/tmp/telemetry-verifier-85f5sc0l/app'); from telemetry.__main__ import main; raise SystemExit(main())
+                                                                                                                                  ~~~~^^
+  File "/tmp/telemetry-verifier-85f5sc0l/app/telemetry/__main__.py", line 26, in main
+    function(*parsed.args)
+    ~~~~~~~~^^^^^^^^^^^^^^
+  File "/tmp/telemetry-verifier-85f5sc0l/app/telemetry/pipeline.py", line 7, in _missing
+    raise NotImplementedError("rebuild the array telemetry pipeline")
+NotImplementedError: rebuild the array telemetry pipeline
+
+
+======================================================================
+FAIL: test_08_independent_invariants (__main__.Verifier.test_08_independent_invariants)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 661, in test_08_independent_invariants
+    output = self.run_full(
+        "hidden-invariants",
+    ...<3 lines>...
+        hash_seed="8",
+    )
+  File "/tests/test_outputs.py", line 500, in run_full
+    require_success(result, name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 41, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: hidden-invariants failed (1)
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import sys; sys.path.insert(0, '/tmp/telemetry-verifier-85f5sc0l/app'); from telemetry.__main__ import main; raise SystemExit(main())
+                                                                                                                                  ~~~~^^
+  File "/tmp/telemetry-verifier-85f5sc0l/app/telemetry/__main__.py", line 26, in main
+    function(*parsed.args)
+    ~~~~~~~~^^^^^^^^^^^^^^
+  File "/tmp/telemetry-verifier-85f5sc0l/app/telemetry/pipeline.py", line 7, in _missing
+    raise NotImplementedError("rebuild the array telemetry pipeline")
+NotImplementedError: rebuild the array telemetry pipeline
+
+
+======================================================================
+FAIL: test_09_hash_seed_determinism (__main__.Verifier.test_09_hash_seed_determinism)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 673, in test_09_hash_seed_determinism
+    first = self.run_full(
+        "hidden-seed-a",
+    ...<3 lines>...
+        hash_seed="1",
+    )
+  File "/tests/test_outputs.py", line 500, in run_full
+    require_success(result, name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 41, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: hidden-seed-a failed (1)
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import sys; sys.path.insert(0, '/tmp/telemetry-verifier-85f5sc0l/app'); from telemetry.__main__ import main; raise SystemExit(main())
+                                                                                                                                  ~~~~^^
+  File "/tmp/telemetry-verifier-85f5sc0l/app/telemetry/__main__.py", line 26, in main
+    function(*parsed.args)
+    ~~~~~~~~^^^^^^^^^^^^^^
+  File "/tmp/telemetry-verifier-85f5sc0l/app/telemetry/pipeline.py", line 7, in _missing
+    raise NotImplementedError("rebuild the array telemetry pipeline")
+NotImplementedError: rebuild the array telemetry pipeline
+
+
+======================================================================
+FAIL: test_10_shuffled_renamed_fragments_match_hidden (__main__.Verifier.test_10_shuffled_renamed_fragments_match_hidden)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 697, in test_10_shuffled_renamed_fragments_match_hidden
+    require_success(
+    ~~~~~~~~~~~~~~~^
+        self.candidate.cli("run", shuffled, campaigns, references, output, hash_seed="17"),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "shuffled hidden run",
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/tests/test_outputs.py", line 41, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: shuffled hidden run failed (1)
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import sys; sys.path.insert(0, '/tmp/telemetry-verifier-85f5sc0l/app'); from telemetry.__main__ import main; raise SystemExit(main())
+                                                                                                                                  ~~~~^^
+  File "/tmp/telemetry-verifier-85f5sc0l/app/telemetry/__main__.py", line 26, in main
+    function(*parsed.args)
+    ~~~~~~~~^^^^^^^^^^^^^^
+  File "/tmp/telemetry-verifier-85f5sc0l/app/telemetry/pipeline.py", line 7, in _missing
+    raise NotImplementedError("rebuild the array telemetry pipeline")
+NotImplementedError: rebuild the array telemetry pipeline
+
+
+======================================================================
+FAIL: test_12_missing_stage_requirements_rejected (__main__.Verifier.test_12_missing_stage_requirements_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 769, in test_12_missing_stage_requirements_rejected
+    require_success(
+    ~~~~~~~~~~~~~~~^
+        self.candidate.cli("ingest", fragments, campaigns, ingested),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "ingest for missing later stages",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/tests/test_outputs.py", line 41, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: ingest for missing later stages failed (1)
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import sys; sys.path.insert(0, '/tmp/telemetry-verifier-85f5sc0l/app'); from telemetry.__main__ import main; raise SystemExit(main())
+                                                                                                                                  ~~~~^^
+  File "/tmp/telemetry-verifier-85f5sc0l/app/telemetry/__main__.py", line 26, in main
+    function(*parsed.args)
+    ~~~~~~~~^^^^^^^^^^^^^^
+  File "/tmp/telemetry-verifier-85f5sc0l/app/telemetry/pipeline.py", line 7, in _missing
+    raise NotImplementedError("rebuild the array telemetry pipeline")
+NotImplementedError: rebuild the array telemetry pipeline
+
+
+======================================================================
+FAIL: test_14_success_keeps_unlisted_stale_txt (__main__.Verifier.test_14_success_keeps_unlisted_stale_txt)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 836, in test_14_success_keeps_unlisted_stale_txt
+    require_success(
+    ~~~~~~~~~~~~~~~^
+        self.candidate.cli("run", fragments, campaigns, references, output, hash_seed="14"),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "successful run with stale.txt",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/tests/test_outputs.py", line 41, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: successful run with stale.txt failed (1)
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import sys; sys.path.insert(0, '/tmp/telemetry-verifier-85f5sc0l/app'); from telemetry.__main__ import main; raise SystemExit(main())
+                                                                                                                                  ~~~~^^
+  File "/tmp/telemetry-verifier-85f5sc0l/app/telemetry/__main__.py", line 26, in main
+    function(*parsed.args)
+    ~~~~~~~~^^^^^^^^^^^^^^
+  File "/tmp/telemetry-verifier-85f5sc0l/app/telemetry/pipeline.py", line 7, in _missing
+    raise NotImplementedError("rebuild the array telemetry pipeline")
+NotImplementedError: rebuild the array telemetry pipeline
+
+
+----------------------------------------------------------------------
+Ran 15 tests in 4.388s
+
+FAILED (failures=10, skipped=1)

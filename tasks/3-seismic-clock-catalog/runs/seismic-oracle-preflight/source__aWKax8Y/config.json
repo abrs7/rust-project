@@ -1,0 +1,8 @@
+{
+    "task": {
+        "path": "tasks/seismic-clock-catalog/source"
+    },
+    "trial_name": "source__aWKax8Y",
+    "trials_dir": "tasks/seismic-clock-catalog/runs/seismic-oracle-preflight",
+    "job_id": "6ef9ef98-b41f-4bb9-ba12-74f576d86626"
+}

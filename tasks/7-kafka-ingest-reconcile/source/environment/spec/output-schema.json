@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "files": [
+    {"name": "normalized-input.json", "stage": "ingest", "format": "json"},
+    {"name": "offset-state.json", "stage": "offsets", "format": "json"},
+    {"name": "dedup-manifest.jsonl", "stage": "dedup", "format": "jsonl"},
+    {"name": "key-assignments.jsonl", "stage": "assign", "format": "jsonl"},
+    {"name": "aggregate-counts.jsonl", "stage": "aggregate", "format": "jsonl"},
+    {"name": "sequence-reconciliation.json", "stage": "reconcile", "format": "json"},
+    {"name": "exactly-once-counts.jsonl", "stage": "reconcile", "format": "jsonl"},
+    {"name": "rejections.jsonl", "stage": "reconcile", "format": "jsonl"},
+    {"name": "provenance.json", "stage": "export", "format": "json"}
+  ],
+  "sort_keys": {
+    "dedup-manifest.jsonl": ["message_id"],
+    "key-assignments.jsonl": ["topic", "partition", "key", "seq", "message_id"],
+    "aggregate-counts.jsonl": ["topic", "partition", "key"],
+    "exactly-once-counts.jsonl": ["topic", "partition", "key"],
+    "rejections.jsonl": ["message_id"]
+  },
+  "replacement": "A command computes all files it owns in a temporary sibling directory and atomically replaces them only after successful validation. `run` replaces the complete listed set and removes no unlisted path.",
+  "stages": {
+    "ingest": {"requires": [], "produces": ["normalized-input.json"]},
+    "offsets": {"requires": ["normalized-input.json"], "produces": ["offset-state.json"]},
+    "dedup": {"requires": ["normalized-input.json", "offset-state.json"], "produces": ["dedup-manifest.jsonl"]},
+    "assign": {"requires": ["normalized-input.json", "dedup-manifest.jsonl"], "produces": ["key-assignments.jsonl"]},
+    "aggregate": {"requires": ["key-assignments.jsonl"], "produces": ["aggregate-counts.jsonl"]},
+    "reconcile": {
+      "requires": [
+        "normalized-input.json",
+        "offset-state.json",
+        "dedup-manifest.jsonl",
+        "key-assignments.jsonl",
+        "aggregate-counts.jsonl"
+      ],
+      "produces": ["sequence-reconciliation.json", "exactly-once-counts.jsonl", "rejections.jsonl"]
+    },
+    "export": {
+      "requires": [
+        "normalized-input.json",
+        "sequence-reconciliation.json",
+        "exactly-once-counts.jsonl",
+        "rejections.jsonl"
+      ],
+      "produces": ["provenance.json"]
+    }
+  }
+}

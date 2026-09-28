@@ -1,0 +1,8 @@
+{
+    "job_name": "2026-09-19__23-15-27",
+    "tasks": [
+        {
+            "path": "tasks/gamma-spectrum-calibration/source"
+        }
+    ]
+}

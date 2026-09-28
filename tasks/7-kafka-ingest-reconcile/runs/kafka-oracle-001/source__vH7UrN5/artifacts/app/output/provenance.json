@@ -1,0 +1,8 @@
+{
+  "accepted_message_count": 14,
+  "input_message_count": 16,
+  "ledger_match": true,
+  "product_sha256": "7b05f5885c2a3465763bdb4aa0d1702f7fc67d2434d97d81eb6219e2f774ec9e",
+  "rejected_message_count": 2,
+  "schema_version": "1.0"
+}

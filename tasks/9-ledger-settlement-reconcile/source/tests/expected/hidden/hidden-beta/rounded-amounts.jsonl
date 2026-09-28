@@ -1,0 +1,12 @@
+{"account_id":"BA001","base_currency":"USD","base_minor":14925,"currency":"USD","entry_id":"BE001","kind":"ledger","native_minor":14925,"signed_native_minor":14925,"trade_date":"2024-06-03"}
+{"account_id":"BA002","base_currency":"USD","base_minor":9286,"currency":"EUR","entry_id":"BE002","kind":"ledger","native_minor":8500,"signed_native_minor":8500,"trade_date":"2024-06-04"}
+{"account_id":"BA001","base_currency":"USD","base_minor":-500,"currency":"USD","entry_id":"BE003","kind":"ledger","native_minor":500,"signed_native_minor":-500,"trade_date":"2024-06-05"}
+{"account_id":"BA004","base_currency":"USD","base_minor":3200,"currency":"GBP","entry_id":"BE005","kind":"ledger","native_minor":2500,"signed_native_minor":2500,"trade_date":"2024-06-06"}
+{"account_id":"BA003","base_currency":"USD","base_minor":96000,"currency":"JPY","entry_id":"BE004","kind":"ledger","native_minor":150000,"signed_native_minor":150000,"trade_date":"2024-06-07"}
+{"account_id":"BA005","base_currency":"USD","base_minor":333,"currency":"USD","entry_id":"BE006","kind":"ledger","native_minor":333,"signed_native_minor":333,"trade_date":"2024-06-10"}
+{"account_id":"BA001","base_currency":"USD","base_minor":6950,"batch_id":"BB001","currency":"USD","entry_id":"BE001","kind":"settlement","line_id":"BL01","net_native_minor":6950,"trade_date":"2024-06-03"}
+{"account_id":"BA001","base_currency":"USD","base_minor":4975,"batch_id":"BB001","currency":"USD","entry_id":"BE001","kind":"settlement","line_id":"BL02","net_native_minor":4975,"trade_date":"2024-06-03"}
+{"account_id":"BA002","base_currency":"USD","base_minor":9286,"batch_id":"BB002","currency":"EUR","entry_id":"BE002","kind":"settlement","line_id":"BL01","net_native_minor":8500,"trade_date":"2024-06-04"}
+{"account_id":"BA001","base_currency":"USD","base_minor":-500,"batch_id":"BB003","currency":"USD","entry_id":"BE003","kind":"settlement","line_id":"BL01","net_native_minor":-500,"trade_date":"2024-06-05"}
+{"account_id":"BA004","base_currency":"USD","base_minor":3200,"batch_id":"BB005","currency":"GBP","entry_id":"BE005","kind":"settlement","line_id":"BL01","net_native_minor":2500,"trade_date":"2024-06-06"}
+{"account_id":"BA003","base_currency":"USD","base_minor":96000,"batch_id":"BB004","currency":"JPY","entry_id":"BE004","kind":"settlement","line_id":"BL01","net_native_minor":150000,"trade_date":"2024-06-07"}

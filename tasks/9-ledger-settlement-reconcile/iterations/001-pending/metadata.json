@@ -1,0 +1,15 @@
+{
+  "task": "ledger-settlement-reconcile",
+  "folder": "9-ledger-settlement-reconcile",
+  "iteration": 1,
+  "status": "pending",
+  "created_at": "2026-09-20T18:59:21.681838+00:00",
+  "archive": "9-ledger-settlement-reconcile.zip",
+  "sha256": "c0a6fcce83c61242453dd4d511d5d17a74e0604126c895f33c1d7e609d0fc467",
+  "platform": {
+    "stage_1": null,
+    "stage_2": null,
+    "stage_3": null,
+    "notes": []
+  }
+}

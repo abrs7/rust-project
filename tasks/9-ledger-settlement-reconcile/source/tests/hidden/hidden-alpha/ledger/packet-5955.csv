@@ -1,0 +1,3 @@
+entry_id,account_id,trade_date,amount_minor,currency,side
+AE005,AA004,2024-06-06,2500,GBP,DR
+AE006,AA005,2024-06-10,333,USD,DR

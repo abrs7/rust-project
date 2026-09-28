@@ -1,0 +1,2599 @@
+{
+  "calibration_histogram": [
+    {
+      "channel": 100,
+      "count": 14
+    },
+    {
+      "channel": 137,
+      "count": 13
+    },
+    {
+      "channel": 174,
+      "count": 12
+    },
+    {
+      "channel": 211,
+      "count": 30
+    },
+    {
+      "channel": 248,
+      "count": 29
+    },
+    {
+      "channel": 285,
+      "count": 28
+    },
+    {
+      "channel": 322,
+      "count": 27
+    },
+    {
+      "channel": 359,
+      "count": 26
+    },
+    {
+      "channel": 396,
+      "count": 25
+    },
+    {
+      "channel": 433,
+      "count": 24
+    },
+    {
+      "channel": 470,
+      "count": 23
+    },
+    {
+      "channel": 507,
+      "count": 22
+    },
+    {
+      "channel": 544,
+      "count": 21
+    },
+    {
+      "channel": 581,
+      "count": 20
+    },
+    {
+      "channel": 618,
+      "count": 19
+    },
+    {
+      "channel": 655,
+      "count": 18
+    },
+    {
+      "channel": 692,
+      "count": 17
+    },
+    {
+      "channel": 729,
+      "count": 16
+    },
+    {
+      "channel": 766,
+      "count": 15
+    },
+    {
+      "channel": 803,
+      "count": 14
+    },
+    {
+      "channel": 840,
+      "count": 13
+    },
+    {
+      "channel": 877,
+      "count": 12
+    },
+    {
+      "channel": 914,
+      "count": 30
+    },
+    {
+      "channel": 951,
+      "count": 29
+    },
+    {
+      "channel": 988,
+      "count": 28
+    },
+    {
+      "channel": 1025,
+      "count": 27
+    },
+    {
+      "channel": 1062,
+      "count": 26
+    },
+    {
+      "channel": 1099,
+      "count": 25
+    },
+    {
+      "channel": 1136,
+      "count": 24
+    },
+    {
+      "channel": 1151,
+      "count": 2367
+    },
+    {
+      "channel": 1152,
+      "count": 3155
+    },
+    {
+      "channel": 1153,
+      "count": 3943
+    },
+    {
+      "channel": 1154,
+      "count": 4731
+    },
+    {
+      "channel": 1155,
+      "count": 5519
+    },
+    {
+      "channel": 1156,
+      "count": 6307
+    },
+    {
+      "channel": 1157,
+      "count": 5519
+    },
+    {
+      "channel": 1158,
+      "count": 4731
+    },
+    {
+      "channel": 1159,
+      "count": 3943
+    },
+    {
+      "channel": 1160,
+      "count": 3155
+    },
+    {
+      "channel": 1161,
+      "count": 2367
+    },
+    {
+      "channel": 1173,
+      "count": 23
+    },
+    {
+      "channel": 1210,
+      "count": 22
+    },
+    {
+      "channel": 1247,
+      "count": 21
+    },
+    {
+      "channel": 1284,
+      "count": 20
+    },
+    {
+      "channel": 1321,
+      "count": 19
+    },
+    {
+      "channel": 1358,
+      "count": 18
+    },
+    {
+      "channel": 1395,
+      "count": 17
+    },
+    {
+      "channel": 1432,
+      "count": 16
+    },
+    {
+      "channel": 1469,
+      "count": 15
+    },
+    {
+      "channel": 1506,
+      "count": 14
+    },
+    {
+      "channel": 1543,
+      "count": 13
+    },
+    {
+      "channel": 1580,
+      "count": 12
+    },
+    {
+      "channel": 1617,
+      "count": 30
+    },
+    {
+      "channel": 1654,
+      "count": 29
+    },
+    {
+      "channel": 1691,
+      "count": 28
+    },
+    {
+      "channel": 1728,
+      "count": 27
+    },
+    {
+      "channel": 1765,
+      "count": 26
+    },
+    {
+      "channel": 1802,
+      "count": 25
+    },
+    {
+      "channel": 1839,
+      "count": 24
+    },
+    {
+      "channel": 1857,
+      "count": 2632
+    },
+    {
+      "channel": 1858,
+      "count": 3507
+    },
+    {
+      "channel": 1859,
+      "count": 4382
+    },
+    {
+      "channel": 1860,
+      "count": 5257
+    },
+    {
+      "channel": 1861,
+      "count": 6132
+    },
+    {
+      "channel": 1862,
+      "count": 7007
+    },
+    {
+      "channel": 1863,
+      "count": 6132
+    },
+    {
+      "channel": 1864,
+      "count": 5257
+    },
+    {
+      "channel": 1865,
+      "count": 4382
+    },
+    {
+      "channel": 1866,
+      "count": 3507
+    },
+    {
+      "channel": 1867,
+      "count": 2632
+    },
+    {
+      "channel": 1876,
+      "count": 23
+    },
+    {
+      "channel": 1913,
+      "count": 22
+    },
+    {
+      "channel": 1950,
+      "count": 21
+    },
+    {
+      "channel": 1987,
+      "count": 20
+    },
+    {
+      "channel": 2024,
+      "count": 19
+    },
+    {
+      "channel": 2061,
+      "count": 18
+    },
+    {
+      "channel": 2098,
+      "count": 17
+    },
+    {
+      "channel": 2135,
+      "count": 16
+    },
+    {
+      "channel": 2172,
+      "count": 15
+    },
+    {
+      "channel": 2209,
+      "count": 14
+    },
+    {
+      "channel": 2246,
+      "count": 13
+    },
+    {
+      "channel": 2283,
+      "count": 12
+    },
+    {
+      "channel": 2320,
+      "count": 30
+    },
+    {
+      "channel": 2357,
+      "count": 29
+    },
+    {
+      "channel": 2394,
+      "count": 28
+    },
+    {
+      "channel": 2431,
+      "count": 27
+    },
+    {
+      "channel": 2468,
+      "count": 26
+    },
+    {
+      "channel": 2505,
+      "count": 25
+    },
+    {
+      "channel": 2542,
+      "count": 24
+    },
+    {
+      "channel": 2579,
+      "count": 23
+    },
+    {
+      "channel": 2592,
+      "count": 2892
+    },
+    {
+      "channel": 2593,
+      "count": 3855
+    },
+    {
+      "channel": 2594,
+      "count": 4818
+    },
+    {
+      "channel": 2595,
+      "count": 5781
+    },
+    {
+      "channel": 2596,
+      "count": 6744
+    },
+    {
+      "channel": 2597,
+      "count": 7707
+    },
+    {
+      "channel": 2598,
+      "count": 6744
+    },
+    {
+      "channel": 2599,
+      "count": 5781
+    },
+    {
+      "channel": 2600,
+      "count": 4818
+    },
+    {
+      "channel": 2601,
+      "count": 3855
+    },
+    {
+      "channel": 2602,
+      "count": 2892
+    },
+    {
+      "channel": 2616,
+      "count": 22
+    },
+    {
+      "channel": 2653,
+      "count": 21
+    },
+    {
+      "channel": 2690,
+      "count": 20
+    },
+    {
+      "channel": 2727,
+      "count": 19
+    },
+    {
+      "channel": 2764,
+      "count": 18
+    },
+    {
+      "channel": 2801,
+      "count": 17
+    },
+    {
+      "channel": 2838,
+      "count": 16
+    },
+    {
+      "channel": 2875,
+      "count": 15
+    },
+    {
+      "channel": 2912,
+      "count": 14
+    },
+    {
+      "channel": 2949,
+      "count": 13
+    },
+    {
+      "channel": 2986,
+      "count": 12
+    },
+    {
+      "channel": 3023,
+      "count": 30
+    },
+    {
+      "channel": 3060,
+      "count": 29
+    },
+    {
+      "channel": 3097,
+      "count": 28
+    },
+    {
+      "channel": 3134,
+      "count": 27
+    },
+    {
+      "channel": 3171,
+      "count": 26
+    },
+    {
+      "channel": 3208,
+      "count": 25
+    },
+    {
+      "channel": 3245,
+      "count": 24
+    },
+    {
+      "channel": 3282,
+      "count": 23
+    },
+    {
+      "channel": 3306,
+      "count": 3483
+    },
+    {
+      "channel": 3307,
+      "count": 3603
+    },
+    {
+      "channel": 3308,
+      "count": 3723
+    },
+    {
+      "channel": 3309,
+      "count": 3843
+    },
+    {
+      "channel": 3310,
+      "count": 3963
+    },
+    {
+      "channel": 3311,
+      "count": 4083
+    },
+    {
+      "channel": 3312,
+      "count": 5003
+    },
+    {
+      "channel": 3313,
+      "count": 5003
+    },
+    {
+      "channel": 3314,
+      "count": 5003
+    },
+    {
+      "channel": 3315,
+      "count": 5003
+    },
+    {
+      "channel": 3316,
+      "count": 8406
+    },
+    {
+      "channel": 3317,
+      "count": 8406
+    },
+    {
+      "channel": 3318,
+      "count": 8406
+    },
+    {
+      "channel": 3319,
+      "count": 8428
+    },
+    {
+      "channel": 3320,
+      "count": 8407
+    },
+    {
+      "channel": 3321,
+      "count": 8406
+    },
+    {
+      "channel": 3322,
+      "count": 8406
+    },
+    {
+      "channel": 3323,
+      "count": 8406
+    },
+    {
+      "channel": 3324,
+      "count": 8406
+    },
+    {
+      "channel": 3325,
+      "count": 5003
+    },
+    {
+      "channel": 3326,
+      "count": 5003
+    },
+    {
+      "channel": 3327,
+      "count": 5003
+    },
+    {
+      "channel": 3328,
+      "count": 5003
+    },
+    {
+      "channel": 3329,
+      "count": 4083
+    },
+    {
+      "channel": 3330,
+      "count": 3963
+    },
+    {
+      "channel": 3331,
+      "count": 3843
+    },
+    {
+      "channel": 3332,
+      "count": 3723
+    },
+    {
+      "channel": 3333,
+      "count": 3603
+    },
+    {
+      "channel": 3334,
+      "count": 3483
+    },
+    {
+      "channel": 3356,
+      "count": 21
+    },
+    {
+      "channel": 3393,
+      "count": 20
+    },
+    {
+      "channel": 3430,
+      "count": 19
+    },
+    {
+      "channel": 3467,
+      "count": 18
+    },
+    {
+      "channel": 3504,
+      "count": 17
+    },
+    {
+      "channel": 3541,
+      "count": 3433
+    },
+    {
+      "channel": 3542,
+      "count": 4555
+    },
+    {
+      "channel": 3543,
+      "count": 5693
+    },
+    {
+      "channel": 3544,
+      "count": 6831
+    },
+    {
+      "channel": 3545,
+      "count": 7969
+    },
+    {
+      "channel": 3546,
+      "count": 9107
+    },
+    {
+      "channel": 3547,
+      "count": 7969
+    },
+    {
+      "channel": 3548,
+      "count": 6831
+    },
+    {
+      "channel": 3549,
+      "count": 5693
+    },
+    {
+      "channel": 3550,
+      "count": 4555
+    },
+    {
+      "channel": 3551,
+      "count": 3417
+    },
+    {
+      "channel": 3578,
+      "count": 15
+    },
+    {
+      "channel": 3615,
+      "count": 14
+    },
+    {
+      "channel": 3652,
+      "count": 13
+    },
+    {
+      "channel": 3689,
+      "count": 12
+    },
+    {
+      "channel": 3726,
+      "count": 30
+    },
+    {
+      "channel": 3763,
+      "count": 29
+    },
+    {
+      "channel": 3800,
+      "count": 28
+    },
+    {
+      "channel": 3837,
+      "count": 27
+    },
+    {
+      "channel": 3874,
+      "count": 26
+    },
+    {
+      "channel": 3911,
+      "count": 25
+    },
+    {
+      "channel": 3948,
+      "count": 24
+    },
+    {
+      "channel": 3985,
+      "count": 23
+    }
+  ],
+  "calibration_lines": [
+    {
+      "energy_mkeV": 300000,
+      "line_id": "BL01"
+    },
+    {
+      "energy_mkeV": 477100,
+      "line_id": "BL02"
+    },
+    {
+      "energy_mkeV": 661657,
+      "line_id": "BL03"
+    },
+    {
+      "energy_mkeV": 843200,
+      "line_id": "BL04"
+    },
+    {
+      "energy_mkeV": 900000,
+      "line_id": "BL05"
+    }
+  ],
+  "campaign": {
+    "channel_max": 4095,
+    "channel_min": 0,
+    "deadtime_tau_us": 68000,
+    "integration_half_width": 8,
+    "line_match_max_delta": 20,
+    "peak_min_counts": 800,
+    "peak_min_separation": 12,
+    "saturation_fwhm_min": 12,
+    "saturation_plateau_delta": 2,
+    "saturation_plateau_min_width": 5
+  },
+  "schema_version": "1.0",
+  "spectrum_histogram": [
+    {
+      "channel": 100,
+      "count": 6
+    },
+    {
+      "channel": 137,
+      "count": 5
+    },
+    {
+      "channel": 174,
+      "count": 5
+    },
+    {
+      "channel": 211,
+      "count": 12
+    },
+    {
+      "channel": 248,
+      "count": 12
+    },
+    {
+      "channel": 285,
+      "count": 12
+    },
+    {
+      "channel": 322,
+      "count": 11
+    },
+    {
+      "channel": 359,
+      "count": 11
+    },
+    {
+      "channel": 396,
+      "count": 10
+    },
+    {
+      "channel": 433,
+      "count": 10
+    },
+    {
+      "channel": 470,
+      "count": 9
+    },
+    {
+      "channel": 507,
+      "count": 9
+    },
+    {
+      "channel": 544,
+      "count": 9
+    },
+    {
+      "channel": 581,
+      "count": 8
+    },
+    {
+      "channel": 618,
+      "count": 8
+    },
+    {
+      "channel": 655,
+      "count": 7
+    },
+    {
+      "channel": 692,
+      "count": 7
+    },
+    {
+      "channel": 729,
+      "count": 7
+    },
+    {
+      "channel": 766,
+      "count": 6
+    },
+    {
+      "channel": 803,
+      "count": 6
+    },
+    {
+      "channel": 840,
+      "count": 5
+    },
+    {
+      "channel": 877,
+      "count": 5
+    },
+    {
+      "channel": 914,
+      "count": 12
+    },
+    {
+      "channel": 951,
+      "count": 12
+    },
+    {
+      "channel": 988,
+      "count": 12
+    },
+    {
+      "channel": 1025,
+      "count": 11
+    },
+    {
+      "channel": 1062,
+      "count": 11
+    },
+    {
+      "channel": 1099,
+      "count": 10
+    },
+    {
+      "channel": 1136,
+      "count": 10
+    },
+    {
+      "channel": 1151,
+      "count": 977
+    },
+    {
+      "channel": 1152,
+      "count": 1302
+    },
+    {
+      "channel": 1153,
+      "count": 1627
+    },
+    {
+      "channel": 1154,
+      "count": 1953
+    },
+    {
+      "channel": 1155,
+      "count": 2278
+    },
+    {
+      "channel": 1156,
+      "count": 2603
+    },
+    {
+      "channel": 1157,
+      "count": 2278
+    },
+    {
+      "channel": 1158,
+      "count": 1953
+    },
+    {
+      "channel": 1159,
+      "count": 1627
+    },
+    {
+      "channel": 1160,
+      "count": 1302
+    },
+    {
+      "channel": 1161,
+      "count": 977
+    },
+    {
+      "channel": 1173,
+      "count": 9
+    },
+    {
+      "channel": 1210,
+      "count": 9
+    },
+    {
+      "channel": 1247,
+      "count": 9
+    },
+    {
+      "channel": 1284,
+      "count": 8
+    },
+    {
+      "channel": 1321,
+      "count": 8
+    },
+    {
+      "channel": 1358,
+      "count": 7
+    },
+    {
+      "channel": 1395,
+      "count": 7
+    },
+    {
+      "channel": 1432,
+      "count": 7
+    },
+    {
+      "channel": 1469,
+      "count": 6
+    },
+    {
+      "channel": 1506,
+      "count": 6
+    },
+    {
+      "channel": 1543,
+      "count": 5
+    },
+    {
+      "channel": 1580,
+      "count": 5
+    },
+    {
+      "channel": 1617,
+      "count": 12
+    },
+    {
+      "channel": 1654,
+      "count": 12
+    },
+    {
+      "channel": 1691,
+      "count": 12
+    },
+    {
+      "channel": 1728,
+      "count": 11
+    },
+    {
+      "channel": 1765,
+      "count": 11
+    },
+    {
+      "channel": 1802,
+      "count": 10
+    },
+    {
+      "channel": 1839,
+      "count": 10
+    },
+    {
+      "channel": 1857,
+      "count": 1086
+    },
+    {
+      "channel": 1858,
+      "count": 1447
+    },
+    {
+      "channel": 1859,
+      "count": 1809
+    },
+    {
+      "channel": 1860,
+      "count": 2170
+    },
+    {
+      "channel": 1861,
+      "count": 2531
+    },
+    {
+      "channel": 1862,
+      "count": 2892
+    },
+    {
+      "channel": 1863,
+      "count": 2531
+    },
+    {
+      "channel": 1864,
+      "count": 2170
+    },
+    {
+      "channel": 1865,
+      "count": 1809
+    },
+    {
+      "channel": 1866,
+      "count": 1447
+    },
+    {
+      "channel": 1867,
+      "count": 1086
+    },
+    {
+      "channel": 1876,
+      "count": 9
+    },
+    {
+      "channel": 1913,
+      "count": 9
+    },
+    {
+      "channel": 1950,
+      "count": 9
+    },
+    {
+      "channel": 1987,
+      "count": 8
+    },
+    {
+      "channel": 2024,
+      "count": 8
+    },
+    {
+      "channel": 2061,
+      "count": 7
+    },
+    {
+      "channel": 2098,
+      "count": 7
+    },
+    {
+      "channel": 2135,
+      "count": 7
+    },
+    {
+      "channel": 2172,
+      "count": 6
+    },
+    {
+      "channel": 2209,
+      "count": 6
+    },
+    {
+      "channel": 2246,
+      "count": 5
+    },
+    {
+      "channel": 2283,
+      "count": 5
+    },
+    {
+      "channel": 2320,
+      "count": 12
+    },
+    {
+      "channel": 2357,
+      "count": 12
+    },
+    {
+      "channel": 2394,
+      "count": 12
+    },
+    {
+      "channel": 2431,
+      "count": 11
+    },
+    {
+      "channel": 2468,
+      "count": 11
+    },
+    {
+      "channel": 2505,
+      "count": 10
+    },
+    {
+      "channel": 2542,
+      "count": 10
+    },
+    {
+      "channel": 2579,
+      "count": 9
+    },
+    {
+      "channel": 2592,
+      "count": 1194
+    },
+    {
+      "channel": 2593,
+      "count": 1591
+    },
+    {
+      "channel": 2594,
+      "count": 1989
+    },
+    {
+      "channel": 2595,
+      "count": 2386
+    },
+    {
+      "channel": 2596,
+      "count": 2783
+    },
+    {
+      "channel": 2597,
+      "count": 3181
+    },
+    {
+      "channel": 2598,
+      "count": 2783
+    },
+    {
+      "channel": 2599,
+      "count": 2386
+    },
+    {
+      "channel": 2600,
+      "count": 1989
+    },
+    {
+      "channel": 2601,
+      "count": 1591
+    },
+    {
+      "channel": 2602,
+      "count": 1194
+    },
+    {
+      "channel": 2616,
+      "count": 9
+    },
+    {
+      "channel": 2653,
+      "count": 9
+    },
+    {
+      "channel": 2690,
+      "count": 8
+    },
+    {
+      "channel": 2727,
+      "count": 8
+    },
+    {
+      "channel": 2764,
+      "count": 7
+    },
+    {
+      "channel": 2801,
+      "count": 7
+    },
+    {
+      "channel": 2838,
+      "count": 7
+    },
+    {
+      "channel": 2875,
+      "count": 6
+    },
+    {
+      "channel": 2912,
+      "count": 6
+    },
+    {
+      "channel": 2949,
+      "count": 5
+    },
+    {
+      "channel": 2986,
+      "count": 5
+    },
+    {
+      "channel": 3023,
+      "count": 12
+    },
+    {
+      "channel": 3060,
+      "count": 12
+    },
+    {
+      "channel": 3097,
+      "count": 12
+    },
+    {
+      "channel": 3134,
+      "count": 11
+    },
+    {
+      "channel": 3171,
+      "count": 11
+    },
+    {
+      "channel": 3208,
+      "count": 10
+    },
+    {
+      "channel": 3245,
+      "count": 10
+    },
+    {
+      "channel": 3282,
+      "count": 9
+    },
+    {
+      "channel": 3306,
+      "count": 1438
+    },
+    {
+      "channel": 3307,
+      "count": 1487
+    },
+    {
+      "channel": 3308,
+      "count": 1537
+    },
+    {
+      "channel": 3309,
+      "count": 1586
+    },
+    {
+      "channel": 3310,
+      "count": 1636
+    },
+    {
+      "channel": 3311,
+      "count": 1685
+    },
+    {
+      "channel": 3312,
+      "count": 2065
+    },
+    {
+      "channel": 3313,
+      "count": 2065
+    },
+    {
+      "channel": 3314,
+      "count": 2065
+    },
+    {
+      "channel": 3315,
+      "count": 2065
+    },
+    {
+      "channel": 3316,
+      "count": 3469
+    },
+    {
+      "channel": 3317,
+      "count": 3469
+    },
+    {
+      "channel": 3318,
+      "count": 3469
+    },
+    {
+      "channel": 3319,
+      "count": 3478
+    },
+    {
+      "channel": 3320,
+      "count": 3470
+    },
+    {
+      "channel": 3321,
+      "count": 3469
+    },
+    {
+      "channel": 3322,
+      "count": 3469
+    },
+    {
+      "channel": 3323,
+      "count": 3469
+    },
+    {
+      "channel": 3324,
+      "count": 3469
+    },
+    {
+      "channel": 3325,
+      "count": 2065
+    },
+    {
+      "channel": 3326,
+      "count": 2065
+    },
+    {
+      "channel": 3327,
+      "count": 2065
+    },
+    {
+      "channel": 3328,
+      "count": 2065
+    },
+    {
+      "channel": 3329,
+      "count": 1685
+    },
+    {
+      "channel": 3330,
+      "count": 1636
+    },
+    {
+      "channel": 3331,
+      "count": 1586
+    },
+    {
+      "channel": 3332,
+      "count": 1537
+    },
+    {
+      "channel": 3333,
+      "count": 1487
+    },
+    {
+      "channel": 3334,
+      "count": 1438
+    },
+    {
+      "channel": 3356,
+      "count": 9
+    },
+    {
+      "channel": 3393,
+      "count": 8
+    },
+    {
+      "channel": 3430,
+      "count": 8
+    },
+    {
+      "channel": 3467,
+      "count": 7
+    },
+    {
+      "channel": 3504,
+      "count": 7
+    },
+    {
+      "channel": 3541,
+      "count": 1417
+    },
+    {
+      "channel": 3542,
+      "count": 1880
+    },
+    {
+      "channel": 3543,
+      "count": 2350
+    },
+    {
+      "channel": 3544,
+      "count": 2819
+    },
+    {
+      "channel": 3545,
+      "count": 3289
+    },
+    {
+      "channel": 3546,
+      "count": 3759
+    },
+    {
+      "channel": 3547,
+      "count": 3289
+    },
+    {
+      "channel": 3548,
+      "count": 2819
+    },
+    {
+      "channel": 3549,
+      "count": 2350
+    },
+    {
+      "channel": 3550,
+      "count": 1880
+    },
+    {
+      "channel": 3551,
+      "count": 1410
+    },
+    {
+      "channel": 3578,
+      "count": 6
+    },
+    {
+      "channel": 3615,
+      "count": 6
+    },
+    {
+      "channel": 3652,
+      "count": 5
+    },
+    {
+      "channel": 3689,
+      "count": 5
+    },
+    {
+      "channel": 3726,
+      "count": 12
+    },
+    {
+      "channel": 3763,
+      "count": 12
+    },
+    {
+      "channel": 3800,
+      "count": 12
+    },
+    {
+      "channel": 3837,
+      "count": 11
+    },
+    {
+      "channel": 3874,
+      "count": 11
+    },
+    {
+      "channel": 3911,
+      "count": 10
+    },
+    {
+      "channel": 3948,
+      "count": 10
+    },
+    {
+      "channel": 3985,
+      "count": 9
+    }
+  ],
+  "timestamps": [
+    {
+      "timestamp_us": 55098663
+    },
+    {
+      "timestamp_us": 55163621
+    },
+    {
+      "timestamp_us": 55298010
+    },
+    {
+      "timestamp_us": 55443114
+    },
+    {
+      "timestamp_us": 55528527
+    },
+    {
+      "timestamp_us": 55657633
+    },
+    {
+      "timestamp_us": 55771538
+    },
+    {
+      "timestamp_us": 55908416
+    },
+    {
+      "timestamp_us": 56021131
+    },
+    {
+      "timestamp_us": 56130258
+    },
+    {
+      "timestamp_us": 56218877
+    },
+    {
+      "timestamp_us": 56360359
+    },
+    {
+      "timestamp_us": 56468742
+    },
+    {
+      "timestamp_us": 56603536
+    },
+    {
+      "timestamp_us": 56686155
+    },
+    {
+      "timestamp_us": 56805263
+    },
+    {
+      "timestamp_us": 56908966
+    },
+    {
+      "timestamp_us": 57061891
+    },
+    {
+      "timestamp_us": 57147682
+    },
+    {
+      "timestamp_us": 57292986
+    },
+    {
+      "timestamp_us": 57365595
+    },
+    {
+      "timestamp_us": 57514177
+    },
+    {
+      "timestamp_us": 57612961
+    },
+    {
+      "timestamp_us": 57748844
+    },
+    {
+      "timestamp_us": 57845283
+    },
+    {
+      "timestamp_us": 57990843
+    },
+    {
+      "timestamp_us": 58065921
+    },
+    {
+      "timestamp_us": 58173666
+    },
+    {
+      "timestamp_us": 58294001
+    },
+    {
+      "timestamp_us": 58405086
+    },
+    {
+      "timestamp_us": 58527447
+    },
+    {
+      "timestamp_us": 58669107
+    },
+    {
+      "timestamp_us": 58796302
+    },
+    {
+      "timestamp_us": 58881294
+    },
+    {
+      "timestamp_us": 59009039
+    },
+    {
+      "timestamp_us": 59134616
+    },
+    {
+      "timestamp_us": 59232473
+    },
+    {
+      "timestamp_us": 59330748
+    },
+    {
+      "timestamp_us": 59496850
+    },
+    {
+      "timestamp_us": 59605066
+    },
+    {
+      "timestamp_us": 59688936
+    },
+    {
+      "timestamp_us": 59794549
+    },
+    {
+      "timestamp_us": 59937579
+    },
+    {
+      "timestamp_us": 60060594
+    },
+    {
+      "timestamp_us": 60188384
+    },
+    {
+      "timestamp_us": 60251658
+    },
+    {
+      "timestamp_us": 60385517
+    },
+    {
+      "timestamp_us": 60515542
+    },
+    {
+      "timestamp_us": 60619499
+    },
+    {
+      "timestamp_us": 60755921
+    },
+    {
+      "timestamp_us": 60853341
+    },
+    {
+      "timestamp_us": 60965997
+    },
+    {
+      "timestamp_us": 61063524
+    },
+    {
+      "timestamp_us": 61186899
+    },
+    {
+      "timestamp_us": 61338272
+    },
+    {
+      "timestamp_us": 61419597
+    },
+    {
+      "timestamp_us": 61576757
+    },
+    {
+      "timestamp_us": 61678232
+    },
+    {
+      "timestamp_us": 61802932
+    },
+    {
+      "timestamp_us": 61913682
+    },
+    {
+      "timestamp_us": 62036354
+    },
+    {
+      "timestamp_us": 62148353
+    },
+    {
+      "timestamp_us": 62223184
+    },
+    {
+      "timestamp_us": 62381604
+    },
+    {
+      "timestamp_us": 62503962
+    },
+    {
+      "timestamp_us": 62604303
+    },
+    {
+      "timestamp_us": 62713473
+    },
+    {
+      "timestamp_us": 62825901
+    },
+    {
+      "timestamp_us": 62924618
+    },
+    {
+      "timestamp_us": 63051116
+    },
+    {
+      "timestamp_us": 63195080
+    },
+    {
+      "timestamp_us": 63272269
+    },
+    {
+      "timestamp_us": 63407867
+    },
+    {
+      "timestamp_us": 63534469
+    },
+    {
+      "timestamp_us": 63653135
+    },
+    {
+      "timestamp_us": 63739743
+    },
+    {
+      "timestamp_us": 63859824
+    },
+    {
+      "timestamp_us": 64011881
+    },
+    {
+      "timestamp_us": 64127801
+    },
+    {
+      "timestamp_us": 64233834
+    },
+    {
+      "timestamp_us": 64341905
+    },
+    {
+      "timestamp_us": 64461234
+    },
+    {
+      "timestamp_us": 64560218
+    },
+    {
+      "timestamp_us": 64681568
+    },
+    {
+      "timestamp_us": 64784825
+    },
+    {
+      "timestamp_us": 64903939
+    },
+    {
+      "timestamp_us": 65020169
+    },
+    {
+      "timestamp_us": 65149722
+    },
+    {
+      "timestamp_us": 65230670
+    },
+    {
+      "timestamp_us": 65353129
+    },
+    {
+      "timestamp_us": 65477721
+    },
+    {
+      "timestamp_us": 65631242
+    },
+    {
+      "timestamp_us": 65694277
+    },
+    {
+      "timestamp_us": 65820741
+    },
+    {
+      "timestamp_us": 65962179
+    },
+    {
+      "timestamp_us": 66054299
+    },
+    {
+      "timestamp_us": 66180292
+    },
+    {
+      "timestamp_us": 66286195
+    },
+    {
+      "timestamp_us": 66436820
+    },
+    {
+      "timestamp_us": 66558848
+    },
+    {
+      "timestamp_us": 66649892
+    },
+    {
+      "timestamp_us": 66779817
+    },
+    {
+      "timestamp_us": 66861789
+    },
+    {
+      "timestamp_us": 66985958
+    },
+    {
+      "timestamp_us": 67106467
+    },
+    {
+      "timestamp_us": 67251426
+    },
+    {
+      "timestamp_us": 67372048
+    },
+    {
+      "timestamp_us": 67480819
+    },
+    {
+      "timestamp_us": 67555368
+    },
+    {
+      "timestamp_us": 67664406
+    },
+    {
+      "timestamp_us": 67778252
+    },
+    {
+      "timestamp_us": 67906035
+    },
+    {
+      "timestamp_us": 68042851
+    },
+    {
+      "timestamp_us": 68182438
+    },
+    {
+      "timestamp_us": 68262603
+    },
+    {
+      "timestamp_us": 68405378
+    },
+    {
+      "timestamp_us": 68506094
+    },
+    {
+      "timestamp_us": 68637885
+    },
+    {
+      "timestamp_us": 68751171
+    },
+    {
+      "timestamp_us": 68856739
+    },
+    {
+      "timestamp_us": 68982214
+    },
+    {
+      "timestamp_us": 69076661
+    },
+    {
+      "timestamp_us": 69193561
+    },
+    {
+      "timestamp_us": 69321293
+    },
+    {
+      "timestamp_us": 69415610
+    },
+    {
+      "timestamp_us": 69519761
+    },
+    {
+      "timestamp_us": 69686480
+    },
+    {
+      "timestamp_us": 69802429
+    },
+    {
+      "timestamp_us": 69885909
+    },
+    {
+      "timestamp_us": 70008725
+    },
+    {
+      "timestamp_us": 70104454
+    },
+    {
+      "timestamp_us": 70234888
+    },
+    {
+      "timestamp_us": 70335742
+    },
+    {
+      "timestamp_us": 70466032
+    },
+    {
+      "timestamp_us": 70586046
+    },
+    {
+      "timestamp_us": 70714711
+    },
+    {
+      "timestamp_us": 70804488
+    },
+    {
+      "timestamp_us": 70956594
+    },
+    {
+      "timestamp_us": 71075806
+    },
+    {
+      "timestamp_us": 71138753
+    },
+    {
+      "timestamp_us": 71291976
+    },
+    {
+      "timestamp_us": 71372385
+    },
+    {
+      "timestamp_us": 71516211
+    },
+    {
+      "timestamp_us": 71627585
+    },
+    {
+      "timestamp_us": 71755221
+    },
+    {
+      "timestamp_us": 71850024
+    },
+    {
+      "timestamp_us": 71986328
+    },
+    {
+      "timestamp_us": 72065294
+    },
+    {
+      "timestamp_us": 72180159
+    },
+    {
+      "timestamp_us": 72312916
+    },
+    {
+      "timestamp_us": 72453225
+    },
+    {
+      "timestamp_us": 72531231
+    },
+    {
+      "timestamp_us": 72655777
+    },
+    {
+      "timestamp_us": 72767965
+    },
+    {
+      "timestamp_us": 72895501
+    },
+    {
+      "timestamp_us": 73036983
+    },
+    {
+      "timestamp_us": 73126904
+    },
+    {
+      "timestamp_us": 73251651
+    },
+    {
+      "timestamp_us": 73381539
+    },
+    {
+      "timestamp_us": 73484513
+    },
+    {
+      "timestamp_us": 73591098
+    },
+    {
+      "timestamp_us": 73708732
+    },
+    {
+      "timestamp_us": 73834225
+    },
+    {
+      "timestamp_us": 73949070
+    },
+    {
+      "timestamp_us": 74037983
+    },
+    {
+      "timestamp_us": 74177296
+    },
+    {
+      "timestamp_us": 74298847
+    },
+    {
+      "timestamp_us": 74395566
+    },
+    {
+      "timestamp_us": 74549252
+    },
+    {
+      "timestamp_us": 74646733
+    },
+    {
+      "timestamp_us": 74764364
+    },
+    {
+      "timestamp_us": 74865112
+    },
+    {
+      "timestamp_us": 74982073
+    },
+    {
+      "timestamp_us": 75105159
+    },
+    {
+      "timestamp_us": 75220302
+    },
+    {
+      "timestamp_us": 75307197
+    },
+    {
+      "timestamp_us": 75437456
+    },
+    {
+      "timestamp_us": 75536391
+    },
+    {
+      "timestamp_us": 75681814
+    },
+    {
+      "timestamp_us": 75780497
+    },
+    {
+      "timestamp_us": 75932474
+    },
+    {
+      "timestamp_us": 76003090
+    },
+    {
+      "timestamp_us": 76171377
+    },
+    {
+      "timestamp_us": 76251794
+    },
+    {
+      "timestamp_us": 76380842
+    },
+    {
+      "timestamp_us": 76484695
+    },
+    {
+      "timestamp_us": 76606988
+    },
+    {
+      "timestamp_us": 76719818
+    },
+    {
+      "timestamp_us": 76829518
+    },
+    {
+      "timestamp_us": 76942551
+    },
+    {
+      "timestamp_us": 77070464
+    },
+    {
+      "timestamp_us": 77206963
+    },
+    {
+      "timestamp_us": 77318540
+    },
+    {
+      "timestamp_us": 77401262
+    },
+    {
+      "timestamp_us": 77513195
+    },
+    {
+      "timestamp_us": 77644863
+    },
+    {
+      "timestamp_us": 77739687
+    },
+    {
+      "timestamp_us": 77897906
+    },
+    {
+      "timestamp_us": 77980553
+    },
+    {
+      "timestamp_us": 78128659
+    },
+    {
+      "timestamp_us": 78255270
+    },
+    {
+      "timestamp_us": 78355914
+    },
+    {
+      "timestamp_us": 78443061
+    },
+    {
+      "timestamp_us": 78567314
+    },
+    {
+      "timestamp_us": 78701863
+    },
+    {
+      "timestamp_us": 78832447
+    },
+    {
+      "timestamp_us": 78914714
+    },
+    {
+      "timestamp_us": 79031889
+    },
+    {
+      "timestamp_us": 79167305
+    },
+    {
+      "timestamp_us": 79291812
+    },
+    {
+      "timestamp_us": 79366036
+    },
+    {
+      "timestamp_us": 79524764
+    },
+    {
+      "timestamp_us": 79617850
+    },
+    {
+      "timestamp_us": 79718605
+    },
+    {
+      "timestamp_us": 79876824
+    },
+    {
+      "timestamp_us": 79972518
+    },
+    {
+      "timestamp_us": 80056653
+    },
+    {
+      "timestamp_us": 80214668
+    },
+    {
+      "timestamp_us": 80321075
+    },
+    {
+      "timestamp_us": 80437925
+    },
+    {
+      "timestamp_us": 80560382
+    },
+    {
+      "timestamp_us": 80642003
+    },
+    {
+      "timestamp_us": 80798304
+    },
+    {
+      "timestamp_us": 80912631
+    },
+    {
+      "timestamp_us": 80980031
+    },
+    {
+      "timestamp_us": 81110251
+    },
+    {
+      "timestamp_us": 81250344
+    },
+    {
+      "timestamp_us": 81380780
+    },
+    {
+      "timestamp_us": 81484367
+    },
+    {
+      "timestamp_us": 81608934
+    },
+    {
+      "timestamp_us": 81689204
+    },
+    {
+      "timestamp_us": 81822262
+    },
+    {
+      "timestamp_us": 81933070
+    },
+    {
+      "timestamp_us": 82056503
+    },
+    {
+      "timestamp_us": 82145019
+    },
+    {
+      "timestamp_us": 82258045
+    },
+    {
+      "timestamp_us": 82391565
+    },
+    {
+      "timestamp_us": 82486770
+    },
+    {
+      "timestamp_us": 82602759
+    },
+    {
+      "timestamp_us": 82715786
+    },
+    {
+      "timestamp_us": 82836621
+    },
+    {
+      "timestamp_us": 82985984
+    },
+    {
+      "timestamp_us": 83105742
+    },
+    {
+      "timestamp_us": 83218357
+    },
+    {
+      "timestamp_us": 83339216
+    },
+    {
+      "timestamp_us": 83418907
+    },
+    {
+      "timestamp_us": 83560755
+    },
+    {
+      "timestamp_us": 83655129
+    },
+    {
+      "timestamp_us": 83801992
+    },
+    {
+      "timestamp_us": 83886285
+    },
+    {
+      "timestamp_us": 84032249
+    },
+    {
+      "timestamp_us": 84138022
+    },
+    {
+      "timestamp_us": 84222639
+    },
+    {
+      "timestamp_us": 84370836
+    },
+    {
+      "timestamp_us": 84458759
+    },
+    {
+      "timestamp_us": 84587837
+    },
+    {
+      "timestamp_us": 84701824
+    },
+    {
+      "timestamp_us": 84802531
+    },
+    {
+      "timestamp_us": 84950127
+    },
+    {
+      "timestamp_us": 85086001
+    },
+    {
+      "timestamp_us": 85196304
+    },
+    {
+      "timestamp_us": 85267877
+    },
+    {
+      "timestamp_us": 85420797
+    },
+    {
+      "timestamp_us": 85510636
+    },
+    {
+      "timestamp_us": 85642483
+    },
+    {
+      "timestamp_us": 85778497
+    },
+    {
+      "timestamp_us": 85848481
+    },
+    {
+      "timestamp_us": 86006239
+    },
+    {
+      "timestamp_us": 86083711
+    },
+    {
+      "timestamp_us": 86191035
+    },
+    {
+      "timestamp_us": 86306364
+    },
+    {
+      "timestamp_us": 86440215
+    },
+    {
+      "timestamp_us": 86573308
+    },
+    {
+      "timestamp_us": 86699863
+    },
+    {
+      "timestamp_us": 86802496
+    },
+    {
+      "timestamp_us": 86896936
+    },
+    {
+      "timestamp_us": 87028845
+    },
+    {
+      "timestamp_us": 87122109
+    },
+    {
+      "timestamp_us": 87260129
+    },
+    {
+      "timestamp_us": 87372698
+    },
+    {
+      "timestamp_us": 87470111
+    },
+    {
+      "timestamp_us": 87588293
+    },
+    {
+      "timestamp_us": 87731702
+    },
+    {
+      "timestamp_us": 87850975
+    },
+    {
+      "timestamp_us": 87932702
+    },
+    {
+      "timestamp_us": 88054508
+    },
+    {
+      "timestamp_us": 88208845
+    },
+    {
+      "timestamp_us": 88305722
+    },
+    {
+      "timestamp_us": 88396133
+    },
+    {
+      "timestamp_us": 88532915
+    },
+    {
+      "timestamp_us": 88651975
+    },
+    {
+      "timestamp_us": 88778817
+    },
+    {
+      "timestamp_us": 88853432
+    },
+    {
+      "timestamp_us": 88983673
+    },
+    {
+      "timestamp_us": 89093087
+    },
+    {
+      "timestamp_us": 89237305
+    },
+    {
+      "timestamp_us": 89365479
+    },
+    {
+      "timestamp_us": 89472811
+    },
+    {
+      "timestamp_us": 89572576
+    },
+    {
+      "timestamp_us": 89675881
+    },
+    {
+      "timestamp_us": 89798388
+    },
+    {
+      "timestamp_us": 89922593
+    },
+    {
+      "timestamp_us": 90040733
+    },
+    {
+      "timestamp_us": 90164481
+    },
+    {
+      "timestamp_us": 90280504
+    },
+    {
+      "timestamp_us": 90389665
+    },
+    {
+      "timestamp_us": 90509236
+    },
+    {
+      "timestamp_us": 90589147
+    },
+    {
+      "timestamp_us": 90753125
+    },
+    {
+      "timestamp_us": 90825160
+    },
+    {
+      "timestamp_us": 90953536
+    },
+    {
+      "timestamp_us": 91086132
+    },
+    {
+      "timestamp_us": 91213340
+    },
+    {
+      "timestamp_us": 91285401
+    },
+    {
+      "timestamp_us": 91398850
+    },
+    {
+      "timestamp_us": 91547064
+    },
+    {
+      "timestamp_us": 91655285
+    },
+    {
+      "timestamp_us": 91784948
+    },
+    {
+      "timestamp_us": 91897856
+    },
+    {
+      "timestamp_us": 92002030
+    },
+    {
+      "timestamp_us": 92107847
+    },
+    {
+      "timestamp_us": 92226660
+    },
+    {
+      "timestamp_us": 92375341
+    },
+    {
+      "timestamp_us": 92453840
+    },
+    {
+      "timestamp_us": 92570725
+    },
+    {
+      "timestamp_us": 92700636
+    },
+    {
+      "timestamp_us": 92796136
+    },
+    {
+      "timestamp_us": 92956478
+    },
+    {
+      "timestamp_us": 93031851
+    },
+    {
+      "timestamp_us": 93168900
+    },
+    {
+      "timestamp_us": 93263970
+    },
+    {
+      "timestamp_us": 93421706
+    },
+    {
+      "timestamp_us": 93484140
+    },
+    {
+      "timestamp_us": 93637714
+    },
+    {
+      "timestamp_us": 93764884
+    },
+    {
+      "timestamp_us": 93860451
+    },
+    {
+      "timestamp_us": 94001708
+    },
+    {
+      "timestamp_us": 94109746
+    },
+    {
+      "timestamp_us": 94178418
+    },
+    {
+      "timestamp_us": 94319776
+    },
+    {
+      "timestamp_us": 94466551
+    },
+    {
+      "timestamp_us": 94541200
+    },
+    {
+      "timestamp_us": 94679200
+    },
+    {
+      "timestamp_us": 94796787
+    },
+    {
+      "timestamp_us": 94895676
+    },
+    {
+      "timestamp_us": 95040698
+    },
+    {
+      "timestamp_us": 95121515
+    },
+    {
+      "timestamp_us": 95228875
+    },
+    {
+      "timestamp_us": 95355618
+    },
+    {
+      "timestamp_us": 95497740
+    },
+    {
+      "timestamp_us": 95605460
+    },
+    {
+      "timestamp_us": 95695243
+    },
+    {
+      "timestamp_us": 95819539
+    },
+    {
+      "timestamp_us": 95955245
+    },
+    {
+      "timestamp_us": 96051313
+    },
+    {
+      "timestamp_us": 96183032
+    },
+    {
+      "timestamp_us": 96288596
+    },
+    {
+      "timestamp_us": 96384186
+    },
+    {
+      "timestamp_us": 96511847
+    },
+    {
+      "timestamp_us": 96629175
+    },
+    {
+      "timestamp_us": 96747760
+    },
+    {
+      "timestamp_us": 96847287
+    },
+    {
+      "timestamp_us": 96989310
+    },
+    {
+      "timestamp_us": 97093874
+    },
+    {
+      "timestamp_us": 97234176
+    },
+    {
+      "timestamp_us": 97350678
+    },
+    {
+      "timestamp_us": 97459376
+    },
+    {
+      "timestamp_us": 97593436
+    },
+    {
+      "timestamp_us": 97695313
+    },
+    {
+      "timestamp_us": 97796202
+    },
+    {
+      "timestamp_us": 97908790
+    },
+    {
+      "timestamp_us": 98054728
+    },
+    {
+      "timestamp_us": 98171686
+    },
+    {
+      "timestamp_us": 98259255
+    },
+    {
+      "timestamp_us": 98358778
+    },
+    {
+      "timestamp_us": 98478329
+    },
+    {
+      "timestamp_us": 98590307
+    },
+    {
+      "timestamp_us": 98725682
+    },
+    {
+      "timestamp_us": 98809744
+    },
+    {
+      "timestamp_us": 99070000
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+batch_id,line_id,entry_ref,trade_date,settle_date,gross_minor,fee_minor,currency,status
+BB100,BL01,BE002,2024-06-04,2024-06-12,200,0,EUR,pending
+BB001,BL02,BE001,2024-06-03,2024-06-05,5000,25,USD,posted
+BB099,BL01,BE999,2024-06-08,2024-06-12,100,0,USD,posted

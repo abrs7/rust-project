@@ -1,0 +1,272 @@
+{
+  "committed_snapshots": [
+    {
+      "captured_at_ms": 1000,
+      "committed_offset": 1,
+      "partition": 0,
+      "snapshot_id": "stream-a-early-a0",
+      "topic": "stream-a-alpha"
+    },
+    {
+      "captured_at_ms": 5000,
+      "committed_offset": 3,
+      "partition": 0,
+      "snapshot_id": "stream-a-late-a0",
+      "topic": "stream-a-alpha"
+    },
+    {
+      "captured_at_ms": 4500,
+      "committed_offset": 2,
+      "partition": 1,
+      "snapshot_id": "stream-a-late-a1",
+      "topic": "stream-a-alpha"
+    },
+    {
+      "captured_at_ms": 4800,
+      "committed_offset": 1,
+      "partition": 0,
+      "snapshot_id": "stream-a-late-b0",
+      "topic": "stream-a-beta"
+    }
+  ],
+  "consumer": {
+    "dedup_identity": "payload_hash",
+    "offset_semantics": "next_to_consume",
+    "schema_version": "1.0"
+  },
+  "messages": [
+    {
+      "message_id": "M000001",
+      "offset": 1,
+      "partition": 0,
+      "payload": {
+        "key": "node-a-01",
+        "reading": 123,
+        "seq": 2
+      },
+      "payload_hash": "e1bd30143b8faa2e08e7f519bdbca502f13f41a31616af9efcbdf1cd9f34601c",
+      "topic": "stream-a-alpha"
+    },
+    {
+      "message_id": "M000002",
+      "offset": 3,
+      "partition": 0,
+      "payload": {
+        "key": "node-a-01",
+        "reading": 116,
+        "seq": 1
+      },
+      "payload_hash": "498d8cadef0325e5657abd1978d7cb4cababc88b024316deddf70c19bea2a3d3",
+      "topic": "stream-a-alpha"
+    },
+    {
+      "message_id": "M000003",
+      "offset": 4,
+      "partition": 0,
+      "payload": {
+        "key": "node-a-01",
+        "reading": 123,
+        "seq": 2
+      },
+      "payload_hash": "e1bd30143b8faa2e08e7f519bdbca502f13f41a31616af9efcbdf1cd9f34601c",
+      "topic": "stream-a-alpha"
+    },
+    {
+      "message_id": "M000004",
+      "offset": 5,
+      "partition": 0,
+      "payload": {
+        "key": "node-a-01",
+        "reading": 130,
+        "seq": 3
+      },
+      "payload_hash": "321d4817081caff688cff8cc9131d7f63dddb67865f12987a67141f37fce04a9",
+      "topic": "stream-a-alpha"
+    },
+    {
+      "message_id": "M000005",
+      "offset": 6,
+      "partition": 0,
+      "payload": {
+        "key": "node-a-01",
+        "reading": 137,
+        "seq": 4
+      },
+      "payload_hash": "b5218030918d734f8a830b99d3dcb1020fd0b3bd095695db5596f6e962a54c54",
+      "topic": "stream-a-alpha"
+    },
+    {
+      "message_id": "M000006",
+      "offset": 7,
+      "partition": 0,
+      "payload": {
+        "key": "node-a-01",
+        "reading": 144,
+        "seq": 5
+      },
+      "payload_hash": "489c1ba8292483ed30f4cc78402fb1dccd9e11f566a6f3d7d17c874d9f9907fa",
+      "topic": "stream-a-alpha"
+    },
+    {
+      "message_id": "M000007",
+      "offset": 2,
+      "partition": 1,
+      "payload": {
+        "key": "node-a-03",
+        "reading": 116,
+        "seq": 1
+      },
+      "payload_hash": "1cddf8c1e16a00b76b4b7c5de7ea37e32acb78fc8e884153f29494af1f515f55",
+      "topic": "stream-a-alpha"
+    },
+    {
+      "message_id": "M000008",
+      "offset": 3,
+      "partition": 1,
+      "payload": {
+        "key": "node-a-03",
+        "reading": 123,
+        "seq": 2
+      },
+      "payload_hash": "828b9eb93acc98ac34feec9f06329d56d4d19612199c31c8946732634a94a24d",
+      "topic": "stream-a-alpha"
+    },
+    {
+      "message_id": "M000009",
+      "offset": 4,
+      "partition": 1,
+      "payload": {
+        "key": "node-a-03",
+        "reading": 130,
+        "seq": 3
+      },
+      "payload_hash": "5d44208a64b8ac1c9397efb2b6cf8db95167500d6ca9417fb7cd165b5ea64305",
+      "topic": "stream-a-alpha"
+    },
+    {
+      "message_id": "M000010",
+      "offset": 1,
+      "partition": 0,
+      "payload": {
+        "key": "node-a-04",
+        "reading": 116,
+        "seq": 1
+      },
+      "payload_hash": "ad458710617d9db88abb6081015cdb710b64d9ac3a15f9da4e2dc3ee12e00be2",
+      "topic": "stream-a-beta"
+    },
+    {
+      "message_id": "M000011",
+      "offset": 2,
+      "partition": 0,
+      "payload": {
+        "key": "node-a-04",
+        "reading": 123,
+        "seq": 2
+      },
+      "payload_hash": "5246f1eba26112f6a145297d19f2bcf619d0ce070ac3a9a8a0361149a01999fd",
+      "topic": "stream-a-beta"
+    },
+    {
+      "message_id": "M000012",
+      "offset": 2,
+      "partition": 0,
+      "payload": {
+        "key": "node-a-02",
+        "reading": 116,
+        "seq": 1
+      },
+      "payload_hash": "73a548b3bdaf2aad099a6a10d990fc915f3e9ca7fcb502e5993b0268b42d6b04",
+      "topic": "stream-a-beta"
+    },
+    {
+      "message_id": "M000013",
+      "offset": 3,
+      "partition": 0,
+      "payload": {
+        "key": "node-a-02",
+        "reading": 123,
+        "seq": 2
+      },
+      "payload_hash": "ca56c800cc14ab04813ccab6432db52bb4218ad5a623ccfa012b34fee14a038d",
+      "topic": "stream-a-beta"
+    },
+    {
+      "message_id": "M000014",
+      "offset": 4,
+      "partition": 0,
+      "payload": {
+        "key": "node-a-02",
+        "reading": 130,
+        "seq": 3
+      },
+      "payload_hash": "37c48bbf48fcc509ea2baf028996248f519d594daabf5ac2b38505033f163496",
+      "topic": "stream-a-beta"
+    },
+    {
+      "message_id": "M000015",
+      "offset": 5,
+      "partition": 0,
+      "payload": {
+        "key": "node-a-02",
+        "reading": 137,
+        "seq": 4
+      },
+      "payload_hash": "bf76566fb0c2b8c610d3476d40eb133505acc6e5e39af4452a8c3f3da128a91f",
+      "topic": "stream-a-beta"
+    },
+    {
+      "message_id": "M000016",
+      "offset": 7,
+      "partition": 0,
+      "payload": {
+        "key": "node-a-02",
+        "reading": 130,
+        "seq": 3
+      },
+      "payload_hash": "37c48bbf48fcc509ea2baf028996248f519d594daabf5ac2b38505033f163496",
+      "topic": "stream-a-beta"
+    }
+  ],
+  "producer_ledger": [
+    {
+      "expected_count": 5,
+      "key": "node-a-01",
+      "max_seq": 5,
+      "partition": 0,
+      "topic": "stream-a-alpha"
+    },
+    {
+      "expected_count": 4,
+      "key": "node-a-02",
+      "max_seq": 4,
+      "partition": 0,
+      "topic": "stream-a-beta"
+    },
+    {
+      "expected_count": 3,
+      "key": "node-a-03",
+      "max_seq": 3,
+      "partition": 1,
+      "topic": "stream-a-alpha"
+    },
+    {
+      "expected_count": 2,
+      "key": "node-a-04",
+      "max_seq": 2,
+      "partition": 0,
+      "topic": "stream-a-beta"
+    }
+  ],
+  "schema_version": "1.0",
+  "topics": [
+    {
+      "partition_count": 2,
+      "topic": "stream-a-alpha"
+    },
+    {
+      "partition_count": 1,
+      "topic": "stream-a-beta"
+    }
+  ]
+}

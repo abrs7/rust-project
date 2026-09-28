@@ -1,0 +1,41 @@
+{
+  "candidate_trials": [
+    {
+      "density_inversion_count": 0,
+      "latitude_deg": {
+        "den": 1,
+        "num": 43
+      },
+      "survey_tie_rms_micro": 484401381072233333
+    },
+    {
+      "density_inversion_count": 0,
+      "latitude_deg": {
+        "den": 1,
+        "num": 45
+      },
+      "survey_tie_rms_micro": 25386666667
+    },
+    {
+      "density_inversion_count": 0,
+      "latitude_deg": {
+        "den": 1,
+        "num": 47
+      },
+      "survey_tie_rms_micro": 240496479134155294
+    }
+  ],
+  "header_latitude_deg": {
+    "den": 1,
+    "num": 45
+  },
+  "inferred_latitude_deg": {
+    "den": 1,
+    "num": 45
+  },
+  "objective_score": [
+    0,
+    25386666667
+  ],
+  "schema_version": "1.0"
+}

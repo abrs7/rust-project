@@ -1,0 +1,7 @@
+{"batch_id":"AB001","drift_business_days":-1,"entry_id":"AE001","expected_settle_date":"2024-06-06","line_id":"AL01","reported_settle_date":"2024-06-05","trade_date":"2024-06-03"}
+{"batch_id":"AB001","drift_business_days":-1,"entry_id":"AE001","expected_settle_date":"2024-06-06","line_id":"AL02","reported_settle_date":"2024-06-05","trade_date":"2024-06-03"}
+{"batch_id":"AB002","drift_business_days":1,"entry_id":"AE002","expected_settle_date":"2024-06-07","line_id":"AL01","reported_settle_date":"2024-06-10","trade_date":"2024-06-04"}
+{"batch_id":"AB100","drift_business_days":3,"entry_id":"AE002","expected_settle_date":"2024-06-07","line_id":"AL01","reported_settle_date":"2024-06-12","trade_date":"2024-06-04"}
+{"batch_id":"AB003","drift_business_days":-1,"entry_id":"AE003","expected_settle_date":"2024-06-10","line_id":"AL01","reported_settle_date":"2024-06-07","trade_date":"2024-06-05"}
+{"batch_id":"AB004","drift_business_days":-1,"entry_id":"AE004","expected_settle_date":"2024-06-12","line_id":"AL01","reported_settle_date":"2024-06-11","trade_date":"2024-06-07"}
+{"batch_id":"AB005","drift_business_days":-2,"entry_id":"AE005","expected_settle_date":"2024-06-11","line_id":"AL01","reported_settle_date":"2024-06-07","trade_date":"2024-06-06"}

@@ -1,0 +1,4 @@
+{"count":5,"key":"probe-b-01","partition":0,"topic":"feed-b-alpha"}
+{"count":4,"key":"probe-b-02","partition":0,"topic":"feed-b-beta"}
+{"count":3,"key":"probe-b-03","partition":1,"topic":"feed-b-alpha"}
+{"count":2,"key":"probe-b-04","partition":0,"topic":"feed-b-beta"}

@@ -1,0 +1,13 @@
+{
+    "job_name": "gamma-nop-001",
+    "agents": [
+        {
+            "name": "nop"
+        }
+    ],
+    "tasks": [
+        {
+            "path": "tasks/gamma-spectrum-calibration/source"
+        }
+    ]
+}

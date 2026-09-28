@@ -1,0 +1,4 @@
+obs_id,source_id,timestamp,quantity,magnitude,unit_symbol
+BO001,BSRC-A,1000,net_force,10/1,lbf
+BO002,BSRC-A,1000,net_force,-10/1,lbf
+BO004,BSRC-B,1000,net_force,5/1,lb_f

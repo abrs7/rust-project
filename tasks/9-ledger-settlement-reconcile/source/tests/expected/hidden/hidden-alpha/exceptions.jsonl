@@ -1,0 +1,10 @@
+{"account_id":"AA005","difference_base_minor":333,"ledger_base_total":333,"settlement_base_total":0,"type":"account_imbalance"}
+{"batch_id":"AB001","drift_business_days":-1,"entry_id":"AE001","line_id":"AL01","type":"settle_drift"}
+{"batch_id":"AB001","drift_business_days":-1,"entry_id":"AE001","line_id":"AL02","type":"settle_drift"}
+{"batch_id":"AB002","drift_business_days":1,"entry_id":"AE002","line_id":"AL01","type":"settle_drift"}
+{"batch_id":"AB100","drift_business_days":3,"entry_id":"AE002","line_id":"AL01","type":"settle_drift"}
+{"batch_id":"AB003","drift_business_days":-1,"entry_id":"AE003","line_id":"AL01","type":"settle_drift"}
+{"batch_id":"AB004","drift_business_days":-1,"entry_id":"AE004","line_id":"AL01","type":"settle_drift"}
+{"batch_id":"AB005","drift_business_days":-2,"entry_id":"AE005","line_id":"AL01","type":"settle_drift"}
+{"entry_id":"AE006","type":"unmatched_entry"}
+{"batch_id":"AB099","entry_ref":"AE999","line_id":"AL01","type":"unmatched_settlement"}

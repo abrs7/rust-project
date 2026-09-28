@@ -1,0 +1,7 @@
+{"batch_id":"BB001","entry_id":"BE001","entry_ref":"BE001","line_id":"BL01","settle_date":"2024-06-05","status":"posted","trade_date":"2024-06-03"}
+{"batch_id":"BB001","entry_id":"BE001","entry_ref":"BE001","line_id":"BL02","settle_date":"2024-06-05","status":"posted","trade_date":"2024-06-03"}
+{"batch_id":"BB002","entry_id":"BE002","entry_ref":"BE002","line_id":"BL01","settle_date":"2024-06-10","status":"posted","trade_date":"2024-06-04"}
+{"batch_id":"BB100","entry_id":"BE002","entry_ref":"BE002","line_id":"BL01","settle_date":"2024-06-12","status":"pending","trade_date":"2024-06-04"}
+{"batch_id":"BB003","entry_id":"BE003","entry_ref":"BE003","line_id":"BL01","settle_date":"2024-06-07","status":"posted","trade_date":"2024-06-05"}
+{"batch_id":"BB004","entry_id":"BE004","entry_ref":"BE004","line_id":"BL01","settle_date":"2024-06-11","status":"posted","trade_date":"2024-06-07"}
+{"batch_id":"BB005","entry_id":"BE005","entry_ref":"BE005","line_id":"BL01","settle_date":"2024-06-07","status":"posted","trade_date":"2024-06-06"}

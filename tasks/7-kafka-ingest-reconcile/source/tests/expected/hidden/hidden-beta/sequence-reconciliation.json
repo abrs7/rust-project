@@ -1,0 +1,23 @@
+{
+  "broken_consumer_delta": 2,
+  "discrepancies": [
+    {
+      "broken_count": 6,
+      "expected_count": 5,
+      "key": "probe-b-01",
+      "partition": 0,
+      "repaired_count": 5,
+      "topic": "feed-b-alpha"
+    },
+    {
+      "broken_count": 5,
+      "expected_count": 4,
+      "key": "probe-b-02",
+      "partition": 0,
+      "repaired_count": 4,
+      "topic": "feed-b-beta"
+    }
+  ],
+  "ledger_match": true,
+  "schema_version": "1.0"
+}

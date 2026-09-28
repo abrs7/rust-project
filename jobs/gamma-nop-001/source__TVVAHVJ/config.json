@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "tasks/gamma-spectrum-calibration/source"
+    },
+    "trial_name": "source__TVVAHVJ",
+    "trials_dir": "jobs/gamma-nop-001",
+    "agent": {
+        "name": "nop"
+    },
+    "job_id": "2b3c1e21-7829-44c3-a28b-d59a834639a4"
+}

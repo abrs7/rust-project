@@ -1,0 +1,18 @@
+{
+  "task": "ctd-cast-processing",
+  "folder": "1-ctd-cast-processing",
+  "iteration": 8,
+  "status": "rejected",
+  "created_at": "2026-09-27T20:13:44.273610+00:00",
+  "archive": "1-ctd-cast-processing.zip",
+  "sha256": "4ad79b445a2162c1b3a2d5e1245d7d4af80b6c36875017eed085903df3c3b0c5",
+  "platform": {
+    "stage_1": null,
+    "stage_2": null,
+    "stage_3": null,
+    "notes": [
+      "Superseded by 009: 17 graded field names were not derivable from instruction.md, /app/spec or /app/examples, making byte-exact output unguessable and 0/8 structural"
+    ]
+  },
+  "finalized_at": "2026-09-27T20:53:10.097160+00:00"
+}

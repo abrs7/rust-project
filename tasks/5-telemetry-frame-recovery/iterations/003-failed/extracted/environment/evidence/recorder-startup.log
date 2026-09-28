@@ -1,0 +1,5 @@
+2030-04-18T06:11:04Z recorder build=B2
+2030-04-18T06:11:04Z framing sync=d391 eof=7e quote=db
+2030-04-18T06:11:04Z crc poly=1021 seed=ffff refin=0 refout=0 xorout=0000
+2030-04-18T06:11:04Z counters sequence=16 tick=16 tick_period_ms=10
+2030-04-18T06:11:04Z selftest header_octets=7 trailer_octets=2 status=pass

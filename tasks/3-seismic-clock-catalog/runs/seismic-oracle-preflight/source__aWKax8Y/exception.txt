@@ -1,0 +1,83 @@
+Traceback (most recent call last):
+  File "/home/abraham/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py", line 415, in run
+    await self._prepare()
+  File "/home/abraham/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py", line 453, in _prepare
+    await self._setup_agent_environment()
+  File "/home/abraham/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py", line 1542, in _setup_agent_environment
+    await self._start_agent_environment()
+  File "/home/abraham/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py", line 1548, in _start_agent_environment
+    await asyncio.wait_for(
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/abraham/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker.py", line 981, in start
+    await self._run_docker_compose_command(["build"])
+  File "/home/abraham/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker.py", line 704, in _run_docker_compose_command
+    raise RuntimeError(
+RuntimeError: Docker compose command failed for environment seismic-clock-catalog. Command: docker compose --project-name source__awkax8y__env --project-directory /home/abraham/workspace/rustlabs/tasks/seismic-clock-catalog/source/environment -f /tmp/tmp_0xsgzw0/source__aWKax8Y__env-docker-compose-resources.json -f /home/abraham/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-build.yaml -f /tmp/tmpxosoht94/docker-compose-environment.json -f /tmp/tmpj6cmxyke/docker-compose-mounts.json build. Return code: 1. Stdout: #1 [internal] load local bake definitions
+#1 reading from stdin 629B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 366B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/python@sha256:9d2e5553305c7c7b0097999bb17187c69b921ccd6bc9d40e4bb5ebe652c00285
+#3 DONE 0.0s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [1/7] FROM docker.io/library/python@sha256:9d2e5553305c7c7b0097999bb17187c69b921ccd6bc9d40e4bb5ebe652c00285
+#5 DONE 0.0s
+
+#6 [2/7] WORKDIR /app
+#6 CACHED
+
+#7 [internal] load build context
+#7 transferring context: 2B done
+#7 DONE 0.0s
+
+#8 [6/7] COPY spec/ /app/spec/
+#8 ERROR: failed to calculate checksum of ref 45b4fa21-7121-412e-8566-2de452693494::vdwxq10pu6leznt7ytzb0h6oc: "/spec": not found
+
+#9 [4/7] COPY campaign/ /app/campaign/
+#9 ERROR: failed to calculate checksum of ref 45b4fa21-7121-412e-8566-2de452693494::vdwxq10pu6leznt7ytzb0h6oc: "/campaign": not found
+
+#10 [3/7] COPY clockrecover/ /app/clockrecover/
+#10 ERROR: failed to calculate checksum of ref 45b4fa21-7121-412e-8566-2de452693494::vdwxq10pu6leznt7ytzb0h6oc: "/clockrecover": not found
+
+#11 [5/7] COPY examples/ /app/examples/
+#11 ERROR: failed to calculate checksum of ref 45b4fa21-7121-412e-8566-2de452693494::vdwxq10pu6leznt7ytzb0h6oc: "/examples": not found
+------
+ > [3/7] COPY clockrecover/ /app/clockrecover/:
+------
+------
+ > [4/7] COPY campaign/ /app/campaign/:
+------
+------
+ > [5/7] COPY examples/ /app/examples/:
+------
+------
+ > [6/7] COPY spec/ /app/spec/:
+------
+Dockerfile:9
+
+--------------------
+
+   7 |     COPY campaign/ /app/campaign/
+
+   8 |     COPY examples/ /app/examples/
+
+   9 | >>> COPY spec/ /app/spec/
+
+  10 |     
+
+  11 |     RUN mkdir -p /app/output
+
+--------------------
+
+failed to solve: failed to compute cache key: failed to calculate checksum of ref 45b4fa21-7121-412e-8566-2de452693494::vdwxq10pu6leznt7ytzb0h6oc: "/spec": not found
+
+. Stderr: None. 

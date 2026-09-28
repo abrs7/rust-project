@@ -1,0 +1,12 @@
+{
+  "correction": {
+    "den": 18478357,
+    "num": 49978357
+  },
+  "event_count": 420,
+  "first_timestamp_us": 8331643,
+  "last_timestamp_us": 58310000,
+  "live_time_us": 18478357,
+  "schema_version": "1.0",
+  "total_span_us": 49978357
+}

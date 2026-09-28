@@ -1,0 +1,115 @@
+{
+    "id": "07280343-d2cf-43b0-bdde-cf7ab0d13d41",
+    "task_name": "terminal-bench/ledger-settlement-reconcile",
+    "trial_name": "source__jcYgVG9",
+    "trial_uri": "file:///home/abraham/workspace/rustlabs/tasks/9-ledger-settlement-reconcile/source/jobs/2026-09-20__21-48-11/source__jcYgVG9",
+    "task_id": {
+        "path": "/home/abraham/workspace/rustlabs/tasks/9-ledger-settlement-reconcile/source"
+    },
+    "source": null,
+    "task_checksum": "aaa89ce14041edebc41bc5da8eff6907e555e3f0a7fabbd2e69c7916ae267811",
+    "config": {
+        "task": {
+            "path": "/home/abraham/workspace/rustlabs/tasks/9-ledger-settlement-reconcile/source",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "source__jcYgVG9",
+        "trials_dir": "jobs/2026-09-20__21-48-11",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "nop",
+            "import_path": null,
+            "model_name": null,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "30116955-04ab-4b9c-9c95-73c66a217c05",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "nop",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "model_usage": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "verifier_environment_mode": "separate",
+    "exception_info": null,
+    "started_at": "2026-09-20T18:48:12.237397Z",
+    "finished_at": "2026-09-20T18:49:50.395613Z",
+    "environment_setup": {
+        "started_at": "2026-09-20T18:48:12.320917Z",
+        "finished_at": "2026-09-20T18:49:14.348206Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-09-20T18:49:14.348261Z",
+        "finished_at": "2026-09-20T18:49:14.348324Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-09-20T18:49:14.348426Z",
+        "finished_at": "2026-09-20T18:49:14.348524Z"
+    },
+    "verifier": {
+        "started_at": "2026-09-20T18:49:27.925584Z",
+        "finished_at": "2026-09-20T18:49:50.395597Z"
+    },
+    "step_results": null
+}

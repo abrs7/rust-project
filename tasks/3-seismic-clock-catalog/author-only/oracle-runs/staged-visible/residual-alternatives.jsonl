@@ -1,0 +1,11 @@
+{"event_id":"EV000004","pick_id":"VP05457","recorded_us":-1279999,"residual_us":220001,"true_arrival_us":-1500000}
+{"event_id":"EV000005","pick_id":"VP13376","recorded_us":-429999,"residual_us":220001,"true_arrival_us":-650000}
+{"event_id":"EV000006","pick_id":"VP21295","recorded_us":520002,"residual_us":220002,"true_arrival_us":300000}
+{"event_id":"EV000007","pick_id":"VP29214","recorded_us":1170000,"residual_us":-330000,"true_arrival_us":1500000}
+{"event_id":"EV000009","pick_id":"VP37133","recorded_us":2970000,"residual_us":-330000,"true_arrival_us":3300000}
+{"event_id":"EV000003","pick_id":"VP45052","recorded_us":-2390000,"residual_us":310000,"true_arrival_us":-2700000}
+{"event_id":"EV000005","pick_id":"VP52971","recorded_us":-910000,"residual_us":-260000,"true_arrival_us":-650000}
+{"event_id":"EV000007","pick_id":"VP60890","recorded_us":1810000,"residual_us":310000,"true_arrival_us":1500000}
+{"event_id":"EV000001","pick_id":"VP81691","recorded_us":-4620002,"residual_us":-120002,"true_arrival_us":-4500000}
+{"event_id":"EV000002","pick_id":"VP89610","recorded_us":-3870002,"residual_us":-120002,"true_arrival_us":-3750000}
+{"event_id":"EV000003","pick_id":"VP97529","recorded_us":-2820003,"residual_us":-120003,"true_arrival_us":-2700000}

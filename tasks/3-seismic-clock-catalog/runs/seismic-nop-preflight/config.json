@@ -1,0 +1,15 @@
+{
+    "job_name": "seismic-nop-preflight",
+    "jobs_dir": "/home/abraham/workspace/rustlabs/tasks/seismic-clock-catalog/runs",
+    "n_concurrent_trials": 1,
+    "agents": [
+        {
+            "name": "nop"
+        }
+    ],
+    "tasks": [
+        {
+            "path": "/home/abraham/workspace/rustlabs/tasks/seismic-clock-catalog/source"
+        }
+    ]
+}

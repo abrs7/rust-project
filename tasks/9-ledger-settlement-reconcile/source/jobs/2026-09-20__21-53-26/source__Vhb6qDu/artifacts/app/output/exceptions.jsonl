@@ -1,0 +1,6 @@
+{"account_id":"VA005","difference_base_minor":333,"ledger_base_total":333,"settlement_base_total":0,"type":"account_imbalance"}
+{"batch_id":"VB002","drift_business_days":2,"entry_id":"VE002","line_id":"VL01","type":"settle_drift"}
+{"batch_id":"VB100","drift_business_days":4,"entry_id":"VE002","line_id":"VL01","type":"settle_drift"}
+{"batch_id":"VB005","drift_business_days":-1,"entry_id":"VE005","line_id":"VL01","type":"settle_drift"}
+{"entry_id":"VE006","type":"unmatched_entry"}
+{"batch_id":"VB099","entry_ref":"VE999","line_id":"VL01","type":"unmatched_settlement"}

@@ -1,0 +1,22 @@
+test_01_privilege_boundary_hides_tests_and_reward (__main__.Verifier.test_01_privilege_boundary_hides_tests_and_reward) ... ok
+test_02_visible_frozen_set_including_streams (__main__.Verifier.test_02_visible_frozen_set_including_streams) ... ok
+test_03_hidden_frozen_set_including_streams (__main__.Verifier.test_03_hidden_frozen_set_including_streams) ... ok
+test_04_staged_cli_after_deleting_fragments_matches_run (__main__.Verifier.test_04_staged_cli_after_deleting_fragments_matches_run) ... ok
+test_05_staged_api_after_deleting_fragments_matches_run (__main__.Verifier.test_05_staged_api_after_deleting_fragments_matches_run) ... ok
+test_06_decoy_fragments_after_ingest_do_not_change_products (__main__.Verifier.test_06_decoy_fragments_after_ingest_do_not_change_products) ... ok
+test_07_public_round_half_even_ties_including_negatives (__main__.Verifier.test_07_public_round_half_even_ties_including_negatives) ... ok
+test_08_independent_invariants (__main__.Verifier.test_08_independent_invariants) ... ok
+test_09_hash_seed_determinism (__main__.Verifier.test_09_hash_seed_determinism) ... ok
+test_10_shuffled_renamed_fragments_match_hidden (__main__.Verifier.test_10_shuffled_renamed_fragments_match_hidden) ... ok
+test_11_malformed_incomplete_missing_and_empty_inputs_rejected (__main__.Verifier.test_11_malformed_incomplete_missing_and_empty_inputs_rejected) ... ok
+test_12_missing_stage_requirements_rejected (__main__.Verifier.test_12_missing_stage_requirements_rejected) ... ok
+test_13_failure_preserves_previous_successful_outputs_including_streams (__main__.Verifier.test_13_failure_preserves_previous_successful_outputs_including_streams) ... ok
+test_14_success_keeps_unlisted_stale_txt (__main__.Verifier.test_14_success_keeps_unlisted_stale_txt) ... ok
+test_15_example_hex_does_not_appear_as_campaign_payload_hex (__main__.Verifier.test_15_example_hex_does_not_appear_as_campaign_payload_hex) ... ok
+test_16_leaves_fragments_examples_evidence_and_spec_unmodified (__main__.Verifier.test_16_leaves_fragments_examples_evidence_and_spec_unmodified) ... ok
+test_17_uses_only_standard_library (__main__.Verifier.test_17_uses_only_standard_library) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 9.609s
+
+OK

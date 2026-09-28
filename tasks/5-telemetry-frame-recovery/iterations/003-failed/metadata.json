@@ -1,0 +1,33 @@
+{
+  "task": "telemetry-frame-recovery",
+  "iteration": 3,
+  "status": "failed",
+  "archive": "5-telemetry-frame-recovery.zip",
+  "sha256": "7308592159bc12c7c88e73e53cfc1b721d4fc6d051bbd960250423b22a84d57e",
+  "platform": {
+    "stage_1": "passed",
+    "stage_2": "failed",
+    "stage_3": "not_run",
+    "failure": {
+      "predicate": "long_horizon",
+      "assistant_turn_median": 26.5,
+      "required": ">80",
+      "rollout_turns": [
+        31,
+        23,
+        21,
+        15,
+        30,
+        37,
+        30,
+        20
+      ]
+    },
+    "notes": [
+      "All eight recorded rewards were zero.",
+      "Reconstructed candidates from slots 1, 2, and 8 passed the retained verifier, so the reward discrepancy requires omitted platform verifier logs.",
+      "The slug reached its iteration limit and is retired."
+    ]
+  },
+  "folder": "5-telemetry-frame-recovery"
+}

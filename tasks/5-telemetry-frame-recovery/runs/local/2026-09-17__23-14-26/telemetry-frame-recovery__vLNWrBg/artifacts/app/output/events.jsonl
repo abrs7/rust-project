@@ -1,0 +1,10 @@
+{"session":"aurora-01","sequence":45,"timestamp_ms":1735689600100,"channel":0,"raw":2150,"calibrated":"7.500"}
+{"session":"aurora-01","sequence":46,"timestamp_ms":1735689600110,"channel":1,"raw":3333,"calibrated":"121.330"}
+{"session":"aurora-01","sequence":47,"timestamp_ms":1735689600140,"channel":0,"raw":4875,"calibrated":"34.750"}
+{"session":"aurora-02","sequence":515,"timestamp_ms":1735689660110,"channel":0,"raw":31500,"calibrated":"5.786"}
+{"session":"aurora-02","sequence":516,"timestamp_ms":1735689660140,"channel":2,"raw":5600,"calibrated":"-13.281"}
+{"session":"aurora-02","sequence":517,"timestamp_ms":1735689660190,"channel":0,"raw":31601,"calibrated":"5.804"}
+{"session":"kepler-mix","sequence":65003,"timestamp_ms":1735689720060,"channel":3,"raw":4096,"calibrated":"280.960"}
+{"session":"kepler-mix","sequence":65004,"timestamp_ms":1735689720100,"channel":3,"raw":6125,"calibrated":"301.250"}
+{"session":"zenith-escape","sequence":32123,"timestamp_ms":1735689780030,"channel":1,"raw":54161,"calibrated":"1.911"}
+{"session":"zenith-escape","sequence":32124,"timestamp_ms":1735689780040,"channel":1,"raw":56190,"calibrated":"1.996"}

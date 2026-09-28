@@ -1,0 +1,16 @@
+{"accepted":false,"message_id":"M000001","offset":1,"partition":0,"payload_hash":"b9ad0801f156c22a42b068747622a6c2b0cb8114e75ec562e16a7062e48d2a08","reason":"already_committed","topic":"feed-b-alpha"}
+{"accepted":true,"message_id":"M000002","offset":3,"partition":0,"payload_hash":"8b834aec1dcc2740e23433231733dd4a5d96b3e43a96a6aba25a903e196ae669","reason":"unique","topic":"feed-b-alpha"}
+{"accepted":true,"message_id":"M000003","offset":4,"partition":0,"payload_hash":"b9ad0801f156c22a42b068747622a6c2b0cb8114e75ec562e16a7062e48d2a08","reason":"unique","topic":"feed-b-alpha"}
+{"accepted":true,"message_id":"M000004","offset":5,"partition":0,"payload_hash":"9b1ef194f5df5d940efaf3ba9e0caa95507e42359f16190a158e6cec158f9844","reason":"unique","topic":"feed-b-alpha"}
+{"accepted":true,"message_id":"M000005","offset":6,"partition":0,"payload_hash":"b5fc6158f2b16898bfe6d66b85740cebcec38c088964548eabc6ee65e41d06f7","reason":"unique","topic":"feed-b-alpha"}
+{"accepted":true,"message_id":"M000006","offset":7,"partition":0,"payload_hash":"bf5bc3a15ea3fcc79c101424fbff7496b3ae454c57d9ce3cce61cd3fda4a1268","reason":"unique","topic":"feed-b-alpha"}
+{"accepted":true,"message_id":"M000007","offset":2,"partition":1,"payload_hash":"22d00e5f1416b0d033018695643b32ca5fac5bd8a2858ed3b62f8efaf0e33d2a","reason":"unique","topic":"feed-b-alpha"}
+{"accepted":true,"message_id":"M000008","offset":3,"partition":1,"payload_hash":"9b00df3017f213c7d4b82a9c21f9328f3a6cce90c1b2f9908694f45730e9c58f","reason":"unique","topic":"feed-b-alpha"}
+{"accepted":true,"message_id":"M000009","offset":4,"partition":1,"payload_hash":"174f74a46251c90524f6a92af897b47ae823445631f44f5ec832eb6152a14ff9","reason":"unique","topic":"feed-b-alpha"}
+{"accepted":true,"message_id":"M000010","offset":1,"partition":0,"payload_hash":"8f598f68bcbb0c8c911ed739f9a537022773b897276827caa5f3637c82f3a1ce","reason":"unique","topic":"feed-b-beta"}
+{"accepted":true,"message_id":"M000011","offset":2,"partition":0,"payload_hash":"cf589731d55e0c38e52a98a8e3037c75be5a942a54138566cafb117ae61a6889","reason":"unique","topic":"feed-b-beta"}
+{"accepted":true,"message_id":"M000012","offset":2,"partition":0,"payload_hash":"d920b10f81dfacba954f656683b5788c9dc7109770988580b299073ae4fbf2b5","reason":"unique","topic":"feed-b-beta"}
+{"accepted":true,"message_id":"M000013","offset":3,"partition":0,"payload_hash":"9bd681724aee96ba82a201203297668d41a02ffde681adffcc6ace3c8a147c0d","reason":"unique","topic":"feed-b-beta"}
+{"accepted":true,"message_id":"M000014","offset":4,"partition":0,"payload_hash":"2298a6f6d5c3ea9220e1bd1d16a017162ffd8129304196aeff40f68ad5f3ea47","reason":"unique","topic":"feed-b-beta"}
+{"accepted":true,"message_id":"M000015","offset":5,"partition":0,"payload_hash":"31ad7512cc9c02d2b1efe65127bb7fb9a2baca030edfcd1c6398fc04e9ef249f","reason":"unique","topic":"feed-b-beta"}
+{"accepted":false,"message_id":"M000016","offset":7,"partition":0,"payload_hash":"2298a6f6d5c3ea9220e1bd1d16a017162ffd8129304196aeff40f68ad5f3ea47","reason":"duplicate_payload","topic":"feed-b-beta"}

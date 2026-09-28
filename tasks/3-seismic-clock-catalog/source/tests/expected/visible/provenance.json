@@ -1,0 +1,9 @@
+{
+  "accepted_pick_count": 41,
+  "event_count": 9,
+  "faulty_station_id": "VQ069",
+  "input_pick_count": 47,
+  "product_sha256": "6286fc69b187eecd38495ba0cf4de46539620c79a4e5cd1ec81d326967e9ad00",
+  "rejected_pick_count": 6,
+  "schema_version": "1.0"
+}

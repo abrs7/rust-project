@@ -1,0 +1,236 @@
+{
+  "schema_version": "1.0",
+  "files": [
+    {
+      "name": "normalized-input.json",
+      "stage": "ingest",
+      "format": "json"
+    },
+    {
+      "name": "downcast-segment.json",
+      "stage": "split",
+      "format": "json"
+    },
+    {
+      "name": "depth-profile.jsonl",
+      "stage": "depth",
+      "format": "jsonl"
+    },
+    {
+      "name": "derived-profile.jsonl",
+      "stage": "derive",
+      "format": "jsonl"
+    },
+    {
+      "name": "binned-profile.jsonl",
+      "stage": "bin",
+      "format": "jsonl"
+    },
+    {
+      "name": "latitude-diagnosis.json",
+      "stage": "qc",
+      "format": "json"
+    },
+    {
+      "name": "qc-flags.jsonl",
+      "stage": "qc",
+      "format": "jsonl"
+    },
+    {
+      "name": "final-profile.jsonl",
+      "stage": "export",
+      "format": "jsonl"
+    },
+    {
+      "name": "provenance.json",
+      "stage": "export",
+      "format": "json"
+    }
+  ],
+  "sort_keys": {
+    "depth-profile.jsonl": [
+      "depth_micro_m",
+      "sample_id"
+    ],
+    "derived-profile.jsonl": [
+      "depth_micro_m",
+      "sample_id"
+    ],
+    "binned-profile.jsonl": [
+      "bin_floor_micro_m"
+    ],
+    "qc-flags.jsonl": [
+      "code",
+      "bin_floor_micro_m"
+    ],
+    "final-profile.jsonl": [
+      "bin_floor_micro_m"
+    ]
+  },
+  "replacement": "A command computes all files it owns in a temporary sibling directory and atomically replaces them only after successful validation. `run` replaces the complete listed set and removes no unlisted path.",
+  "stages": {
+    "ingest": {
+      "requires": [],
+      "produces": [
+        "normalized-input.json"
+      ]
+    },
+    "split": {
+      "requires": [
+        "normalized-input.json"
+      ],
+      "produces": [
+        "downcast-segment.json"
+      ]
+    },
+    "depth": {
+      "requires": [
+        "normalized-input.json",
+        "downcast-segment.json"
+      ],
+      "produces": [
+        "depth-profile.jsonl"
+      ]
+    },
+    "derive": {
+      "requires": [
+        "normalized-input.json",
+        "depth-profile.jsonl"
+      ],
+      "produces": [
+        "derived-profile.jsonl"
+      ]
+    },
+    "bin": {
+      "requires": [
+        "normalized-input.json",
+        "derived-profile.jsonl"
+      ],
+      "produces": [
+        "binned-profile.jsonl"
+      ]
+    },
+    "qc": {
+      "requires": [
+        "normalized-input.json",
+        "binned-profile.jsonl"
+      ],
+      "produces": [
+        "latitude-diagnosis.json",
+        "qc-flags.jsonl"
+      ]
+    },
+    "export": {
+      "requires": [
+        "normalized-input.json",
+        "downcast-segment.json",
+        "binned-profile.jsonl",
+        "latitude-diagnosis.json",
+        "qc-flags.jsonl"
+      ],
+      "produces": [
+        "final-profile.jsonl",
+        "provenance.json"
+      ]
+    }
+  },
+  "products": {
+    "field_order": "Every JSON object is emitted with sort_keys, so field order is lexicographic by key name.",
+    "normalized-input.json": {
+      "schema_version": "the string 1.0",
+      "cast": {
+        "cast_id": "cast_id copied from cast.toml",
+        "latitude_deg": "header latitude as a reduced positive fraction object {num, den}, both integers",
+        "bin_size_m": "bin size as a reduced positive fraction object {num, den}, both integers",
+        "candidate_latitudes_deg": "array of candidate latitudes, each a reduced positive fraction, ordered ascending by num/den"
+      },
+      "samples": {
+        "sample_id": "canonical identifier S000001, S000002, ... assigned in (time_s, pressure_dbar, temperature_c, conductivity_mS) order",
+        "time_s": "scaled integer copied from the shard row",
+        "pressure_dbar": "scaled integer copied from the shard row",
+        "temperature_c": "scaled integer copied from the shard row",
+        "conductivity_mS": "scaled integer copied from the shard row",
+        "duplicate_count": "number of identical shard rows collapsed into this sample, counting the retained row, so an unduplicated sample is 1"
+      }
+    },
+    "downcast-segment.json": {
+      "schema_version": "the string 1.0",
+      "downcast_sample_count": "number of sample_ids in the downcast",
+      "downcast_sample_ids": "array of downcast sample_id strings in downcast order",
+      "start_time_s": "time_s of the first downcast sample",
+      "end_time_s": "time_s of the last downcast sample",
+      "max_pressure_dbar": "pressure_dbar of the last downcast sample",
+      "upcast_discarded_count": "number of normalized samples not in the downcast"
+    },
+    "depth-profile.jsonl": {
+      "sample_id": "downcast sample_id",
+      "time_s": "as normalized",
+      "pressure_dbar": "as normalized",
+      "depth_micro_m": "depth from the contract depth conversion at the working latitude"
+    },
+    "derived-profile.jsonl": {
+      "sample_id": "downcast sample_id",
+      "time_s": "as normalized",
+      "pressure_dbar": "as normalized",
+      "temperature_c": "as normalized",
+      "conductivity_mS": "as normalized",
+      "depth_micro_m": "as in depth-profile.jsonl",
+      "salinity_milli_psu": "contract salinity conversion",
+      "density_micro_kg_m3": "contract density conversion"
+    },
+    "binned-profile.jsonl": {
+      "bin_floor_micro_m": "contract bin floor",
+      "depth_micro_m": "mean depth in the bin",
+      "temperature_c": "mean temperature in the bin",
+      "salinity_milli_psu": "mean salinity in the bin",
+      "density_micro_kg_m3": "mean density in the bin",
+      "sample_count": "number of derived rows in the bin"
+    },
+    "latitude-diagnosis.json": {
+      "schema_version": "the string 1.0",
+      "candidate_trials": {
+        "latitude_deg": "the candidate latitude as a reduced positive fraction object {num, den}, both integers",
+        "density_inversion_count": "contract density_inversion count for this candidate",
+        "survey_tie_mse_micro": "contract survey_tie_mse for this candidate"
+      },
+      "candidate_trials_order": "ascending by latitude_deg num then den",
+      "header_latitude_deg": "the cast.toml latitude",
+      "inferred_latitude_deg": "the winning candidate under the contract objective",
+      "objective_score": "two-element array [density_inversion_count, survey_tie_mse_micro] of the winning candidate"
+    },
+    "qc-flags.jsonl": {
+      "density_inversion": {
+        "code": "the string density_inversion",
+        "bin_floor_micro_m": "bin where density decreased with depth",
+        "density_micro_kg_m3": "density at that bin",
+        "previous_density_micro_kg_m3": "density at the preceding bin"
+      },
+      "header_latitude_mismatch": {
+        "code": "the string header_latitude_mismatch",
+        "header_latitude_deg": "the cast.toml latitude",
+        "inferred_latitude_deg": "the inferred latitude"
+      },
+      "emptiness": "A run with no flags emits a zero-byte file.",
+      "ordering": "Ascending by code, then by bin_floor_micro_m; a flag with no bin_floor_micro_m sorts as if that value were -1."
+    },
+    "final-profile.jsonl": {
+      "cast_id": "cast_id from the cast definition",
+      "bin_floor_micro_m": "as in binned-profile.jsonl, recomputed at the inferred latitude",
+      "depth_micro_m": "as in binned-profile.jsonl, recomputed at the inferred latitude",
+      "temperature_c": "as in binned-profile.jsonl",
+      "salinity_milli_psu": "as in binned-profile.jsonl",
+      "density_micro_kg_m3": "as in binned-profile.jsonl",
+      "sample_count": "as in binned-profile.jsonl",
+      "latitude_deg": "the inferred latitude"
+    },
+    "provenance.json": {
+      "schema_version": "the string 1.0",
+      "input_sample_count": "number of entries in normalized-input.json samples",
+      "downcast_sample_count": "from downcast-segment.json",
+      "upcast_discarded_count": "from downcast-segment.json",
+      "qc_flag_count": "number of lines in qc-flags.jsonl",
+      "inferred_latitude_deg": "from latitude-diagnosis.json",
+      "product_sha256": "lowercase hex sha256 of the UTF-8 bytes of json.dumps({\"diagnosis\": <latitude-diagnosis.json>, \"flags\": <qc-flags.jsonl as an array of objects>, \"final\": <final-profile.jsonl as an array of objects>, \"segment\": <downcast-segment.json>}, ensure_ascii=True, indent=2, sort_keys=True) followed by one newline"
+    }
+  }
+}

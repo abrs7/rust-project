@@ -1,0 +1,4 @@
+batch_id,line_id,entry_ref,trade_date,settle_date,gross_minor,fee_minor,currency,status
+VB003,VL01,VE003,2024-06-05,2024-06-07,-500,0,USD,posted
+VB001,VL01,VE001,2024-06-03,2024-06-05,10000,50,USD,posted
+VB002,VL01,VE002,2024-06-04,2024-06-10,8600,100,EUR,posted

@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+*.pem
+*.key
+credentials.json

@@ -1,0 +1,8 @@
+{"session":"atlas-roll","sequence":65525,"timestamp_ms":1767225600120,"channel":0,"raw":2517,"calibrated":"1.000"}
+{"session":"atlas-roll","sequence":65526,"timestamp_ms":1767225600170,"channel":4,"raw":7333,"calibrated":"75.330"}
+{"session":"borealis-net","sequence":32470,"timestamp_ms":1767225660030,"channel":2,"raw":16254,"calibrated":"0.497"}
+{"session":"borealis-net","sequence":32471,"timestamp_ms":1767225660070,"channel":2,"raw":16384,"calibrated":"0.501"}
+{"session":"cross-build","sequence":74,"timestamp_ms":1767225720030,"channel":5,"raw":30300,"calibrated":"0.000"}
+{"session":"cross-build","sequence":75,"timestamp_ms":1767225720050,"channel":5,"raw":45001,"calibrated":"49.003"}
+{"session":"deep-noise","sequence":903,"timestamp_ms":1767225780050,"channel":1,"raw":5111,"calibrated":"50.500"}
+{"session":"deep-noise","sequence":904,"timestamp_ms":1767225780070,"channel":1,"raw":7112,"calibrated":"63.131"}

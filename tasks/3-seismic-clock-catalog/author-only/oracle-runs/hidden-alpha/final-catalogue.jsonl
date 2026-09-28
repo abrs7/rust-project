@@ -1,0 +1,9 @@
+{"event_id":"EV000001","observation_count":5,"origin_us":1407000,"source_id":"AX030","station_ids":["AQ017","AQ030","AQ043","AQ056","AQ069"],"surveyed_ids":["SHOT-A-01"]}
+{"event_id":"EV000002","observation_count":4,"origin_us":2183000,"source_id":"AX011","station_ids":["AQ030","AQ043","AQ056","AQ069"],"surveyed_ids":[]}
+{"event_id":"EV000003","observation_count":5,"origin_us":3181000,"source_id":"AX049","station_ids":["AQ017","AQ030","AQ043","AQ056","AQ069"],"surveyed_ids":[]}
+{"event_id":"EV000004","observation_count":5,"origin_us":4407000,"source_id":"AX030","station_ids":["AQ017","AQ030","AQ043","AQ056","AQ069"],"surveyed_ids":["SHOT-A-04"]}
+{"event_id":"EV000005","observation_count":4,"origin_us":5283000,"source_id":"AX011","station_ids":["AQ017","AQ030","AQ043","AQ056"],"surveyed_ids":[]}
+{"event_id":"EV000006","observation_count":5,"origin_us":6181000,"source_id":"AX049","station_ids":["AQ017","AQ030","AQ043","AQ056","AQ069"],"surveyed_ids":[]}
+{"event_id":"EV000007","observation_count":5,"origin_us":7407000,"source_id":"AX030","station_ids":["AQ017","AQ030","AQ043","AQ056","AQ069"],"surveyed_ids":[]}
+{"event_id":"EV000008","observation_count":3,"origin_us":8283000,"source_id":"AX011","station_ids":["AQ017","AQ043","AQ069"],"surveyed_ids":[]}
+{"event_id":"EV000009","observation_count":5,"origin_us":9181000,"source_id":"AX049","station_ids":["AQ017","AQ030","AQ043","AQ056","AQ069"],"surveyed_ids":["SHOT-A-09"]}

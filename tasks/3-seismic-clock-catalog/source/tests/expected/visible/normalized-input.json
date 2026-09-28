@@ -1,0 +1,449 @@
+{
+  "campaign": {
+    "allowed_rates": [
+      {
+        "rate_den": 1,
+        "rate_num": 1
+      },
+      {
+        "rate_den": 1000000,
+        "rate_num": 999999
+      },
+      {
+        "rate_den": 1000000,
+        "rate_num": 1000001
+      }
+    ],
+    "campaign_end_us": 4000000,
+    "campaign_start_us": -6000000,
+    "candidate_boundaries_us": [
+      -2000000,
+      -1000000,
+      1000000
+    ],
+    "min_stable_stations": 3,
+    "residual_max_us": 500000,
+    "residual_min_us": -500000
+  },
+  "known_events": [
+    {
+      "event_id": "SHOT-V-01",
+      "origin_us": -4653000,
+      "source_id": "VX030"
+    },
+    {
+      "event_id": "SHOT-V-04",
+      "origin_us": -1653000,
+      "source_id": "VX030"
+    },
+    {
+      "event_id": "SHOT-V-09",
+      "origin_us": 3112000,
+      "source_id": "VX049"
+    }
+  ],
+  "picks": [
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP68809",
+      "recorded_us": -5199269,
+      "station_id": "VQ017"
+    },
+    {
+      "duplicate_count": 2,
+      "pick_id": "VP20346",
+      "recorded_us": -4580000,
+      "station_id": "VQ017"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP75779",
+      "recorded_us": -2792000,
+      "station_id": "VQ017"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP07464",
+      "recorded_us": -1580000,
+      "station_id": "VQ017"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP39140",
+      "recorded_us": -718000,
+      "station_id": "VQ017"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP62897",
+      "recorded_us": 208000,
+      "station_id": "VQ017"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP94573",
+      "recorded_us": 1420000,
+      "station_id": "VQ017"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP26258",
+      "recorded_us": 2282000,
+      "station_id": "VQ017"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP50015",
+      "recorded_us": 3208000,
+      "station_id": "VQ017"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP28265",
+      "recorded_us": -4560000,
+      "station_id": "VQ030"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP76728",
+      "recorded_us": -3862158,
+      "station_id": "VQ030"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP52022",
+      "recorded_us": -3801000,
+      "station_id": "VQ030"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP83698",
+      "recorded_us": -2769000,
+      "station_id": "VQ030"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP15383",
+      "recorded_us": -1560000,
+      "station_id": "VQ030"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP47059",
+      "recorded_us": -701000,
+      "station_id": "VQ030"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP70816",
+      "recorded_us": 231000,
+      "station_id": "VQ030"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP02501",
+      "recorded_us": 1440000,
+      "station_id": "VQ030"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP34177",
+      "recorded_us": 2299000,
+      "station_id": "VQ030"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP57934",
+      "recorded_us": 3231000,
+      "station_id": "VQ030"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP36184",
+      "recorded_us": -4540000,
+      "station_id": "VQ043"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP59941",
+      "recorded_us": -3784000,
+      "station_id": "VQ043"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP91617",
+      "recorded_us": -2746000,
+      "station_id": "VQ043"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP84647",
+      "recorded_us": -2525047,
+      "station_id": "VQ043"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP23302",
+      "recorded_us": -1540000,
+      "station_id": "VQ043"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP54978",
+      "recorded_us": -684000,
+      "station_id": "VQ043"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP78735",
+      "recorded_us": 254000,
+      "station_id": "VQ043"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP10420",
+      "recorded_us": 1460000,
+      "station_id": "VQ043"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP65853",
+      "recorded_us": 3254000,
+      "station_id": "VQ043"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP44103",
+      "recorded_us": -4520000,
+      "station_id": "VQ056"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP67860",
+      "recorded_us": -3767000,
+      "station_id": "VQ056"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP99536",
+      "recorded_us": -2723000,
+      "station_id": "VQ056"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP31221",
+      "recorded_us": -1520000,
+      "station_id": "VQ056"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP86654",
+      "recorded_us": 277000,
+      "station_id": "VQ056"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP18339",
+      "recorded_us": 1480000,
+      "station_id": "VQ056"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP42096",
+      "recorded_us": 2333000,
+      "station_id": "VQ056"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP73772",
+      "recorded_us": 3277000,
+      "station_id": "VQ056"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP81691",
+      "recorded_us": -4620002,
+      "station_id": "VQ069"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP89610",
+      "recorded_us": -3870002,
+      "station_id": "VQ069"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP97529",
+      "recorded_us": -2820003,
+      "station_id": "VQ069"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP45052",
+      "recorded_us": -2390000,
+      "station_id": "VQ069"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP05457",
+      "recorded_us": -1279999,
+      "station_id": "VQ069"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP52971",
+      "recorded_us": -910000,
+      "station_id": "VQ069"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP13376",
+      "recorded_us": -429999,
+      "station_id": "VQ069"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP21295",
+      "recorded_us": 520002,
+      "station_id": "VQ069"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP29214",
+      "recorded_us": 1170000,
+      "station_id": "VQ069"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP60890",
+      "recorded_us": 1810000,
+      "station_id": "VQ069"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "VP37133",
+      "recorded_us": 2970000,
+      "station_id": "VQ069"
+    }
+  ],
+  "schema_version": "1.0",
+  "sources": [
+    {
+      "depth_m": 1800,
+      "source_id": "VX011",
+      "x_m": -4200,
+      "y_m": 3300
+    },
+    {
+      "depth_m": 2700,
+      "source_id": "VX030",
+      "x_m": 900,
+      "y_m": 600
+    },
+    {
+      "depth_m": 3600,
+      "source_id": "VX049",
+      "x_m": 6000,
+      "y_m": -2100
+    }
+  ],
+  "stations": [
+    {
+      "name": "Recorder K",
+      "station_id": "VQ017"
+    },
+    {
+      "name": "Recorder L",
+      "station_id": "VQ030"
+    },
+    {
+      "name": "Recorder M",
+      "station_id": "VQ043"
+    },
+    {
+      "name": "Recorder N",
+      "station_id": "VQ056"
+    },
+    {
+      "name": "Recorder O",
+      "station_id": "VQ069"
+    }
+  ],
+  "travel_times": [
+    {
+      "source_id": "VX011",
+      "station_id": "VQ017",
+      "travel_us": 50000
+    },
+    {
+      "source_id": "VX030",
+      "station_id": "VQ017",
+      "travel_us": 73000
+    },
+    {
+      "source_id": "VX049",
+      "station_id": "VQ017",
+      "travel_us": 96000
+    },
+    {
+      "source_id": "VX011",
+      "station_id": "VQ030",
+      "travel_us": 67000
+    },
+    {
+      "source_id": "VX030",
+      "station_id": "VQ030",
+      "travel_us": 93000
+    },
+    {
+      "source_id": "VX049",
+      "station_id": "VQ030",
+      "travel_us": 119000
+    },
+    {
+      "source_id": "VX011",
+      "station_id": "VQ043",
+      "travel_us": 84000
+    },
+    {
+      "source_id": "VX030",
+      "station_id": "VQ043",
+      "travel_us": 113000
+    },
+    {
+      "source_id": "VX049",
+      "station_id": "VQ043",
+      "travel_us": 142000
+    },
+    {
+      "source_id": "VX011",
+      "station_id": "VQ056",
+      "travel_us": 101000
+    },
+    {
+      "source_id": "VX030",
+      "station_id": "VQ056",
+      "travel_us": 133000
+    },
+    {
+      "source_id": "VX049",
+      "station_id": "VQ056",
+      "travel_us": 165000
+    },
+    {
+      "source_id": "VX011",
+      "station_id": "VQ069",
+      "travel_us": 118000
+    },
+    {
+      "source_id": "VX030",
+      "station_id": "VQ069",
+      "travel_us": 153000
+    },
+    {
+      "source_id": "VX049",
+      "station_id": "VQ069",
+      "travel_us": 188000
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "calibrated": "-0.2499",
+  "raw": -4000,
+  "reference_temperature_milli_c": 20125,
+  "sample_temperature_milli_c": 21450,
+  "temperature_coefficient": "0.00125000"
+}

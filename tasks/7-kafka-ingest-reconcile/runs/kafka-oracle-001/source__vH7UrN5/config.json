@@ -1,0 +1,8 @@
+{
+    "task": {
+        "path": "tasks/7-kafka-ingest-repair/source"
+    },
+    "trial_name": "source__vH7UrN5",
+    "trials_dir": "jobs/kafka-oracle-001",
+    "job_id": "8300dcdb-d200-4af1-89f5-cc22f25182f1"
+}

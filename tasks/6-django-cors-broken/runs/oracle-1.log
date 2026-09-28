@@ -1,0 +1,38 @@
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /home/abraham/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harb │
+│ or/cli/jobs.py:915 in start                                                  │
+│                                                                              │
+│    912 │   │   │   │   "--exclude-task-name without also specifying --datase │
+│    913 │   │   │   )                                                         │
+│    914 │                                                                     │
+│ ❱  915 │   job = Job(config)                                                 │
+│    916 │                                                                     │
+│    917 │   from harbor.environments.factory import EnvironmentFactory        │
+│    918                                                                       │
+│                                                                              │
+│ /home/abraham/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harb │
+│ or/job.py:66 in __init__                                                     │
+│                                                                              │
+│    63 │   │                                                                  │
+│    64 │   │   self.job_dir.mkdir(parents=True, exist_ok=True)                │
+│    65 │   │                                                                  │
+│ ❱  66 │   │   self._init_task_configs()                                      │
+│    67 │   │   self._init_trial_configs()                                     │
+│    68 │   │   self._init_metrics()                                           │
+│    69 │   │   self._log_file_handler: logging.Handler | None = None          │
+│                                                                              │
+│ /home/abraham/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harb │
+│ or/job.py:220 in _init_task_configs                                          │
+│                                                                              │
+│   217 │   │   │   )                                                          │
+│   218 │   │                                                                  │
+│   219 │   │   if not self._task_configs:                                     │
+│ ❱ 220 │   │   │   raise ValueError("Either datasets or tasks must be provide │
+│   221 │                                                                      │
+│   222 │   def _init_trial_configs(self):                                     │
+│   223 │   │   self._trial_configs = [                                        │
+╰──────────────────────────────────────────────────────────────────────────────╯
+ValueError: Either datasets or tasks must be provided.
+Command exited with non-zero status 1
+
+WALL_SECONDS=6.65

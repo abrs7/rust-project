@@ -1,0 +1,449 @@
+{
+  "campaign": {
+    "allowed_rates": [
+      {
+        "rate_den": 1,
+        "rate_num": 1
+      },
+      {
+        "rate_den": 1000000,
+        "rate_num": 999999
+      },
+      {
+        "rate_den": 1000000,
+        "rate_num": 1000001
+      }
+    ],
+    "campaign_end_us": 10000000,
+    "campaign_start_us": 0,
+    "candidate_boundaries_us": [
+      4000000,
+      5000000,
+      7000000
+    ],
+    "min_stable_stations": 3,
+    "residual_max_us": 500000,
+    "residual_min_us": -500000
+  },
+  "known_events": [
+    {
+      "event_id": "SHOT-A-01",
+      "origin_us": 1407000,
+      "source_id": "AX030"
+    },
+    {
+      "event_id": "SHOT-A-04",
+      "origin_us": 4407000,
+      "source_id": "AX030"
+    },
+    {
+      "event_id": "SHOT-A-09",
+      "origin_us": 9181000,
+      "source_id": "AX049"
+    }
+  ],
+  "picks": [
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP88801",
+      "recorded_us": 800910,
+      "station_id": "AQ017"
+    },
+    {
+      "duplicate_count": 2,
+      "pick_id": "AP40338",
+      "recorded_us": 1480000,
+      "station_id": "AQ017"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP95771",
+      "recorded_us": 3277000,
+      "station_id": "AQ017"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP27456",
+      "recorded_us": 4480000,
+      "station_id": "AQ017"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP59132",
+      "recorded_us": 5333000,
+      "station_id": "AQ017"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP82889",
+      "recorded_us": 6277000,
+      "station_id": "AQ017"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP14574",
+      "recorded_us": 7480000,
+      "station_id": "AQ017"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP46250",
+      "recorded_us": 8333000,
+      "station_id": "AQ017"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP70007",
+      "recorded_us": 9277000,
+      "station_id": "AQ017"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP01692",
+      "recorded_us": 1379998,
+      "station_id": "AQ030"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP09611",
+      "recorded_us": 2129998,
+      "station_id": "AQ030"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP17530",
+      "recorded_us": 3179997,
+      "station_id": "AQ030"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP65044",
+      "recorded_us": 3610000,
+      "station_id": "AQ030"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP25449",
+      "recorded_us": 4720001,
+      "station_id": "AQ030"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP72963",
+      "recorded_us": 5090000,
+      "station_id": "AQ030"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP33368",
+      "recorded_us": 5570001,
+      "station_id": "AQ030"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP41287",
+      "recorded_us": 6520002,
+      "station_id": "AQ030"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP49206",
+      "recorded_us": 7170000,
+      "station_id": "AQ030"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP80882",
+      "recorded_us": 7810000,
+      "station_id": "AQ030"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP57125",
+      "recorded_us": 8970000,
+      "station_id": "AQ030"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP48257",
+      "recorded_us": 1520000,
+      "station_id": "AQ043"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP96720",
+      "recorded_us": 2138021,
+      "station_id": "AQ043"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP72014",
+      "recorded_us": 2267000,
+      "station_id": "AQ043"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP03699",
+      "recorded_us": 3323000,
+      "station_id": "AQ043"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP35375",
+      "recorded_us": 4520000,
+      "station_id": "AQ043"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP67051",
+      "recorded_us": 5367000,
+      "station_id": "AQ043"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP90808",
+      "recorded_us": 6323000,
+      "station_id": "AQ043"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP22493",
+      "recorded_us": 7520000,
+      "station_id": "AQ043"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP54169",
+      "recorded_us": 8367000,
+      "station_id": "AQ043"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP77926",
+      "recorded_us": 9323000,
+      "station_id": "AQ043"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP56176",
+      "recorded_us": 1540000,
+      "station_id": "AQ056"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP79933",
+      "recorded_us": 2284000,
+      "station_id": "AQ056"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP11618",
+      "recorded_us": 3346000,
+      "station_id": "AQ056"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP04648",
+      "recorded_us": 3475132,
+      "station_id": "AQ056"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP43294",
+      "recorded_us": 4540000,
+      "station_id": "AQ056"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP74970",
+      "recorded_us": 5384000,
+      "station_id": "AQ056"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP98727",
+      "recorded_us": 6346000,
+      "station_id": "AQ056"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP30412",
+      "recorded_us": 7540000,
+      "station_id": "AQ056"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP85845",
+      "recorded_us": 9346000,
+      "station_id": "AQ056"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP64095",
+      "recorded_us": 1560000,
+      "station_id": "AQ069"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP87852",
+      "recorded_us": 2301000,
+      "station_id": "AQ069"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP19537",
+      "recorded_us": 3369000,
+      "station_id": "AQ069"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP51213",
+      "recorded_us": 4560000,
+      "station_id": "AQ069"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP06655",
+      "recorded_us": 6369000,
+      "station_id": "AQ069"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP38331",
+      "recorded_us": 7560000,
+      "station_id": "AQ069"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP62088",
+      "recorded_us": 8401000,
+      "station_id": "AQ069"
+    },
+    {
+      "duplicate_count": 1,
+      "pick_id": "AP93764",
+      "recorded_us": 9369000,
+      "station_id": "AQ069"
+    }
+  ],
+  "schema_version": "1.0",
+  "sources": [
+    {
+      "depth_m": 1800,
+      "source_id": "AX011",
+      "x_m": -4200,
+      "y_m": 3300
+    },
+    {
+      "depth_m": 2700,
+      "source_id": "AX030",
+      "x_m": 900,
+      "y_m": 600
+    },
+    {
+      "depth_m": 3600,
+      "source_id": "AX049",
+      "x_m": 6000,
+      "y_m": -2100
+    }
+  ],
+  "stations": [
+    {
+      "name": "Recorder K",
+      "station_id": "AQ017"
+    },
+    {
+      "name": "Recorder L",
+      "station_id": "AQ030"
+    },
+    {
+      "name": "Recorder M",
+      "station_id": "AQ043"
+    },
+    {
+      "name": "Recorder N",
+      "station_id": "AQ056"
+    },
+    {
+      "name": "Recorder O",
+      "station_id": "AQ069"
+    }
+  ],
+  "travel_times": [
+    {
+      "source_id": "AX011",
+      "station_id": "AQ017",
+      "travel_us": 50000
+    },
+    {
+      "source_id": "AX030",
+      "station_id": "AQ017",
+      "travel_us": 73000
+    },
+    {
+      "source_id": "AX049",
+      "station_id": "AQ017",
+      "travel_us": 96000
+    },
+    {
+      "source_id": "AX011",
+      "station_id": "AQ030",
+      "travel_us": 67000
+    },
+    {
+      "source_id": "AX030",
+      "station_id": "AQ030",
+      "travel_us": 93000
+    },
+    {
+      "source_id": "AX049",
+      "station_id": "AQ030",
+      "travel_us": 119000
+    },
+    {
+      "source_id": "AX011",
+      "station_id": "AQ043",
+      "travel_us": 84000
+    },
+    {
+      "source_id": "AX030",
+      "station_id": "AQ043",
+      "travel_us": 113000
+    },
+    {
+      "source_id": "AX049",
+      "station_id": "AQ043",
+      "travel_us": 142000
+    },
+    {
+      "source_id": "AX011",
+      "station_id": "AQ056",
+      "travel_us": 101000
+    },
+    {
+      "source_id": "AX030",
+      "station_id": "AQ056",
+      "travel_us": 133000
+    },
+    {
+      "source_id": "AX049",
+      "station_id": "AQ056",
+      "travel_us": 165000
+    },
+    {
+      "source_id": "AX011",
+      "station_id": "AQ069",
+      "travel_us": 118000
+    },
+    {
+      "source_id": "AX030",
+      "station_id": "AQ069",
+      "travel_us": 153000
+    },
+    {
+      "source_id": "AX049",
+      "station_id": "AQ069",
+      "travel_us": 188000
+    }
+  ]
+}

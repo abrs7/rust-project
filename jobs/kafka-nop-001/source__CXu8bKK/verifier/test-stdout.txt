@@ -1,0 +1,106 @@
+test_01_visible_full_staged_and_public_apis (__main__.Verifier.test_01_visible_full_staged_and_public_apis) ... FAIL
+test_02_hidden_frozen_outputs (__main__.Verifier.test_02_hidden_frozen_outputs) ... 
+  test_02_hidden_frozen_outputs (__main__.Verifier.test_02_hidden_frozen_outputs) (fixture='hidden-alpha') ... FAIL
+  test_02_hidden_frozen_outputs (__main__.Verifier.test_02_hidden_frozen_outputs) (fixture='hidden-beta') ... FAIL
+test_03_shards_duplicates_and_hash_determinism (__main__.Verifier.test_03_shards_duplicates_and_hash_determinism) ... FAIL
+test_04_rejects_bad_inputs_without_clobbering_output (__main__.Verifier.test_04_rejects_bad_inputs_without_clobbering_output) ... FAIL
+
+======================================================================
+FAIL: test_01_visible_full_staged_and_public_apis (__main__.Verifier.test_01_visible_full_staged_and_public_apis)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 197, in test_01_visible_full_staged_and_public_apis
+    require_success(self.candidate.cli("run", campaign, full, hash_seed="11"), "visible full run")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 34, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: visible full run failed (1)
+stdout:
+
+stderr:
+Picked up JAVA_TOOL_OPTIONS: -Djava.security.egd=file:/dev/urandom
+rebuild the ingest repair pipeline
+
+
+======================================================================
+FAIL: test_02_hidden_frozen_outputs (__main__.Verifier.test_02_hidden_frozen_outputs) (fixture='hidden-alpha')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 233, in test_02_hidden_frozen_outputs
+    require_success(self.candidate.cli("run", campaign, output, hash_seed="123"), fixture)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 34, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: hidden-alpha failed (1)
+stdout:
+
+stderr:
+Picked up JAVA_TOOL_OPTIONS: -Djava.security.egd=file:/dev/urandom
+rebuild the ingest repair pipeline
+
+
+======================================================================
+FAIL: test_02_hidden_frozen_outputs (__main__.Verifier.test_02_hidden_frozen_outputs) (fixture='hidden-beta')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 233, in test_02_hidden_frozen_outputs
+    require_success(self.candidate.cli("run", campaign, output, hash_seed="123"), fixture)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 34, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: hidden-beta failed (1)
+stdout:
+
+stderr:
+Picked up JAVA_TOOL_OPTIONS: -Djava.security.egd=file:/dev/urandom
+rebuild the ingest repair pipeline
+
+
+======================================================================
+FAIL: test_03_shards_duplicates_and_hash_determinism (__main__.Verifier.test_03_shards_duplicates_and_hash_determinism)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 240, in test_03_shards_duplicates_and_hash_determinism
+    require_success(self.candidate.cli("run", campaign, output_a, hash_seed="1"), "shuffled run seed 1")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 34, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: shuffled run seed 1 failed (1)
+stdout:
+
+stderr:
+Picked up JAVA_TOOL_OPTIONS: -Djava.security.egd=file:/dev/urandom
+rebuild the ingest repair pipeline
+
+
+======================================================================
+FAIL: test_04_rejects_bad_inputs_without_clobbering_output (__main__.Verifier.test_04_rejects_bad_inputs_without_clobbering_output)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 295, in test_04_rejects_bad_inputs_without_clobbering_output
+    require_success(self.candidate.cli("ingest", duplicate_seq, bad_output), "duplicate seq ingest")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 34, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: duplicate seq ingest failed (1)
+stdout:
+
+stderr:
+Picked up JAVA_TOOL_OPTIONS: -Djava.security.egd=file:/dev/urandom
+rebuild the ingest repair pipeline
+
+
+----------------------------------------------------------------------
+Ran 4 tests in 4.578s
+
+FAILED (failures=5)

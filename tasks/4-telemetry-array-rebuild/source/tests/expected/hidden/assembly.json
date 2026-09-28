@@ -1,0 +1,33 @@
+{
+  "campaigns": [
+    {
+      "accepted_fragments": 3,
+      "assembled_octets": 360,
+      "campaign": "aquila-hidden",
+      "rejected_fragments": 1,
+      "stream_sha256": "e12ee3d7e5439f289bf08262d7dc1dc0c9137ba4b2ba01d64ddba6838e58a9e4"
+    },
+    {
+      "accepted_fragments": 4,
+      "assembled_octets": 520,
+      "campaign": "delphinus-hidden",
+      "rejected_fragments": 1,
+      "stream_sha256": "3963025c8785007e1f339510fc78c0a7886c7e78750a48b344ac131b72ea1ce6"
+    },
+    {
+      "accepted_fragments": 4,
+      "assembled_octets": 500,
+      "campaign": "hydra-hidden",
+      "rejected_fragments": 1,
+      "stream_sha256": "b98f7b72d212b096a27acac3ce3fa4d0caf92844453df1066f1f492aff758953"
+    },
+    {
+      "accepted_fragments": 3,
+      "assembled_octets": 360,
+      "campaign": "pictor-hidden",
+      "rejected_fragments": 1,
+      "stream_sha256": "fbf1c8a5de5b8a9b405e4fa2fe89cde8baf7a4845ffb0ea14ea869b10cc8e740"
+    }
+  ],
+  "schema_version": 1
+}

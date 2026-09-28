@@ -1,0 +1,9 @@
+{
+  "compact": "{\"key\":\"demo-1\",\"reading\":42,\"seq\":1}",
+  "payload": {
+    "key": "demo-1",
+    "reading": 42,
+    "seq": 1
+  },
+  "payload_hash": "22495f8aebaa6bfc02810242e5abaf843386a4e1098a2485efeecf69d29763e5"
+}

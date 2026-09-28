@@ -1,0 +1,4 @@
+shard_id,path
+packet-v-01,shards/packet-v-01.wal
+packet-v-02,shards/packet-v-02.wal
+packet-v-03,shards/packet-v-03.wal

@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "/home/abraham/workspace/rustlabs/tasks/9-ledger-settlement-reconcile/source"
+    },
+    "trial_name": "source__jcYgVG9",
+    "trials_dir": "jobs/2026-09-20__21-48-11",
+    "agent": {
+        "name": "nop"
+    },
+    "job_id": "30116955-04ab-4b9c-9c95-73c66a217c05"
+}

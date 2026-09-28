@@ -1,0 +1,8 @@
+{"dimension":"force","obs_id":"AO001","quantity":"net_force","si_magnitude":"5560277/125000","source_id":"ASRC-A","timestamp":1000,"unit_id":"U002","unit_symbol":"lb_f"}
+{"dimension":"force","obs_id":"AO002","quantity":"net_force","si_magnitude":"-5560277/125000","source_id":"ASRC-A","timestamp":1000,"unit_id":"U002","unit_symbol":"lb_f"}
+{"dimension":"force","obs_id":"AO004","quantity":"net_force","si_magnitude":"5560277/250000","source_id":"ASRC-B","timestamp":1000,"unit_id":"U001","unit_symbol":"lbf"}
+{"dimension":"force","obs_id":"AO005","quantity":"net_force","si_magnitude":"-5560277/250000","source_id":"ASRC-B","timestamp":1000,"unit_id":"U001","unit_symbol":"lbf"}
+{"dimension":"energy","obs_id":"AO003","quantity":"heat_in","si_magnitude":"4184/1","source_id":"ASRC-A","timestamp":2000,"unit_id":"U005","unit_symbol":"calorie"}
+{"dimension":"energy","obs_id":"AO006","quantity":"heat_in","si_magnitude":"4184/1","source_id":"ASRC-B","timestamp":2000,"unit_id":"U004","unit_symbol":"cal"}
+{"dimension":"energy","obs_id":"AO007","quantity":"stored_energy","si_magnitude":"8368/1","source_id":"ASRC-C","timestamp":3000,"unit_id":"U005","unit_symbol":"calorie"}
+{"dimension":"energy","obs_id":"AO008","quantity":"stored_energy","si_magnitude":"4184/1","source_id":"ASRC-C","timestamp":3000,"unit_id":"U004","unit_symbol":"cal"}

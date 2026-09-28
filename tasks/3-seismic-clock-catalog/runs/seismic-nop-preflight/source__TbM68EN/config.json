@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "/home/abraham/workspace/rustlabs/tasks/seismic-clock-catalog/source"
+    },
+    "trial_name": "source__TbM68EN",
+    "trials_dir": "/home/abraham/workspace/rustlabs/tasks/seismic-clock-catalog/runs/seismic-nop-preflight",
+    "agent": {
+        "name": "nop"
+    },
+    "job_id": "f6a40280-6995-4d63-9021-1a35cffbaf72"
+}

@@ -1,0 +1,9 @@
+{
+  "accepted_pick_count": 56,
+  "event_count": 10,
+  "faulty_station_id": "BQ056",
+  "input_pick_count": 62,
+  "product_sha256": "5bb72b65d907d371675b5cb1cdc8b531a796d2d061cd7e757ecb5cc6855d50c0",
+  "rejected_pick_count": 6,
+  "schema_version": "1.0"
+}

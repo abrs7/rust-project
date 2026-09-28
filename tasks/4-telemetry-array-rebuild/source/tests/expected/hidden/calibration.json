@@ -1,0 +1,97 @@
+{
+  "campaigns": {
+    "aquila-hidden": [
+      {
+        "channel": 9,
+        "coefficient_a": "0.000000000650",
+        "coefficient_b": "0.000182000000",
+        "coefficient_c": "1.615000000000",
+        "raw_high": 110000,
+        "raw_low": -90000,
+        "raw_mid": 10000,
+        "reference_high": "29.5000",
+        "reference_low": "-9.5000",
+        "reference_mid": "3.5000",
+        "reference_temperature_milli_c": 19625,
+        "temperature_coefficient": "0.00175000"
+      }
+    ],
+    "delphinus-hidden": [
+      {
+        "channel": 2,
+        "coefficient_a": "0.000000016667",
+        "coefficient_b": "0.001533333333",
+        "coefficient_c": "131.516666666667",
+        "raw_high": 29000,
+        "raw_low": -31000,
+        "raw_mid": -1000,
+        "reference_high": "190.0000",
+        "reference_low": "100.0000",
+        "reference_mid": "130.0000",
+        "reference_temperature_milli_c": 21500,
+        "temperature_coefficient": "-0.00312500"
+      },
+      {
+        "channel": 10,
+        "coefficient_a": "0.000000025000",
+        "coefficient_b": "0.001733350000",
+        "coefficient_c": "-0.246677775000",
+        "raw_high": 40333,
+        "raw_low": 333,
+        "raw_mid": 10333,
+        "reference_high": "110.3333",
+        "reference_low": "0.3333",
+        "reference_mid": "20.3333",
+        "reference_temperature_milli_c": 20000,
+        "temperature_coefficient": "0.00015625"
+      }
+    ],
+    "hydra-hidden": [
+      {
+        "channel": 1,
+        "coefficient_a": "0.000000022500",
+        "coefficient_b": "0.000462500000",
+        "coefficient_c": "0.500000000000",
+        "raw_high": 15000,
+        "raw_low": -5000,
+        "raw_mid": 0,
+        "reference_high": "12.5000",
+        "reference_low": "-1.2500",
+        "reference_mid": "0.5000",
+        "reference_temperature_milli_c": 18750,
+        "temperature_coefficient": "0.00450000"
+      },
+      {
+        "channel": 12,
+        "coefficient_a": "0.000000000567",
+        "coefficient_b": "0.000359333333",
+        "coefficient_c": "4.960000000000",
+        "raw_high": 180000,
+        "raw_low": -120000,
+        "raw_mid": -20000,
+        "reference_high": "88.0000",
+        "reference_low": "-30.0000",
+        "reference_mid": "-2.0000",
+        "reference_temperature_milli_c": 26000,
+        "temperature_coefficient": "-0.00187500"
+      }
+    ],
+    "pictor-hidden": [
+      {
+        "channel": 4,
+        "coefficient_a": "0.000000001385",
+        "coefficient_b": "0.000254618014",
+        "coefficient_c": "15.427402433085",
+        "raw_high": 88888,
+        "raw_low": -77777,
+        "raw_mid": 2222,
+        "reference_high": "49.0000",
+        "reference_low": "4.0000",
+        "reference_mid": "16.0000",
+        "reference_temperature_milli_c": 24250,
+        "temperature_coefficient": "0.00206250"
+      }
+    ]
+  },
+  "schema_version": 1
+}

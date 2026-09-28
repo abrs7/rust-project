@@ -1,0 +1,17 @@
+{"byte_offset":0,"frame_id":"F000001","seq":1,"shard_id":"trace-a-01","status":"accepted","timestamp_ns":1000000000,"value":-256}
+{"byte_offset":28,"frame_id":"F000002","seq":2,"shard_id":"trace-a-01","status":"accepted","timestamp_ns":1195471668,"value":81}
+{"byte_offset":56,"frame_id":"F000003","seq":2,"shard_id":"trace-a-01","status":"rejected_duplicate","timestamp_ns":1541357201,"value":82}
+{"byte_offset":84,"frame_id":"F000004","seq":3,"shard_id":"trace-a-01","status":"accepted","timestamp_ns":1541357201,"value":432}
+{"byte_offset":112,"frame_id":"F000005","seq":4,"shard_id":"trace-a-01","status":"accepted","timestamp_ns":1912433714,"value":428}
+{"byte_offset":140,"frame_id":"F000006","seq":5,"shard_id":"trace-a-01","status":"accepted","timestamp_ns":2234297444,"value":-131}
+{"byte_offset":168,"frame_id":"F000007","seq":6,"shard_id":"trace-a-01","status":"accepted","timestamp_ns":2496666750,"value":-203}
+{"byte_offset":0,"frame_id":"F000008","seq":7,"shard_id":"trace-a-02","status":"accepted","timestamp_ns":2688268073,"value":-128}
+{"byte_offset":28,"frame_id":"F000009","seq":8,"shard_id":"trace-a-02","status":"accepted","timestamp_ns":2889534057,"value":475}
+{"byte_offset":56,"frame_id":"F000010","seq":9,"shard_id":"trace-a-02","status":"accepted","timestamp_ns":3170346220,"value":166}
+{"byte_offset":84,"frame_id":"F000011","seq":10,"shard_id":"trace-a-02","status":"rejected_crc","timestamp_ns":3433507384,"value":166}
+{"byte_offset":112,"frame_id":"F000012","seq":10,"shard_id":"trace-a-02","status":"accepted","timestamp_ns":3383507384,"value":-75}
+{"byte_offset":140,"frame_id":"F000013","seq":11,"shard_id":"trace-a-02","status":"accepted","timestamp_ns":3709387200,"value":318}
+{"byte_offset":0,"frame_id":"F000014","seq":12,"shard_id":"trace-a-03","status":"accepted","timestamp_ns":3941993993,"value":-481}
+{"byte_offset":28,"frame_id":"F000015","seq":13,"shard_id":"trace-a-03","status":"accepted","timestamp_ns":4322575688,"value":200}
+{"byte_offset":56,"frame_id":"F000016","seq":14,"shard_id":"trace-a-03","status":"accepted","timestamp_ns":4605550298,"value":440}
+{"byte_offset":84,"frame_id":"F000017","seq":15,"shard_id":"trace-a-03","status":"accepted","timestamp_ns":4752168971,"value":-286}

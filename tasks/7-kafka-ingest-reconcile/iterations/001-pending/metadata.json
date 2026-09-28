@@ -1,0 +1,15 @@
+{
+  "task": "kafka-ingest-reconcile",
+  "folder": "7-kafka-ingest-reconcile",
+  "iteration": 1,
+  "status": "pending",
+  "created_at": "2026-09-23T19:30:38.548212+00:00",
+  "archive": "7-kafka-ingest-reconcile.zip",
+  "sha256": "fd5b2042fb3769cb488e4f9076275dd51cadcb68c656e7731a20ff39f1978cba",
+  "platform": {
+    "stage_1": null,
+    "stage_2": null,
+    "stage_3": null,
+    "notes": []
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "agents": [
+        {
+            "name": "nop"
+        }
+    ],
+    "tasks": [
+        {
+            "path": "/home/abraham/workspace/rustlabs/tasks/9-ledger-settlement-reconcile/source"
+        }
+    ]
+}

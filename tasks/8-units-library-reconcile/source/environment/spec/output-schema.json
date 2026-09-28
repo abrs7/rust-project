@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "files": [
+    {"name": "normalized-input.json", "stage": "ingest", "format": "json"},
+    {"name": "parsed-units.json", "stage": "parse-units", "format": "json"},
+    {"name": "conversion-graph.json", "stage": "build-graph", "format": "json"},
+    {"name": "converted-observations.jsonl", "stage": "convert", "format": "jsonl"},
+    {"name": "convention-map.json", "stage": "merge", "format": "json"},
+    {"name": "merged-series.jsonl", "stage": "merge", "format": "jsonl"},
+    {"name": "conservation-report.json", "stage": "validate", "format": "json"},
+    {"name": "rejections.jsonl", "stage": "validate", "format": "jsonl"},
+    {"name": "provenance.json", "stage": "export", "format": "json"}
+  ],
+  "sort_keys": {
+    "converted-observations.jsonl": ["timestamp", "quantity", "obs_id"],
+    "merged-series.jsonl": ["timestamp", "quantity"],
+    "rejections.jsonl": ["obs_id"]
+  },
+  "replacement": "A command computes all files it owns in a temporary sibling directory and atomically replaces them only after successful validation. `run` replaces the complete listed set and removes no unlisted path.",
+  "stages": {
+    "ingest": {"requires": [], "produces": ["normalized-input.json"]},
+    "parse-units": {"requires": ["normalized-input.json"], "produces": ["parsed-units.json"]},
+    "build-graph": {"requires": ["normalized-input.json", "parsed-units.json"], "produces": ["conversion-graph.json"]},
+    "convert": {"requires": ["normalized-input.json", "parsed-units.json", "conversion-graph.json"], "produces": ["converted-observations.jsonl"]},
+    "merge": {"requires": ["normalized-input.json", "parsed-units.json", "converted-observations.jsonl"], "produces": ["convention-map.json", "merged-series.jsonl"]},
+    "validate": {"requires": ["normalized-input.json", "merged-series.jsonl", "converted-observations.jsonl"], "produces": ["conservation-report.json", "rejections.jsonl"]},
+    "export": {"requires": ["normalized-input.json", "conservation-report.json", "converted-observations.jsonl", "merged-series.jsonl", "rejections.jsonl"], "produces": ["provenance.json"]}
+  }
+}

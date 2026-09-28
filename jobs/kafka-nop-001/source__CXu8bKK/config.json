@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "tasks/7-kafka-ingest-repair/source"
+    },
+    "trial_name": "source__CXu8bKK",
+    "trials_dir": "jobs/kafka-nop-001",
+    "agent": {
+        "name": "nop"
+    },
+    "job_id": "d1676379-f10d-4862-a970-100ac7895f86"
+}

@@ -1,0 +1,2 @@
+topic,partition,offset,payload_hash,payload
+topic-a,0,0,0000000000000000000000000000000000000000000000000000000000000000,"{"key":"x","reading":1,"seq":1}"

@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "/home/abraham/workspace/rustlabs/tasks/telemetry-array-rebuild/source"
+    },
+    "trial_name": "source__BuUoHCp",
+    "trials_dir": "/home/abraham/workspace/rustlabs/tasks/telemetry-array-rebuild/runs/telemetry-nop-003",
+    "agent": {
+        "name": "nop"
+    },
+    "job_id": "316bca7c-a4f3-470c-9f66-a23457a1343c"
+}

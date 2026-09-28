@@ -1,0 +1,4 @@
+schema_version = "1.0"
+base_currency = "USD"
+settlement_lag_business_days = 2
+business_calendar = ["2024-01-01", "2024-07-04"]

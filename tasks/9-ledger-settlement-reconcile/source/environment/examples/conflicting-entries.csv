@@ -1,0 +1,3 @@
+entry_id,account_id,trade_date,amount_minor,currency,side
+CONFLICT,AC1,2024-06-01,100,USD,DR
+CONFLICT,AC1,2024-06-01,200,USD,DR

@@ -1,0 +1,4 @@
+constraint_id,quantity,window_start,window_end,expected_sum_si,tolerance_si
+AC01,net_force,1000,1000,0/1,1/1000
+AC02,heat_in,2000,2000,8368/1,1/1
+AC03,stored_energy,3000,3000,12552/1,2/1

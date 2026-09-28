@@ -1,0 +1,12 @@
+
+🔎 Checking task quality...
+  1/1 Mean: 0.000 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 0:06:19 0:00:00
+❌ telemetry-frame-recovery: Check trial failed with AgentSetupTimeoutError: 
+Agent setup timed out after 360.0 seconds
+Trial artifacts: 
+jobs/2026-09-17__21-56-14/check-telemetry-frame-recovery__eCU4esz
+
+Report: jobs/2026-09-17__21-56-14/check_report.json
+Inspect results by running `harbor view jobs`
+In the viewer, open a trial's Artifacts tab to read its check-result.json, and 
+use ← / → to switch between tasks.

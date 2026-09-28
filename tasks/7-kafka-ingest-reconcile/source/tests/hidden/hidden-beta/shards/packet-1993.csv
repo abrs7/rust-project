@@ -1,0 +1,7 @@
+topic,partition,offset,payload_hash,payload
+feed-b-alpha,0,1,b9ad0801f156c22a42b068747622a6c2b0cb8114e75ec562e16a7062e48d2a08,"{""key"":""probe-b-01"",""reading"":115,""seq"":2}"
+feed-b-alpha,1,3,9b00df3017f213c7d4b82a9c21f9328f3a6cce90c1b2f9908694f45730e9c58f,"{""key"":""probe-b-03"",""reading"":115,""seq"":2}"
+feed-b-beta,0,7,2298a6f6d5c3ea9220e1bd1d16a017162ffd8129304196aeff40f68ad5f3ea47,"{""key"":""probe-b-02"",""reading"":122,""seq"":3}"
+feed-b-alpha,0,7,bf5bc3a15ea3fcc79c101424fbff7496b3ae454c57d9ce3cce61cd3fda4a1268,"{""key"":""probe-b-01"",""reading"":136,""seq"":5}"
+feed-b-alpha,0,3,8b834aec1dcc2740e23433231733dd4a5d96b3e43a96a6aba25a903e196ae669,"{""key"":""probe-b-01"",""reading"":108,""seq"":1}"
+feed-b-beta,0,4,2298a6f6d5c3ea9220e1bd1d16a017162ffd8129304196aeff40f68ad5f3ea47,"{""key"":""probe-b-02"",""reading"":122,""seq"":3}"

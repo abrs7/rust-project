@@ -1,0 +1,6 @@
+topic,partition,offset,payload_hash,payload
+stream-a-alpha,0,4,e1bd30143b8faa2e08e7f519bdbca502f13f41a31616af9efcbdf1cd9f34601c,"{""key"":""node-a-01"",""reading"":123,""seq"":2}"
+stream-a-beta,0,5,bf76566fb0c2b8c610d3476d40eb133505acc6e5e39af4452a8c3f3da128a91f,"{""key"":""node-a-02"",""reading"":137,""seq"":4}"
+stream-a-alpha,1,2,1cddf8c1e16a00b76b4b7c5de7ea37e32acb78fc8e884153f29494af1f515f55,"{""key"":""node-a-03"",""reading"":116,""seq"":1}"
+stream-a-alpha,0,7,489c1ba8292483ed30f4cc78402fb1dccd9e11f566a6f3d7d17c874d9f9907fa,"{""key"":""node-a-01"",""reading"":144,""seq"":5}"
+stream-a-beta,0,1,ad458710617d9db88abb6081015cdb710b64d9ac3a15f9da4e2dc3ee12e00be2,"{""key"":""node-a-04"",""reading"":116,""seq"":1}"

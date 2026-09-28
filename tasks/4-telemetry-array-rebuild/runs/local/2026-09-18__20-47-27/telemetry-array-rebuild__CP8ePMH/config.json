@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "."
+    },
+    "trial_name": "telemetry-array-rebuild__CP8ePMH",
+    "trials_dir": "jobs/2026-09-18__20-47-27",
+    "agent": {
+        "name": "nop"
+    },
+    "job_id": "c98004b1-fe4d-4180-9d95-2353f344a32d"
+}

@@ -1,0 +1,15 @@
+{
+    "job_name": "telemetry-nop-002",
+    "jobs_dir": "/home/abraham/workspace/rustlabs/tasks/telemetry-array-rebuild/runs",
+    "n_concurrent_trials": 1,
+    "agents": [
+        {
+            "name": "nop"
+        }
+    ],
+    "tasks": [
+        {
+            "path": "/home/abraham/workspace/rustlabs/tasks/telemetry-array-rebuild/source"
+        }
+    ]
+}

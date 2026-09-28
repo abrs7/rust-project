@@ -1,0 +1,28 @@
+test_01_candidate_artifact_exists (__main__.ArrayVerifierTests.test_01_candidate_artifact_exists) ... ok
+test_02_privilege_boundary_hides_truth_and_reward (__main__.ArrayVerifierTests.test_02_privilege_boundary_hides_truth_and_reward) ... ok
+test_03_visible_records_match (__main__.ArrayVerifierTests.test_03_visible_records_match) ... ok
+test_04_visible_clock_models_match (__main__.ArrayVerifierTests.test_04_visible_clock_models_match) ... ok
+test_05_visible_calibration_matches (__main__.ArrayVerifierTests.test_05_visible_calibration_matches) ... ok
+test_06_visible_observations_match (__main__.ArrayVerifierTests.test_06_visible_observations_match) ... ok
+test_07_visible_manifest_matches (__main__.ArrayVerifierTests.test_07_visible_manifest_matches) ... ok
+test_08_visible_exact_file_set_and_schema (__main__.ArrayVerifierTests.test_08_visible_exact_file_set_and_schema) ... ok
+test_09_hidden_run_succeeds (__main__.ArrayVerifierTests.test_09_hidden_run_succeeds) ... ok
+test_10_hidden_records_match (__main__.ArrayVerifierTests.test_10_hidden_records_match) ... ok
+test_11_hidden_clock_models_match (__main__.ArrayVerifierTests.test_11_hidden_clock_models_match) ... ok
+test_12_hidden_calibration_matches (__main__.ArrayVerifierTests.test_12_hidden_calibration_matches) ... ok
+test_13_hidden_observations_match (__main__.ArrayVerifierTests.test_13_hidden_observations_match) ... ok
+test_14_hidden_manifest_matches (__main__.ArrayVerifierTests.test_14_hidden_manifest_matches) ... ok
+test_15_hidden_exact_file_set_and_schema (__main__.ArrayVerifierTests.test_15_hidden_exact_file_set_and_schema) ... ok
+test_16_repeated_run_is_byte_deterministic (__main__.ArrayVerifierTests.test_16_repeated_run_is_byte_deterministic) ... ok
+test_17_malformed_campaign_catalog_is_rejected (__main__.ArrayVerifierTests.test_17_malformed_campaign_catalog_is_rejected) ... ok
+test_18_incomplete_reference_ledger_is_rejected (__main__.ArrayVerifierTests.test_18_incomplete_reference_ledger_is_rejected) ... ok
+test_19_missing_input_is_rejected (__main__.ArrayVerifierTests.test_19_missing_input_is_rejected) ... ok
+test_20_unassemblable_collection_is_rejected (__main__.ArrayVerifierTests.test_20_unassemblable_collection_is_rejected) ... ok
+test_21_output_write_failure_is_nonzero (__main__.ArrayVerifierTests.test_21_output_write_failure_is_nonzero) ... ok
+test_22_success_removes_stale_output_entries (__main__.ArrayVerifierTests.test_22_success_removes_stale_output_entries) ... ok
+test_23_failure_preserves_previous_successful_outputs (__main__.ArrayVerifierTests.test_23_failure_preserves_previous_successful_outputs) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 1.164s
+
+OK

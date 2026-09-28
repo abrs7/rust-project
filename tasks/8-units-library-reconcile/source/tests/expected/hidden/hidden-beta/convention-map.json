@@ -1,0 +1,29 @@
+{
+  "groups": [
+    {
+      "canonical_unit_id": "U004",
+      "convention_group": "CAL_THERMO",
+      "source_ids": [
+        "BSRC-A",
+        "BSRC-B",
+        "BSRC-C"
+      ],
+      "symbols_seen": [
+        "cal",
+        "calorie"
+      ]
+    },
+    {
+      "canonical_unit_id": "U001",
+      "convention_group": "FORCE_POUND",
+      "source_ids": [
+        "BSRC-A",
+        "BSRC-B"
+      ],
+      "symbols_seen": [
+        "lb_f",
+        "lbf"
+      ]
+    }
+  ]
+}

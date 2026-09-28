@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Telemetry recovery output contract",
+  "events_jsonl": {
+    "one_object_per_line": true,
+    "final_newline": true,
+    "fields": {
+      "session": "string",
+      "sequence": "non-negative integer decoded from the record",
+      "timestamp_ms": "integer UTC milliseconds",
+      "channel": "non-negative integer",
+      "raw": "non-negative integer",
+      "calibrated": "decimal string with exactly three fractional digits, rounded with IEEE 754 round-half-even"
+    },
+    "field_order": [
+      "session",
+      "sequence",
+      "timestamp_ms",
+      "channel",
+      "raw",
+      "calibrated"
+    ],
+    "record_order": "ascending by session, then timestamp_ms, then sequence, then channel"
+  },
+  "calibration_json": {
+    "top_level_fields": ["schema_version", "sessions"],
+    "schema_version": 1,
+    "sessions": "object keyed by session in lexicographic insertion order",
+    "channel_entries": "array ordered by ascending channel",
+    "channel_fields": {
+      "channel": "non-negative integer",
+      "raw_low": "integer",
+      "raw_high": "integer",
+      "reference_low": "decimal string copied from the ledger in normalized form with exactly three fractional digits",
+      "reference_high": "decimal string copied from the ledger in normalized form with exactly three fractional digits",
+      "gain": "decimal string with exactly nine fractional digits, rounded half-even",
+      "offset": "decimal string with exactly nine fractional digits, rounded half-even"
+    }
+  },
+  "manifest_json": {
+    "top_level_fields": ["schema_version", "sessions"],
+    "schema_version": 1,
+    "sessions": "array ordered by session name",
+    "session_fields": {
+      "session": "string",
+      "capture_sha256": "lowercase hexadecimal SHA-256 of the complete input capture",
+      "firmware": "legacy, modern, or mixed according to valid records",
+      "valid_frames": "count of records with recognized framing, a supported type, the declared payload size, and a valid trailer",
+      "rejected_frames": "count of complete sync candidates rejected during recovery; unrelated noise bytes and an incomplete suffix are not candidates",
+      "science_events": "count of emitted science observations",
+      "first_timestamp_ms": "timestamp of the earliest emitted observation",
+      "last_timestamp_ms": "timestamp of the latest emitted observation"
+    }
+  }
+}

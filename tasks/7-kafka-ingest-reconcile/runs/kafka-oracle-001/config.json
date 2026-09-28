@@ -1,0 +1,8 @@
+{
+    "job_name": "kafka-oracle-001",
+    "tasks": [
+        {
+            "path": "tasks/7-kafka-ingest-repair/source"
+        }
+    ]
+}

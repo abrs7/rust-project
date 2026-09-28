@@ -1,0 +1,3 @@
+obs_id,source_id,timestamp,quantity,magnitude,unit_symbol
+AO005,ASRC-B,1000,net_force,-5/1,lbf
+AO007,ASRC-C,3000,stored_energy,2/1,calorie

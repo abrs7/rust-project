@@ -1,0 +1,184 @@
+test_01_privilege_boundary_hides_tests_and_reward (__main__.Verifier.test_01_privilege_boundary_hides_tests_and_reward) ... ok
+test_02_visible_frozen_set_including_streams (__main__.Verifier.test_02_visible_frozen_set_including_streams) ... ERROR
+test_03_hidden_frozen_set_including_streams (__main__.Verifier.test_03_hidden_frozen_set_including_streams) ... ok
+test_04_staged_cli_after_deleting_fragments_matches_run (__main__.Verifier.test_04_staged_cli_after_deleting_fragments_matches_run) ... ERROR
+test_05_staged_api_after_deleting_fragments_matches_run (__main__.Verifier.test_05_staged_api_after_deleting_fragments_matches_run) ... ERROR
+test_06_decoy_fragments_after_ingest_do_not_change_products (__main__.Verifier.test_06_decoy_fragments_after_ingest_do_not_change_products) ... ERROR
+test_07_public_round_half_even_ties_including_negatives (__main__.Verifier.test_07_public_round_half_even_ties_including_negatives) ... ok
+test_08_independent_invariants (__main__.Verifier.test_08_independent_invariants) ... ERROR
+test_09_hash_seed_determinism (__main__.Verifier.test_09_hash_seed_determinism) ... ok
+test_10_shuffled_renamed_fragments_match_hidden (__main__.Verifier.test_10_shuffled_renamed_fragments_match_hidden) ... ok
+test_11_malformed_incomplete_missing_and_empty_inputs_rejected (__main__.Verifier.test_11_malformed_incomplete_missing_and_empty_inputs_rejected) ... ok
+test_12_missing_stage_requirements_rejected (__main__.Verifier.test_12_missing_stage_requirements_rejected) ... ok
+test_13_failure_preserves_previous_successful_outputs_including_streams (__main__.Verifier.test_13_failure_preserves_previous_successful_outputs_including_streams) ... ok
+test_14_success_keeps_unlisted_stale_txt (__main__.Verifier.test_14_success_keeps_unlisted_stale_txt) ... ERROR
+test_15_example_hex_does_not_appear_as_campaign_payload_hex (__main__.Verifier.test_15_example_hex_does_not_appear_as_campaign_payload_hex) ... skipped 'example directory is absent'
+
+======================================================================
+ERROR: test_02_visible_frozen_set_including_streams (__main__.Verifier.test_02_visible_frozen_set_including_streams)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 560, in test_02_visible_frozen_set_including_streams
+    output = self.run_full(
+        "visible-full",
+    ...<3 lines>...
+        hash_seed="11",
+    )
+  File "/tests/test_outputs.py", line 476, in run_full
+    copied_fragments, copied_campaigns, copied_references = self.inputs(
+                                                            ~~~~~~~~~~~^
+        f"{name}-input", fragments, campaigns, references
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/tests/test_outputs.py", line 262, in inputs
+    copied_campaigns = copy_readable(campaigns, root / "campaigns.csv")
+  File "/tests/verifier_utils.py", line 136, in copy_readable
+    shutil.copy2(source, destination)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/shutil.py", line 468, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/shutil.py", line 260, in copyfile
+    with open(src, 'rb') as fsrc:
+         ~~~~^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/environment/evidence/campaigns.csv'
+
+======================================================================
+ERROR: test_04_staged_cli_after_deleting_fragments_matches_run (__main__.Verifier.test_04_staged_cli_after_deleting_fragments_matches_run)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 580, in test_04_staged_cli_after_deleting_fragments_matches_run
+    full = self.run_full(
+        "visible-run-for-cli",
+    ...<3 lines>...
+        hash_seed="41",
+    )
+  File "/tests/test_outputs.py", line 476, in run_full
+    copied_fragments, copied_campaigns, copied_references = self.inputs(
+                                                            ~~~~~~~~~~~^
+        f"{name}-input", fragments, campaigns, references
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/tests/test_outputs.py", line 262, in inputs
+    copied_campaigns = copy_readable(campaigns, root / "campaigns.csv")
+  File "/tests/verifier_utils.py", line 136, in copy_readable
+    shutil.copy2(source, destination)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/shutil.py", line 468, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/shutil.py", line 260, in copyfile
+    with open(src, 'rb') as fsrc:
+         ~~~~^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/environment/evidence/campaigns.csv'
+
+======================================================================
+ERROR: test_05_staged_api_after_deleting_fragments_matches_run (__main__.Verifier.test_05_staged_api_after_deleting_fragments_matches_run)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 597, in test_05_staged_api_after_deleting_fragments_matches_run
+    full = self.run_full(
+        "visible-run-for-api",
+    ...<4 lines>...
+        api=True,
+    )
+  File "/tests/test_outputs.py", line 476, in run_full
+    copied_fragments, copied_campaigns, copied_references = self.inputs(
+                                                            ~~~~~~~~~~~^
+        f"{name}-input", fragments, campaigns, references
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/tests/test_outputs.py", line 262, in inputs
+    copied_campaigns = copy_readable(campaigns, root / "campaigns.csv")
+  File "/tests/verifier_utils.py", line 136, in copy_readable
+    shutil.copy2(source, destination)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/shutil.py", line 468, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/shutil.py", line 260, in copyfile
+    with open(src, 'rb') as fsrc:
+         ~~~~^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/environment/evidence/campaigns.csv'
+
+======================================================================
+ERROR: test_06_decoy_fragments_after_ingest_do_not_change_products (__main__.Verifier.test_06_decoy_fragments_after_ingest_do_not_change_products)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 616, in test_06_decoy_fragments_after_ingest_do_not_change_products
+    full = self.run_full(
+        "visible-run-for-decoy",
+    ...<3 lines>...
+        hash_seed="53",
+    )
+  File "/tests/test_outputs.py", line 476, in run_full
+    copied_fragments, copied_campaigns, copied_references = self.inputs(
+                                                            ~~~~~~~~~~~^
+        f"{name}-input", fragments, campaigns, references
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/tests/test_outputs.py", line 262, in inputs
+    copied_campaigns = copy_readable(campaigns, root / "campaigns.csv")
+  File "/tests/verifier_utils.py", line 136, in copy_readable
+    shutil.copy2(source, destination)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/shutil.py", line 468, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/shutil.py", line 260, in copyfile
+    with open(src, 'rb') as fsrc:
+         ~~~~^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/environment/evidence/campaigns.csv'
+
+======================================================================
+ERROR: test_08_independent_invariants (__main__.Verifier.test_08_independent_invariants)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 657, in test_08_independent_invariants
+    self.check_invariants(EXPECTED / "visible", self.visible_references)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 327, in check_invariants
+    ledgers = load_references(references_path)
+  File "/tests/test_outputs.py", line 88, in load_references
+    with path.open(newline="", encoding="utf-8") as handle:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/environment/evidence/references.csv'
+
+======================================================================
+ERROR: test_14_success_keeps_unlisted_stale_txt (__main__.Verifier.test_14_success_keeps_unlisted_stale_txt)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 814, in test_14_success_keeps_unlisted_stale_txt
+    fragments, campaigns, references = self.inputs(
+                                       ~~~~~~~~~~~^
+        "stale-input",
+        ^^^^^^^^^^^^^^
+    ...<2 lines>...
+        self.visible_references,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/tests/test_outputs.py", line 262, in inputs
+    copied_campaigns = copy_readable(campaigns, root / "campaigns.csv")
+  File "/tests/verifier_utils.py", line 136, in copy_readable
+    shutil.copy2(source, destination)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/shutil.py", line 468, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/shutil.py", line 260, in copyfile
+    with open(src, 'rb') as fsrc:
+         ~~~~^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/environment/evidence/campaigns.csv'
+
+----------------------------------------------------------------------
+Ran 15 tests in 3.365s
+
+FAILED (errors=6, skipped=1)

@@ -1,0 +1,64 @@
+{
+    "schema_version": 3,
+    "created_at": "2026-09-17T18:42:14.998559Z",
+    "harbor": {
+        "version": "0.23.0",
+        "is_editable": false
+    },
+    "n_concurrent_trials": 4,
+    "retry": {
+        "max_retries": 0,
+        "exclude_exceptions": [
+            "VerifierTimeoutError",
+            "VerifierOutputParseError",
+            "ApiUsageLimitError",
+            "RewardFileEmptyError",
+            "RewardFileNotFoundError",
+            "ModelNotFoundError",
+            "AgentTimeoutError",
+            "AgentSafetyRefusalError",
+            "AgentAuthenticationError"
+        ],
+        "wait_multiplier": 1.0,
+        "min_wait_sec": 1.0,
+        "max_wait_sec": 60.0
+    },
+    "trials": [
+        {
+            "schema_version": 2,
+            "task": {
+                "name": "check-telemetry-frame-recovery",
+                "type": "local",
+                "digest": "sha256:23dc680503a0d92095e20b6afd6cc2aa7023c2c9df135ebe490b6fcaa963188e",
+                "path": "/tmp/harbor-check-6pqmducm/check-telemetry-frame-recovery"
+            },
+            "install_only": false,
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "claude-code",
+                "model_name": "claude-sonnet-4-6",
+                "skills": [],
+                "resume_trajectory": false,
+                "extra_allowed_hosts": [],
+                "kwargs": {},
+                "mcp_servers": []
+            },
+            "bridge_inputs": {},
+            "skills": [],
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "extra_docker_compose": [],
+                "kwargs": {},
+                "extra_allowed_hosts": []
+            },
+            "verifier": {
+                "disable": false,
+                "environment_mode": "shared"
+            }
+        }
+    ]
+}

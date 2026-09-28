@@ -1,0 +1,19 @@
+{
+  "coefficient_a": "0.000000000767",
+  "coefficient_b": "0.000387067100",
+  "coefficient_c": "1.284415584416",
+  "points": [
+    {
+      "physical": "-3.2500",
+      "raw": -12000
+    },
+    {
+      "physical": "1.7500",
+      "raw": 1200
+    },
+    {
+      "physical": "8.5000",
+      "raw": 18000
+    }
+  ]
+}

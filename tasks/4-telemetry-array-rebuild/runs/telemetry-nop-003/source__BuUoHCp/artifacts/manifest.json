@@ -1,0 +1,42 @@
+[
+  {
+    "source": "/logs/artifacts",
+    "destination": "artifacts/logs/artifacts",
+    "type": "directory",
+    "status": "empty",
+    "service": null,
+    "exclude": []
+  },
+  {
+    "source": "/app/telemetry",
+    "destination": "artifacts/app/telemetry",
+    "type": "directory",
+    "status": "ok",
+    "service": null,
+    "exclude": []
+  },
+  {
+    "source": "/app/fragments",
+    "destination": "artifacts/app/fragments",
+    "type": "directory",
+    "status": "ok",
+    "service": null,
+    "exclude": []
+  },
+  {
+    "source": "/app/evidence",
+    "destination": "artifacts/app/evidence",
+    "type": "directory",
+    "status": "ok",
+    "service": null,
+    "exclude": []
+  },
+  {
+    "source": "/app/output",
+    "destination": "artifacts/app/output",
+    "type": "directory",
+    "status": "ok",
+    "service": null,
+    "exclude": []
+  }
+]

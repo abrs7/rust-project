@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "offset_semantics": "next_to_consume",
+  "dedup_identity": "payload_hash",
+  "message_id_format": "M%06d",
+  "reject_reasons": [
+    "already_committed",
+    "duplicate_payload"
+  ]
+}

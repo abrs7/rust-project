@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "energy_unit": "milli_electronvolt_integer",
+  "rounding": "round_half_away_from_zero",
+  "csv": {
+    "encoding": "utf-8",
+    "dialect": "excel",
+    "header_required": true,
+    "unknown_columns": "error",
+    "blank_rows": "ignored"
+  },
+  "ingestion": {
+    "histogram_merge": "sum_counts_by_channel",
+    "timestamp_order": "sorted_ascending",
+    "canonical_histogram_order": ["channel"]
+  },
+  "peak_detection": {
+    "local_maximum": "count strictly greater than left neighbor and greater than or equal to right neighbor on populated channels",
+    "merge_rule": "When two maxima are closer than peak_min_separation channels, keep the taller; equal counts keep the lower channel",
+    "minimum_counts": "peak_min_counts from campaign.toml"
+  },
+  "saturation_evidence": {
+    "fwhm": "Let half = floor(peak height / 2). From the peak channel walk left while the next populated channel holds a count strictly greater than half, and walk right on the same condition. fwhm is the outermost right channel minus the outermost left channel.",
+    "plateau": "Contiguous run of channels whose counts are at least peak height minus saturation_plateau_delta; width includes the peak channel",
+    "exclusion": "A peak is saturated when fwhm >= saturation_fwhm_min and plateau width >= saturation_plateau_min_width"
+  },
+  "calibration_fit": {
+    "model": "energy_mkeV = round_half_away_from_zero((slope_num * channel * intercept_den + intercept_num * slope_den) / (slope_den * intercept_den))",
+    "method": "Ordinary least squares on unsaturated matched line-peak pairs",
+    "residual": "residual_sum_sq_mkeV2 is the sum over included_lines of (line energy_mkeV - model energy at that line's matched peak channel) squared, evaluated with the model above.",
+    "coefficients": "slope and intercept as positive reduced fractions {num, den}",
+    "minimum_lines": 2
+  },
+  "line_matching": {
+    "rule": "Sort calibration lines by energy_mkeV and peak candidates by channel; pair in order",
+    "requirement": "At least as many peak candidates as calibration lines",
+    "line_match_max_delta": "Each matched peak channel must lie within this many channels of the channel predicted by linear interpolation between the first and last paired line/peak endpoints using exact rational arithmetic and round_half_away"
+  },
+  "deadtime": {
+    "formula": "live_time_us = (last_timestamp_us - first_timestamp_us) - event_count * deadtime_tau_us",
+    "correction": "correction = total_span_us / live_time_us as a reduced fraction",
+    "count_correction": "corrected_count = round_half_away_from_zero(observed_count * correction.num / correction.den)"
+  },
+  "integration": {
+    "search": "Within integration_half_width channels of the inverted calibration channel for each line, select the channel with maximum corrected_count as peak_channel. The inverted channel is the initial candidate and is replaced only by a strictly greater corrected_count, so ties keep the lowest channel.",
+    "window": "Sum corrected_count from peak_channel - integration_half_width through peak_channel + integration_half_width inclusive",
+    "centroid": "Count-weighted mean channel rounded with round_half_away_from_zero"
+  },
+  "integers": {
+    "minimum": -9223372036854775808,
+    "maximum": 9223372036854775807
+  },
+  "json": {
+    "encoding": "utf-8",
+    "indent": 2,
+    "sort_keys": true,
+    "line_ending": "LF",
+    "jsonl": "One compact sort-key-ordered JSON object per LF-terminated line."
+  }
+}

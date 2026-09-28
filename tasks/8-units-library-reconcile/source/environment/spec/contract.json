@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "conservation": {
+    "comparison": "exact rational difference against tolerance",
+    "failure": "validate exits nonzero when any constraint fails"
+  },
+  "conventions": {
+    "canonical_source": "campaign.toml canonical_units",
+    "merge_rule": "sum SI magnitudes after registry conversion regardless of alias symbol"
+  },
+  "rationals": {
+    "format": "reduced n/d or integer",
+    "rounding_public_api": "roundHalfAway ties away from zero"
+  }
+}

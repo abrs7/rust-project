@@ -1,0 +1,4 @@
+obs_id,source_id,timestamp,quantity,magnitude,unit_symbol
+BO007,BSRC-C,3000,stored_energy,2/1,cal
+BO003,BSRC-A,2000,heat_in,1/1,cal
+BO001,BSRC-A,1000,net_force,10/1,lbf

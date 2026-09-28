@@ -1,0 +1,115 @@
+{
+    "id": "bf21984f-c56b-4930-bdf2-9454976f016e",
+    "task_name": "rustlabs/seismic-clock-catalog",
+    "trial_name": "source__TbM68EN",
+    "trial_uri": "file:///home/abraham/workspace/rustlabs/tasks/seismic-clock-catalog/runs/seismic-nop-preflight/source__TbM68EN",
+    "task_id": {
+        "path": "/home/abraham/workspace/rustlabs/tasks/seismic-clock-catalog/source"
+    },
+    "source": null,
+    "task_checksum": "b25b7871c449943bf4792412505a502eb5301e282b40c5faa53f118868fdf606",
+    "config": {
+        "task": {
+            "path": "/home/abraham/workspace/rustlabs/tasks/seismic-clock-catalog/source",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "source__TbM68EN",
+        "trials_dir": "/home/abraham/workspace/rustlabs/tasks/seismic-clock-catalog/runs/seismic-nop-preflight",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "nop",
+            "import_path": null,
+            "model_name": null,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "f6a40280-6995-4d63-9021-1a35cffbaf72",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "nop",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "model_usage": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "verifier_environment_mode": "separate",
+    "exception_info": null,
+    "started_at": "2026-09-18T22:04:30.828273Z",
+    "finished_at": "2026-09-18T22:05:20.503755Z",
+    "environment_setup": {
+        "started_at": "2026-09-18T22:04:30.962961Z",
+        "finished_at": "2026-09-18T22:04:36.846864Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-09-18T22:04:36.846949Z",
+        "finished_at": "2026-09-18T22:04:36.853252Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-09-18T22:04:36.853490Z",
+        "finished_at": "2026-09-18T22:04:36.853727Z"
+    },
+    "verifier": {
+        "started_at": "2026-09-18T22:04:54.016805Z",
+        "finished_at": "2026-09-18T22:05:20.503730Z"
+    },
+    "step_results": null
+}

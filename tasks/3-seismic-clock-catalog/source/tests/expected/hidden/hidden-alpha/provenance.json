@@ -1,0 +1,9 @@
+{
+  "accepted_pick_count": 41,
+  "event_count": 9,
+  "faulty_station_id": "AQ030",
+  "input_pick_count": 47,
+  "product_sha256": "8ba258ebe8a1790545137f5c33dda2583e36bb86e3f6ed7867d4f89649b33256",
+  "rejected_pick_count": 6,
+  "schema_version": "1.0"
+}

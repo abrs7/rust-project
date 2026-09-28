@@ -1,0 +1,5 @@
+{
+  "explanation": "Using header latitude 43/1 on a cast taken at 47/1 produces density decreasing with depth.",
+  "header_latitude_deg": "43/1",
+  "true_latitude_deg": "47/1"
+}

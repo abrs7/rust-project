@@ -1,0 +1,19 @@
+{
+  "included_lines": [
+    "BL01",
+    "BL02",
+    "BL03",
+    "BL04",
+    "BL05"
+  ],
+  "intercept": {
+    "den": 9968965,
+    "num": 96054357221
+  },
+  "residual_sum_sq_mkeV2": 50342,
+  "schema_version": "1.0",
+  "slope": {
+    "den": 3987586,
+    "num": 1001299557
+  }
+}

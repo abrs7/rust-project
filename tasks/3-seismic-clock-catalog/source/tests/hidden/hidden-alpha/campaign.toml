@@ -1,0 +1,8 @@
+schema_version = "1.0"
+campaign_start_us = 0
+campaign_end_us = 10000000
+min_stable_stations = 3
+residual_min_us = -500000
+residual_max_us = 500000
+allowed_rates = ["1/1", "999999/1000000", "1000001/1000000"]
+candidate_boundaries_us = [4000000, 5000000, 7000000]

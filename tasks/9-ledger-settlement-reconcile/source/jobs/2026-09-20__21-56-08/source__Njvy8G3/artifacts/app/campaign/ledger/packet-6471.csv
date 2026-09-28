@@ -1,0 +1,3 @@
+entry_id,account_id,trade_date,amount_minor,currency,side
+VE004,VA003,2024-06-07,150000,JPY,DR
+VE005,VA004,2024-06-06,2500,GBP,DR

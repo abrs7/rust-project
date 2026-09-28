@@ -1,0 +1,115 @@
+{
+    "id": "3f085953-1043-4e99-a482-d1d6917fff67",
+    "task_name": "rustlabs/seismic-clock-catalog",
+    "trial_name": "source__5LVEdVx",
+    "trial_uri": "file:///home/abraham/workspace/rustlabs/tasks/seismic-clock-catalog/runs/seismic-oracle-preflight-2/source__5LVEdVx",
+    "task_id": {
+        "path": "tasks/seismic-clock-catalog/source"
+    },
+    "source": null,
+    "task_checksum": "6cfbe047fd730d855683f5e926db323a5fdad035f10e6f1ad45d6f2d484dd154",
+    "config": {
+        "task": {
+            "path": "tasks/seismic-clock-catalog/source",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "source__5LVEdVx",
+        "trials_dir": "tasks/seismic-clock-catalog/runs/seismic-oracle-preflight-2",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "oracle",
+            "import_path": null,
+            "model_name": null,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "9ee1fdda-0901-40e8-9dba-31706bf3f795",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "oracle",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "model_usage": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "verifier_environment_mode": "separate",
+    "exception_info": null,
+    "started_at": "2026-09-18T22:01:14.017804Z",
+    "finished_at": "2026-09-18T22:01:58.323570Z",
+    "environment_setup": {
+        "started_at": "2026-09-18T22:01:14.129032Z",
+        "finished_at": "2026-09-18T22:01:18.192232Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-09-18T22:01:18.192302Z",
+        "finished_at": "2026-09-18T22:01:18.192431Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-09-18T22:01:18.192570Z",
+        "finished_at": "2026-09-18T22:01:20.446618Z"
+    },
+    "verifier": {
+        "started_at": "2026-09-18T22:01:34.745263Z",
+        "finished_at": "2026-09-18T22:01:58.323551Z"
+    },
+    "step_results": null
+}

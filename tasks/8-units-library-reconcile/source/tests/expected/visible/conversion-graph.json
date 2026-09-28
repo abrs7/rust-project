@@ -1,0 +1,45 @@
+{
+  "dimensions": {
+    "energy": [
+      {
+        "si_factor": "4184/1",
+        "si_offset": "0/1",
+        "symbol": "cal",
+        "unit_id": "U004"
+      },
+      {
+        "si_factor": "4184/1",
+        "si_offset": "0/1",
+        "symbol": "calorie",
+        "unit_id": "U005"
+      },
+      {
+        "si_factor": "1/1",
+        "si_offset": "0/1",
+        "symbol": "J",
+        "unit_id": "U006"
+      }
+    ],
+    "force": [
+      {
+        "si_factor": "5560277/1250000",
+        "si_offset": "0/1",
+        "symbol": "lbf",
+        "unit_id": "U001"
+      },
+      {
+        "si_factor": "5560277/1250000",
+        "si_offset": "0/1",
+        "symbol": "lb_f",
+        "unit_id": "U002"
+      },
+      {
+        "si_factor": "1/1",
+        "si_offset": "0/1",
+        "symbol": "N",
+        "unit_id": "U003"
+      }
+    ]
+  },
+  "si_system": "SI"
+}

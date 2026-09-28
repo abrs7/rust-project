@@ -1,0 +1,18 @@
+{
+  "included_lines": [
+    "VL01",
+    "VL02",
+    "VL04",
+    "VL05"
+  ],
+  "intercept": {
+    "den": 142019,
+    "num": 1380625500
+  },
+  "residual_sum_sq_mkeV2": 12774,
+  "schema_version": "1.0",
+  "slope": {
+    "den": 994133,
+    "num": 249580725
+  }
+}

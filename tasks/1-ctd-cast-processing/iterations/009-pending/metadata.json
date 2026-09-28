@@ -1,0 +1,15 @@
+{
+  "task": "ctd-cast-processing",
+  "folder": "1-ctd-cast-processing",
+  "iteration": 9,
+  "status": "pending",
+  "created_at": "2026-09-27T20:53:10.462858+00:00",
+  "archive": "1-ctd-cast-processing.zip",
+  "sha256": "9b5287522742bb95286e04930dde0089b66e7b36045fe072690fc9b0f797f18a",
+  "platform": {
+    "stage_1": null,
+    "stage_2": null,
+    "stage_3": null,
+    "notes": []
+  }
+}

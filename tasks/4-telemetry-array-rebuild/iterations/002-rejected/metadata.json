@@ -1,0 +1,18 @@
+{
+  "task": "telemetry-array-rebuild",
+  "iteration": 2,
+  "status": "rejected",
+  "created_at": "2026-09-19T08:58:23.906166+00:00",
+  "archive": "4-telemetry-array-rebuild.zip",
+  "sha256": "fcb7c570cf55e05687e237a84d2a460bee382dd7e5d4ec44da9e1d1297dae52e",
+  "platform": {
+    "stage_1": null,
+    "stage_2": null,
+    "stage_3": null,
+    "notes": [
+      "Superseded by iteration 003 before TB4 fixes"
+    ]
+  },
+  "finalized_at": "2026-09-20T18:04:40.814305+00:00",
+  "folder": "4-telemetry-array-rebuild"
+}

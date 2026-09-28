@@ -1,0 +1,7 @@
+campaign,channel,reference_low,reference_mid,reference_high,reference_temperature_milli_c,temperature_coefficient
+aquila-hidden,9,-9.5000,3.5000,29.5000,19625,0.00175000
+delphinus-hidden,2,100.0000,130.0000,190.0000,21500,-0.00312500
+delphinus-hidden,10,0.3333,20.3333,110.3333,20000,0.00015625
+hydra-hidden,1,-1.2500,0.5000,12.5000,18750,0.00450000
+hydra-hidden,12,-30.0000,-2.0000,88.0000,26000,-0.00187500
+pictor-hidden,4,4.0000,16.0000,49.0000,24250,0.00206250

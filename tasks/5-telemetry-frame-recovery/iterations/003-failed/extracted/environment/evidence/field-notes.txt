@@ -1,0 +1,31 @@
+SPECTROMETER DOWNLINK NOTES — pages recovered from two binders
+
+Both recorders searched for synchronization octets D3 91. A1 names the bench writer and B2 the flight writer. The old workstation wrote 16-bit values least-significant octet first. One intact bench sketch reads:
+
+    sync | build | type | sequence(2) | device tick(2) | payload octets | payload | trailer(2)
+
+The flight-writer migration checklist is damaged:
+
+    [done] network octet order
+    [done] move octet count before c———
+    [done] quote recorder control octets
+    [done] append record delimiter
+
+The loopback and startup logs in this directory were captured while that migration was tested. They are the surviving evidence for the flight wire representation.
+
+Bench trailer check was the unsigned sum of octets from build through payload, modulo 65536. The flight writer switched to the non-reflected 1021-family CRC implemented by the recorder ROM.
+
+Console event labels survived:
+
+    10 UTC anchor
+    20 low reference
+    21 high reference
+    30 science sample
+
+Anchor payloads hold UTC milliseconds in one unsigned 64-bit value. Reference and science payloads hold channel(1) and converter count(2), using the writer's numeric order.
+
+Device tick is an unsigned 16-bit counter at 10 ms per tick. An anchor's UTC value belongs to the tick in that same record. Sequence identifies a record but is not a clock.
+
+Calibration was affine per session and channel. Physical low and high references are in calibration-ledger.csv. Operations used decimal arithmetic.
+
+Recorder files contain line noise and interrupted writes. The diagnostic rejected count increased only after a complete candidate had been examined.

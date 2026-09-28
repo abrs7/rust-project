@@ -1,0 +1,8 @@
+{
+    "task": {
+        "path": "tasks/gamma-spectrum-calibration/source"
+    },
+    "trial_name": "source__BniQ9vU",
+    "trials_dir": "jobs/gamma-oracle-001",
+    "job_id": "cf62cbe3-afd1-4d2c-ae1a-ddbd753a7e39"
+}

@@ -1,0 +1,2 @@
+{"message_id":"M000001","offset":1,"partition":0,"reason":"already_committed","topic":"feed-b-alpha"}
+{"message_id":"M000016","offset":7,"partition":0,"reason":"duplicate_payload","topic":"feed-b-beta"}

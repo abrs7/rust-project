@@ -1,0 +1,125 @@
+{
+  "campaigns": {
+    "andromeda-scan": [
+      {
+        "index": 0,
+        "rate_denominator": 600,
+        "rate_numerator": 6031,
+        "tick_end": 16777624,
+        "tick_start": 16777024,
+        "utc_end_ms": 1798761606031,
+        "utc_start_ms": 1798761600000
+      },
+      {
+        "index": 1,
+        "rate_denominator": 700,
+        "rate_numerator": 7039,
+        "tick_end": 16778324,
+        "tick_start": 16777624,
+        "utc_end_ms": 1798761613070,
+        "utc_start_ms": 1798761606031
+      }
+    ],
+    "cassiopeia-drift": [
+      {
+        "index": 0,
+        "rate_denominator": 600,
+        "rate_numerator": 6031,
+        "tick_end": 41600,
+        "tick_start": 41000,
+        "utc_end_ms": 1798765206031,
+        "utc_start_ms": 1798765200000
+      },
+      {
+        "index": 1,
+        "rate_denominator": 700,
+        "rate_numerator": 7039,
+        "tick_end": 42300,
+        "tick_start": 41600,
+        "utc_end_ms": 1798765213070,
+        "utc_start_ms": 1798765206031
+      }
+    ],
+    "fornax-night": [
+      {
+        "index": 0,
+        "rate_denominator": 600,
+        "rate_numerator": 6031,
+        "tick_end": 890600,
+        "tick_start": 890000,
+        "utc_end_ms": 1798768806031,
+        "utc_start_ms": 1798768800000
+      },
+      {
+        "index": 1,
+        "rate_denominator": 700,
+        "rate_numerator": 7039,
+        "tick_end": 891300,
+        "tick_start": 890600,
+        "utc_end_ms": 1798768813070,
+        "utc_start_ms": 1798768806031
+      }
+    ],
+    "lyra-crossfeed": [
+      {
+        "index": 0,
+        "rate_denominator": 600,
+        "rate_numerator": 6031,
+        "tick_end": 8248776,
+        "tick_start": 8248176,
+        "utc_end_ms": 1798772406031,
+        "utc_start_ms": 1798772400000
+      },
+      {
+        "index": 1,
+        "rate_denominator": 700,
+        "rate_numerator": 7039,
+        "tick_end": 8249476,
+        "tick_start": 8248776,
+        "utc_end_ms": 1798772413070,
+        "utc_start_ms": 1798772406031
+      }
+    ],
+    "mensa-survey": [
+      {
+        "index": 0,
+        "rate_denominator": 600,
+        "rate_numerator": 6031,
+        "tick_end": 1200600,
+        "tick_start": 1200000,
+        "utc_end_ms": 1798776006031,
+        "utc_start_ms": 1798776000000
+      },
+      {
+        "index": 1,
+        "rate_denominator": 700,
+        "rate_numerator": 7039,
+        "tick_end": 1201300,
+        "tick_start": 1200600,
+        "utc_end_ms": 1798776013070,
+        "utc_start_ms": 1798776006031
+      }
+    ],
+    "vela-transit": [
+      {
+        "index": 0,
+        "rate_denominator": 600,
+        "rate_numerator": 6031,
+        "tick_end": 16777544,
+        "tick_start": 16776944,
+        "utc_end_ms": 1798779606031,
+        "utc_start_ms": 1798779600000
+      },
+      {
+        "index": 1,
+        "rate_denominator": 700,
+        "rate_numerator": 7039,
+        "tick_end": 16778244,
+        "tick_start": 16777544,
+        "utc_end_ms": 1798779613070,
+        "utc_start_ms": 1798779606031
+      }
+    ]
+  },
+  "schema_version": 1
+}

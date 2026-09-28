@@ -1,0 +1,272 @@
+{
+  "committed_snapshots": [
+    {
+      "captured_at_ms": 1000,
+      "committed_offset": 1,
+      "partition": 0,
+      "snapshot_id": "telemetry-v-early-a0",
+      "topic": "telemetry-v-alpha"
+    },
+    {
+      "captured_at_ms": 5000,
+      "committed_offset": 3,
+      "partition": 0,
+      "snapshot_id": "telemetry-v-late-a0",
+      "topic": "telemetry-v-alpha"
+    },
+    {
+      "captured_at_ms": 4500,
+      "committed_offset": 2,
+      "partition": 1,
+      "snapshot_id": "telemetry-v-late-a1",
+      "topic": "telemetry-v-alpha"
+    },
+    {
+      "captured_at_ms": 4800,
+      "committed_offset": 1,
+      "partition": 0,
+      "snapshot_id": "telemetry-v-late-b0",
+      "topic": "telemetry-v-beta"
+    }
+  ],
+  "consumer": {
+    "dedup_identity": "payload_hash",
+    "offset_semantics": "next_to_consume",
+    "schema_version": "1.0"
+  },
+  "messages": [
+    {
+      "message_id": "M000001",
+      "offset": 1,
+      "partition": 0,
+      "payload": {
+        "key": "sensor-v-01",
+        "reading": 117,
+        "seq": 2
+      },
+      "payload_hash": "9676dda24472cc55a41cd260608002aca3e3e452c5989a68aeab971ea3d5715f",
+      "topic": "telemetry-v-alpha"
+    },
+    {
+      "message_id": "M000002",
+      "offset": 3,
+      "partition": 0,
+      "payload": {
+        "key": "sensor-v-01",
+        "reading": 110,
+        "seq": 1
+      },
+      "payload_hash": "79122d5ad4b5f3400b90c6dff46df6e1c6b7eb0f266c74d82fde77c831886233",
+      "topic": "telemetry-v-alpha"
+    },
+    {
+      "message_id": "M000003",
+      "offset": 4,
+      "partition": 0,
+      "payload": {
+        "key": "sensor-v-01",
+        "reading": 117,
+        "seq": 2
+      },
+      "payload_hash": "9676dda24472cc55a41cd260608002aca3e3e452c5989a68aeab971ea3d5715f",
+      "topic": "telemetry-v-alpha"
+    },
+    {
+      "message_id": "M000004",
+      "offset": 5,
+      "partition": 0,
+      "payload": {
+        "key": "sensor-v-01",
+        "reading": 124,
+        "seq": 3
+      },
+      "payload_hash": "2046843e1f06c1d0c5e1515180f1a08f3b37908cfe4bd705d9a262a5dba0d9f3",
+      "topic": "telemetry-v-alpha"
+    },
+    {
+      "message_id": "M000005",
+      "offset": 6,
+      "partition": 0,
+      "payload": {
+        "key": "sensor-v-01",
+        "reading": 131,
+        "seq": 4
+      },
+      "payload_hash": "9648718b31b39c1fed2f65d9be9a78c2f866e4a82a70c54d2211ca520abcf837",
+      "topic": "telemetry-v-alpha"
+    },
+    {
+      "message_id": "M000006",
+      "offset": 7,
+      "partition": 0,
+      "payload": {
+        "key": "sensor-v-01",
+        "reading": 138,
+        "seq": 5
+      },
+      "payload_hash": "da9ff5fe83cc9655134ea169f6c9c0973dcbc83e4d923fa04725fedca23c666d",
+      "topic": "telemetry-v-alpha"
+    },
+    {
+      "message_id": "M000007",
+      "offset": 2,
+      "partition": 1,
+      "payload": {
+        "key": "sensor-v-03",
+        "reading": 110,
+        "seq": 1
+      },
+      "payload_hash": "8d7a778238d7418244d439ecc4d65cbb9267c6137aa90601e1d637a2c339e973",
+      "topic": "telemetry-v-alpha"
+    },
+    {
+      "message_id": "M000008",
+      "offset": 3,
+      "partition": 1,
+      "payload": {
+        "key": "sensor-v-03",
+        "reading": 117,
+        "seq": 2
+      },
+      "payload_hash": "e075a197d760e39b42cb22cbfc51f47021a92a8c3158ae86be33bc3419cc35c0",
+      "topic": "telemetry-v-alpha"
+    },
+    {
+      "message_id": "M000009",
+      "offset": 4,
+      "partition": 1,
+      "payload": {
+        "key": "sensor-v-03",
+        "reading": 124,
+        "seq": 3
+      },
+      "payload_hash": "a8c264a310b758eb939c87f70bc8ce9d93bf41793bb8ee4ba7d244664f59e8a2",
+      "topic": "telemetry-v-alpha"
+    },
+    {
+      "message_id": "M000010",
+      "offset": 1,
+      "partition": 0,
+      "payload": {
+        "key": "sensor-v-04",
+        "reading": 110,
+        "seq": 1
+      },
+      "payload_hash": "8a5b52b6d7fb1cad1a847a7df2fdeafc02a001f6fdc0dba9756320fca28f6f78",
+      "topic": "telemetry-v-beta"
+    },
+    {
+      "message_id": "M000011",
+      "offset": 2,
+      "partition": 0,
+      "payload": {
+        "key": "sensor-v-04",
+        "reading": 117,
+        "seq": 2
+      },
+      "payload_hash": "0d54e3258cd2dfcc0795ea8c3dc855db008dfb2cc432cad0b74ff3391a614fd3",
+      "topic": "telemetry-v-beta"
+    },
+    {
+      "message_id": "M000012",
+      "offset": 2,
+      "partition": 0,
+      "payload": {
+        "key": "sensor-v-02",
+        "reading": 110,
+        "seq": 1
+      },
+      "payload_hash": "e35f06b978a5aa17d3cdbab554107029887d5c6ebf3c65eec578f0e7afa06ed7",
+      "topic": "telemetry-v-beta"
+    },
+    {
+      "message_id": "M000013",
+      "offset": 3,
+      "partition": 0,
+      "payload": {
+        "key": "sensor-v-02",
+        "reading": 117,
+        "seq": 2
+      },
+      "payload_hash": "3f00199d5192dd4754b018acfea2970284aeed74728147d8dff2756c3c31de60",
+      "topic": "telemetry-v-beta"
+    },
+    {
+      "message_id": "M000014",
+      "offset": 4,
+      "partition": 0,
+      "payload": {
+        "key": "sensor-v-02",
+        "reading": 124,
+        "seq": 3
+      },
+      "payload_hash": "cf3c13e57709eb44420279b99a3481ed0f0ec7976d05b4cfc2ba1558f07804cd",
+      "topic": "telemetry-v-beta"
+    },
+    {
+      "message_id": "M000015",
+      "offset": 5,
+      "partition": 0,
+      "payload": {
+        "key": "sensor-v-02",
+        "reading": 131,
+        "seq": 4
+      },
+      "payload_hash": "27b63f93d88f553fc40fd7b8036d6a4ab5c8383ff8bb233c7132b0ba0b589850",
+      "topic": "telemetry-v-beta"
+    },
+    {
+      "message_id": "M000016",
+      "offset": 7,
+      "partition": 0,
+      "payload": {
+        "key": "sensor-v-02",
+        "reading": 124,
+        "seq": 3
+      },
+      "payload_hash": "cf3c13e57709eb44420279b99a3481ed0f0ec7976d05b4cfc2ba1558f07804cd",
+      "topic": "telemetry-v-beta"
+    }
+  ],
+  "producer_ledger": [
+    {
+      "expected_count": 5,
+      "key": "sensor-v-01",
+      "max_seq": 5,
+      "partition": 0,
+      "topic": "telemetry-v-alpha"
+    },
+    {
+      "expected_count": 4,
+      "key": "sensor-v-02",
+      "max_seq": 4,
+      "partition": 0,
+      "topic": "telemetry-v-beta"
+    },
+    {
+      "expected_count": 3,
+      "key": "sensor-v-03",
+      "max_seq": 3,
+      "partition": 1,
+      "topic": "telemetry-v-alpha"
+    },
+    {
+      "expected_count": 2,
+      "key": "sensor-v-04",
+      "max_seq": 2,
+      "partition": 0,
+      "topic": "telemetry-v-beta"
+    }
+  ],
+  "schema_version": "1.0",
+  "topics": [
+    {
+      "partition_count": 2,
+      "topic": "telemetry-v-alpha"
+    },
+    {
+      "partition_count": 1,
+      "topic": "telemetry-v-beta"
+    }
+  ]
+}

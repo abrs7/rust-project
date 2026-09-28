@@ -1,0 +1,51 @@
+{
+  "faulty_station_id": "AQ030",
+  "objective_score": [
+    3,
+    9,
+    33
+  ],
+  "schema_version": "1.0",
+  "station_trials": [
+    {
+      "excluded_station_id": "AQ017",
+      "score": [
+        3,
+        7,
+        21
+      ]
+    },
+    {
+      "excluded_station_id": "AQ030",
+      "score": [
+        3,
+        9,
+        33
+      ]
+    },
+    {
+      "excluded_station_id": "AQ043",
+      "score": [
+        3,
+        6,
+        18
+      ]
+    },
+    {
+      "excluded_station_id": "AQ056",
+      "score": [
+        3,
+        7,
+        21
+      ]
+    },
+    {
+      "excluded_station_id": "AQ069",
+      "score": [
+        3,
+        7,
+        21
+      ]
+    }
+  ]
+}

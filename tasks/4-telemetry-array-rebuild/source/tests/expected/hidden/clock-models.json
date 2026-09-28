@@ -1,0 +1,85 @@
+{
+  "campaigns": {
+    "aquila-hidden": [
+      {
+        "index": 0,
+        "rate_denominator": 600,
+        "rate_numerator": 6031,
+        "tick_end": 16777720,
+        "tick_start": 16777120,
+        "utc_end_ms": 1830297606031,
+        "utc_start_ms": 1830297600000
+      },
+      {
+        "index": 1,
+        "rate_denominator": 700,
+        "rate_numerator": 7039,
+        "tick_end": 16778420,
+        "tick_start": 16777720,
+        "utc_end_ms": 1830297613070,
+        "utc_start_ms": 1830297606031
+      }
+    ],
+    "delphinus-hidden": [
+      {
+        "index": 0,
+        "rate_denominator": 600,
+        "rate_numerator": 6031,
+        "tick_end": 766032,
+        "tick_start": 765432,
+        "utc_end_ms": 1830301206031,
+        "utc_start_ms": 1830301200000
+      },
+      {
+        "index": 1,
+        "rate_denominator": 700,
+        "rate_numerator": 7039,
+        "tick_end": 766732,
+        "tick_start": 766032,
+        "utc_end_ms": 1830301213070,
+        "utc_start_ms": 1830301206031
+      }
+    ],
+    "hydra-hidden": [
+      {
+        "index": 0,
+        "rate_denominator": 600,
+        "rate_numerator": 6031,
+        "tick_end": 16777224,
+        "tick_start": 16776624,
+        "utc_end_ms": 1830304806031,
+        "utc_start_ms": 1830304800000
+      },
+      {
+        "index": 1,
+        "rate_denominator": 700,
+        "rate_numerator": 7039,
+        "tick_end": 16777924,
+        "tick_start": 16777224,
+        "utc_end_ms": 1830304813070,
+        "utc_start_ms": 1830304806031
+      }
+    ],
+    "pictor-hidden": [
+      {
+        "index": 0,
+        "rate_denominator": 600,
+        "rate_numerator": 6031,
+        "tick_end": 8290319,
+        "tick_start": 8289719,
+        "utc_end_ms": 1830308406031,
+        "utc_start_ms": 1830308400000
+      },
+      {
+        "index": 1,
+        "rate_denominator": 700,
+        "rate_numerator": 7039,
+        "tick_end": 8291019,
+        "tick_start": 8290319,
+        "utc_end_ms": 1830308413070,
+        "utc_start_ms": 1830308406031
+      }
+    ]
+  },
+  "schema_version": 1
+}
