@@ -11,6 +11,7 @@
   },
   "ingestion": {
     "histogram_merge": "sum_counts_by_channel",
+    "histogram_reject": "Reject negative counts and channels outside campaign.toml channel_min..channel_max; duplicate channels sum",
     "timestamp_order": "sorted_ascending",
     "canonical_histogram_order": ["channel"]
   },

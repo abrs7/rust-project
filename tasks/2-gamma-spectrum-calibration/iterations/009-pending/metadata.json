@@ -1,0 +1,15 @@
+{
+  "task": "gamma-spectrum-calibration",
+  "folder": "2-gamma-spectrum-calibration",
+  "iteration": 9,
+  "status": "pending",
+  "created_at": "2026-09-29T21:01:52.705322+00:00",
+  "archive": "2-gamma-spectrum-calibration.zip",
+  "sha256": "de130e2cb93d6b81f4163079dbad5cfd6601e4a3a4c67890401becd355ca7030",
+  "platform": {
+    "stage_1": null,
+    "stage_2": null,
+    "stage_3": null,
+    "notes": []
+  }
+}

@@ -1,0 +1,3 @@
+schema_version = "1.0"
+si_system = "SI"
+canonical_units = { FORCE_POUND = "U001", CAL_THERMO = "U004" }

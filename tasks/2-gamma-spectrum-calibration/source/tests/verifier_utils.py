@@ -259,3 +259,28 @@ def append_histogram_row(path: Path, row: dict[str, Any]) -> None:
         writer = csv.DictWriter(handle, fieldnames=["channel", "count"])
         writer.writerow(row)
     path.chmod(0o644)
+
+
+def split_histogram_channel(campaign: Path, subdir: str, channel: int) -> None:
+    """Replace one channel row with two shard rows that must merge by summation."""
+    directory = campaign / subdir
+    target_shard = next(directory.glob("*.csv"))
+    rows: list[dict[str, str]] = []
+    with target_shard.open(newline="", encoding="utf-8") as handle:
+        reader = csv.DictReader(handle)
+        fieldnames = reader.fieldnames
+        if fieldnames != ["channel", "count"]:
+            raise AssertionError("unexpected histogram header")
+        for row in reader:
+            if int(row["channel"]) == channel:
+                total = int(row["count"])
+                half = total // 2
+                rows.append({"channel": str(channel), "count": str(half)})
+                rows.append({"channel": str(channel), "count": str(total - half)})
+            else:
+                rows.append(row)
+    with target_shard.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(rows)
+    target_shard.chmod(0o644)

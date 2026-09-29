@@ -1,0 +1,27 @@
+test_01_visible_full_run_frozen (__main__.Verifier.test_01_visible_full_run_frozen) ... ok
+test_02_visible_cli_staged_isolation (__main__.Verifier.test_02_visible_cli_staged_isolation) ... ok
+test_03_visible_api_staged_isolation (__main__.Verifier.test_03_visible_api_staged_isolation) ... ok
+test_04_exact_arithmetic_public_api (__main__.Verifier.test_04_exact_arithmetic_public_api) ... ok
+test_05_hidden_alpha_frozen (__main__.Verifier.test_05_hidden_alpha_frozen) ... ok
+test_06_hidden_beta_frozen (__main__.Verifier.test_06_hidden_beta_frozen) ... ok
+test_07_shuffled_shards_byte_identical (__main__.Verifier.test_07_shuffled_shards_byte_identical) ... ok
+test_08_rejects_negative_histogram_count (__main__.Verifier.test_08_rejects_negative_histogram_count) ... ok
+test_09_rejects_malformed_campaign (__main__.Verifier.test_09_rejects_malformed_campaign) ... ok
+test_10_rejects_nonpositive_live_time (__main__.Verifier.test_10_rejects_nonpositive_live_time) ... ok
+test_11_rejects_missing_calibration_lines (__main__.Verifier.test_11_rejects_missing_calibration_lines) ... ok
+test_12_ingest_only_produces_normalized_input (__main__.Verifier.test_12_ingest_only_produces_normalized_input) ... ok
+test_13_peaks_requires_normalized_input (__main__.Verifier.test_13_peaks_requires_normalized_input) ... ok
+test_14_fit_cal_requires_peaks (__main__.Verifier.test_14_fit_cal_requires_peaks) ... ok
+test_15_correct_requires_deadtime_and_fit (__main__.Verifier.test_15_correct_requires_deadtime_and_fit) ... ok
+test_16_integrate_requires_corrected_spectrum (__main__.Verifier.test_16_integrate_requires_corrected_spectrum) ... ok
+test_17_provenance_counts_match_products (__main__.Verifier.test_17_provenance_counts_match_products) ... ok
+test_18_saturation_exclusion_present (__main__.Verifier.test_18_saturation_exclusion_present) ... ok
+test_19_rejects_unmatched_calibration_line (__main__.Verifier.test_19_rejects_unmatched_calibration_line) ... ok
+test_20_leaves_campaign_examples_and_spec_unmodified (__main__.Verifier.test_20_leaves_campaign_examples_and_spec_unmodified) ... ok
+test_21_delivered_output_artifact_matches_frozen_products (__main__.Verifier.test_21_delivered_output_artifact_matches_frozen_products) ... ok
+test_22_products_are_locale_invariant (__main__.Verifier.test_22_products_are_locale_invariant) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 13.756s
+
+OK

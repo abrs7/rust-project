@@ -1,0 +1,38 @@
+setUpClass (__main__.Verifier) ... ERROR
+/usr/local/lib/python3.13/tempfile.py:942: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/tmp/unitlib-verifier-pr5_hjg8'>
+  _warnings.warn(warn_message, ResourceWarning)
+
+======================================================================
+ERROR: setUpClass (__main__.Verifier)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 52, in setUpClass
+    cls.candidate = Candidate(package_root)
+                    ~~~~~~~~~^^^^^^^^^^^^^^
+  File "/tests/verifier_utils.py", line 132, in __init__
+    compile_result = subprocess.run(
+        ["javac", "-d", str(self.app), *[str(p) for p in sorted((self.app / "unitlib" / "unitlib").glob("*.java"))]],
+    ...<4 lines>...
+        timeout=120,
+    )
+  File "/usr/local/lib/python3.13/subprocess.py", line 554, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/subprocess.py", line 1991, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'javac'
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.023s
+
+FAILED (errors=1)

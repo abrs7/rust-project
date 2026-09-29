@@ -2,4 +2,5 @@
 
 # Worked edge cases
 
-`rounding.json` demonstrates exact positive and negative half ties. `saturation-peaks.csv` contrasts a narrow calibration peak with a wide plateau peak. `deadtime-timestamps.csv` shows how acquisition span and per-count dead time yield live time.
+Fixtures under this directory exercise rounding ties, saturation shape, and
+timestamp span edge behavior. Semantics are defined only in `/app/spec/contract.json`.

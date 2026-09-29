@@ -1,0 +1,152 @@
+{
+  "campaign": {
+    "canonical_units": {
+      "CAL_THERMO": "U004",
+      "FORCE_POUND": "U001"
+    },
+    "schema_version": "1.0",
+    "si_system": "SI"
+  },
+  "conservation": [
+    {
+      "constraint_id": "VC01",
+      "expected_sum_si": "0/1",
+      "quantity": "net_force",
+      "tolerance_si": "1/1000",
+      "window_end": 1000,
+      "window_start": 1000
+    },
+    {
+      "constraint_id": "VC02",
+      "expected_sum_si": "8368/1",
+      "quantity": "heat_in",
+      "tolerance_si": "1/1",
+      "window_end": 2000,
+      "window_start": 2000
+    },
+    {
+      "constraint_id": "VC03",
+      "expected_sum_si": "12552/1",
+      "quantity": "stored_energy",
+      "tolerance_si": "2/1",
+      "window_end": 3000,
+      "window_start": 3000
+    }
+  ],
+  "observations": [
+    {
+      "magnitude": "10/1",
+      "obs_id": "VO001",
+      "quantity": "net_force",
+      "source_id": "VSRC-A",
+      "timestamp": 1000,
+      "unit_symbol": "lbf"
+    },
+    {
+      "magnitude": "-10/1",
+      "obs_id": "VO002",
+      "quantity": "net_force",
+      "source_id": "VSRC-A",
+      "timestamp": 1000,
+      "unit_symbol": "lbf"
+    },
+    {
+      "magnitude": "5/1",
+      "obs_id": "VO004",
+      "quantity": "net_force",
+      "source_id": "VSRC-B",
+      "timestamp": 1000,
+      "unit_symbol": "lb_f"
+    },
+    {
+      "magnitude": "-5/1",
+      "obs_id": "VO005",
+      "quantity": "net_force",
+      "source_id": "VSRC-B",
+      "timestamp": 1000,
+      "unit_symbol": "lb_f"
+    },
+    {
+      "magnitude": "1/1",
+      "obs_id": "VO003",
+      "quantity": "heat_in",
+      "source_id": "VSRC-A",
+      "timestamp": 2000,
+      "unit_symbol": "cal"
+    },
+    {
+      "magnitude": "1/1",
+      "obs_id": "VO006",
+      "quantity": "heat_in",
+      "source_id": "VSRC-B",
+      "timestamp": 2000,
+      "unit_symbol": "calorie"
+    },
+    {
+      "magnitude": "2/1",
+      "obs_id": "VO007",
+      "quantity": "stored_energy",
+      "source_id": "VSRC-C",
+      "timestamp": 3000,
+      "unit_symbol": "cal"
+    },
+    {
+      "magnitude": "1/1",
+      "obs_id": "VO008",
+      "quantity": "stored_energy",
+      "source_id": "VSRC-C",
+      "timestamp": 3000,
+      "unit_symbol": "calorie"
+    }
+  ],
+  "registry": [
+    {
+      "convention_group": "FORCE_POUND",
+      "dimension": "force",
+      "si_factor": "5560277/1250000",
+      "si_offset": "0/1",
+      "symbol": "lbf",
+      "unit_id": "U001"
+    },
+    {
+      "convention_group": "FORCE_POUND",
+      "dimension": "force",
+      "si_factor": "5560277/1250000",
+      "si_offset": "0/1",
+      "symbol": "lb_f",
+      "unit_id": "U002"
+    },
+    {
+      "convention_group": null,
+      "dimension": "force",
+      "si_factor": "1/1",
+      "si_offset": "0/1",
+      "symbol": "N",
+      "unit_id": "U003"
+    },
+    {
+      "convention_group": "CAL_THERMO",
+      "dimension": "energy",
+      "si_factor": "4184/1",
+      "si_offset": "0/1",
+      "symbol": "cal",
+      "unit_id": "U004"
+    },
+    {
+      "convention_group": "CAL_THERMO",
+      "dimension": "energy",
+      "si_factor": "4184/1",
+      "si_offset": "0/1",
+      "symbol": "calorie",
+      "unit_id": "U005"
+    },
+    {
+      "convention_group": null,
+      "dimension": "energy",
+      "si_factor": "1/1",
+      "si_offset": "0/1",
+      "symbol": "J",
+      "unit_id": "U006"
+    }
+  ]
+}

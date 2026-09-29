@@ -1,0 +1,5 @@
+{"excluded":false,"expected_energy_mkeV":300000,"fitted_energy_mkeV":299939,"integrated_counts":43782,"line_id":"VL01","residual_mkeV":-61}
+{"excluded":false,"expected_energy_mkeV":477100,"fitted_energy_mkeV":477183,"integrated_counts":48847,"line_id":"VL02","residual_mkeV":83}
+{"excluded":true,"expected_energy_mkeV":661657,"fitted_energy_mkeV":661708,"integrated_counts":103075,"line_id":"VL03","residual_mkeV":51}
+{"excluded":false,"expected_energy_mkeV":843200,"fitted_energy_mkeV":843220,"integrated_counts":59033,"line_id":"VL04","residual_mkeV":20}
+{"excluded":false,"expected_energy_mkeV":900000,"fitted_energy_mkeV":899958,"integrated_counts":64107,"line_id":"VL05","residual_mkeV":-42}

@@ -1,0 +1,15 @@
+{
+  "task": "units-library-reconcile",
+  "folder": "8-units-library-reconcile",
+  "iteration": 2,
+  "status": "pending",
+  "created_at": "2026-09-29T20:22:03.296382+00:00",
+  "archive": "8-units-library-reconcile.zip",
+  "sha256": "9fb5bc89a19c1823cd6009f03327b0e71d6d698872f952f32746db0126e77951",
+  "platform": {
+    "stage_1": null,
+    "stage_2": null,
+    "stage_3": null,
+    "notes": []
+  }
+}

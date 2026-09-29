@@ -1,0 +1,79 @@
+test_01_visible_full_staged_and_public_apis (__main__.Verifier.test_01_visible_full_staged_and_public_apis) ... FAIL
+test_02_hidden_frozen_outputs (__main__.Verifier.test_02_hidden_frozen_outputs) ... 
+  test_02_hidden_frozen_outputs (__main__.Verifier.test_02_hidden_frozen_outputs) (fixture='hidden-alpha') ... FAIL
+  test_02_hidden_frozen_outputs (__main__.Verifier.test_02_hidden_frozen_outputs) (fixture='hidden-beta') ... FAIL
+test_03_shards_and_determinism (__main__.Verifier.test_03_shards_and_determinism) ... FAIL
+test_04_rejects_bad_inputs_without_clobbering_output (__main__.Verifier.test_04_rejects_bad_inputs_without_clobbering_output) ... ok
+
+======================================================================
+FAIL: test_01_visible_full_staged_and_public_apis (__main__.Verifier.test_01_visible_full_staged_and_public_apis)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 254, in test_01_visible_full_staged_and_public_apis
+    require_success(self.candidate.cli("run", campaign, full), "visible full run")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 36, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: visible full run failed (1)
+stdout:
+
+stderr:
+
+
+======================================================================
+FAIL: test_02_hidden_frozen_outputs (__main__.Verifier.test_02_hidden_frozen_outputs) (fixture='hidden-alpha')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 292, in test_02_hidden_frozen_outputs
+    require_success(self.candidate.cli("run", campaign, output), fixture)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 36, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: hidden-alpha failed (1)
+stdout:
+
+stderr:
+
+
+======================================================================
+FAIL: test_02_hidden_frozen_outputs (__main__.Verifier.test_02_hidden_frozen_outputs) (fixture='hidden-beta')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 292, in test_02_hidden_frozen_outputs
+    require_success(self.candidate.cli("run", campaign, output), fixture)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 36, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: hidden-beta failed (1)
+stdout:
+
+stderr:
+
+
+======================================================================
+FAIL: test_03_shards_and_determinism (__main__.Verifier.test_03_shards_and_determinism)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 299, in test_03_shards_and_determinism
+    require_success(self.candidate.cli("run", campaign, output_a), "shuffled run a")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 36, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: shuffled run a failed (1)
+stdout:
+
+stderr:
+
+
+----------------------------------------------------------------------
+Ran 4 tests in 6.448s
+
+FAILED (failures=4)

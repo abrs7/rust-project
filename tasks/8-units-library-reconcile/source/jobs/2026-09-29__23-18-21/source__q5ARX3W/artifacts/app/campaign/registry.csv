@@ -1,0 +1,7 @@
+unit_id,symbol,dimension,si_factor,si_offset,convention_group
+U001,lbf,force,444822160/100000000,0/1,FORCE_POUND
+U002,lb_f,force,444822160/100000000,0/1,FORCE_POUND
+U003,N,force,1/1,0/1,
+U004,cal,energy,4184/1,0/1,CAL_THERMO
+U005,calorie,energy,4184/1,0/1,CAL_THERMO
+U006,J,energy,1/1,0/1,

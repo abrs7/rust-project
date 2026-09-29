@@ -1,0 +1,250 @@
+{
+  "accounts": [
+    {
+      "account_id": "VA001",
+      "currency": "USD",
+      "name": "V_Merchant_USD"
+    },
+    {
+      "account_id": "VA002",
+      "currency": "EUR",
+      "name": "V_Merchant_EUR"
+    },
+    {
+      "account_id": "VA003",
+      "currency": "JPY",
+      "name": "V_Merchant_JPY"
+    },
+    {
+      "account_id": "VA004",
+      "currency": "GBP",
+      "name": "V_Merchant_GBP"
+    },
+    {
+      "account_id": "VA005",
+      "currency": "USD",
+      "name": "V_Pending_USD"
+    }
+  ],
+  "campaign": {
+    "base_currency": "USD",
+    "business_calendar": [
+      "2024-01-01",
+      "2024-07-04"
+    ],
+    "schema_version": "1.0",
+    "settlement_lag_business_days": 2
+  },
+  "currencies": [
+    {
+      "currency_code": "EUR",
+      "exponent": 2
+    },
+    {
+      "currency_code": "GBP",
+      "exponent": 2
+    },
+    {
+      "currency_code": "JPY",
+      "exponent": 0
+    },
+    {
+      "currency_code": "USD",
+      "exponent": 2
+    }
+  ],
+  "fx_rates": [
+    {
+      "as_of_date": "2024-01-02",
+      "denominator": 10000,
+      "from_currency": "EUR",
+      "numerator": 10875,
+      "to_currency": "USD"
+    },
+    {
+      "as_of_date": "2024-01-02",
+      "denominator": 100,
+      "from_currency": "GBP",
+      "numerator": 127,
+      "to_currency": "USD"
+    },
+    {
+      "as_of_date": "2024-01-02",
+      "denominator": 10000,
+      "from_currency": "JPY",
+      "numerator": 67,
+      "to_currency": "USD"
+    },
+    {
+      "as_of_date": "2024-06-01",
+      "denominator": 10000,
+      "from_currency": "EUR",
+      "numerator": 10925,
+      "to_currency": "USD"
+    },
+    {
+      "as_of_date": "2024-06-01",
+      "denominator": 100,
+      "from_currency": "GBP",
+      "numerator": 128,
+      "to_currency": "USD"
+    },
+    {
+      "as_of_date": "2024-06-01",
+      "denominator": 10000,
+      "from_currency": "JPY",
+      "numerator": 64,
+      "to_currency": "USD"
+    }
+  ],
+  "ledger": [
+    {
+      "account_id": "VA001",
+      "amount_minor": 14925,
+      "currency": "USD",
+      "entry_id": "VE001",
+      "side": "DR",
+      "trade_date": "2024-06-03"
+    },
+    {
+      "account_id": "VA002",
+      "amount_minor": 8500,
+      "currency": "EUR",
+      "entry_id": "VE002",
+      "side": "DR",
+      "trade_date": "2024-06-04"
+    },
+    {
+      "account_id": "VA001",
+      "amount_minor": 500,
+      "currency": "USD",
+      "entry_id": "VE003",
+      "side": "CR",
+      "trade_date": "2024-06-05"
+    },
+    {
+      "account_id": "VA004",
+      "amount_minor": 2500,
+      "currency": "GBP",
+      "entry_id": "VE005",
+      "side": "DR",
+      "trade_date": "2024-06-06"
+    },
+    {
+      "account_id": "VA003",
+      "amount_minor": 150000,
+      "currency": "JPY",
+      "entry_id": "VE004",
+      "side": "DR",
+      "trade_date": "2024-06-07"
+    },
+    {
+      "account_id": "VA005",
+      "amount_minor": 333,
+      "currency": "USD",
+      "entry_id": "VE006",
+      "side": "DR",
+      "trade_date": "2024-06-10"
+    }
+  ],
+  "reversals": [
+    {
+      "amount_minor": 3000,
+      "batch_id": "VB001",
+      "currency": "USD",
+      "line_id": "VL01",
+      "reversal_date": "2024-06-06",
+      "reversal_id": "VR001"
+    }
+  ],
+  "settlements": [
+    {
+      "batch_id": "VB001",
+      "currency": "USD",
+      "entry_ref": "VE001",
+      "fee_minor": 50,
+      "gross_minor": 10000,
+      "line_id": "VL01",
+      "settle_date": "2024-06-05",
+      "status": "posted",
+      "trade_date": "2024-06-03"
+    },
+    {
+      "batch_id": "VB001",
+      "currency": "USD",
+      "entry_ref": "VE001",
+      "fee_minor": 25,
+      "gross_minor": 5000,
+      "line_id": "VL02",
+      "settle_date": "2024-06-05",
+      "status": "posted",
+      "trade_date": "2024-06-03"
+    },
+    {
+      "batch_id": "VB002",
+      "currency": "EUR",
+      "entry_ref": "VE002",
+      "fee_minor": 100,
+      "gross_minor": 8600,
+      "line_id": "VL01",
+      "settle_date": "2024-06-10",
+      "status": "posted",
+      "trade_date": "2024-06-04"
+    },
+    {
+      "batch_id": "VB003",
+      "currency": "USD",
+      "entry_ref": "VE003",
+      "fee_minor": 0,
+      "gross_minor": -500,
+      "line_id": "VL01",
+      "settle_date": "2024-06-07",
+      "status": "posted",
+      "trade_date": "2024-06-05"
+    },
+    {
+      "batch_id": "VB004",
+      "currency": "JPY",
+      "entry_ref": "VE004",
+      "fee_minor": 0,
+      "gross_minor": 150000,
+      "line_id": "VL01",
+      "settle_date": "2024-06-11",
+      "status": "posted",
+      "trade_date": "2024-06-07"
+    },
+    {
+      "batch_id": "VB005",
+      "currency": "GBP",
+      "entry_ref": "VE005",
+      "fee_minor": 0,
+      "gross_minor": 2500,
+      "line_id": "VL01",
+      "settle_date": "2024-06-07",
+      "status": "posted",
+      "trade_date": "2024-06-06"
+    },
+    {
+      "batch_id": "VB099",
+      "currency": "USD",
+      "entry_ref": "VE999",
+      "fee_minor": 0,
+      "gross_minor": 100,
+      "line_id": "VL01",
+      "settle_date": "2024-06-12",
+      "status": "posted",
+      "trade_date": "2024-06-08"
+    },
+    {
+      "batch_id": "VB100",
+      "currency": "EUR",
+      "entry_ref": "VE002",
+      "fee_minor": 0,
+      "gross_minor": 200,
+      "line_id": "VL01",
+      "settle_date": "2024-06-12",
+      "status": "pending",
+      "trade_date": "2024-06-04"
+    }
+  ]
+}

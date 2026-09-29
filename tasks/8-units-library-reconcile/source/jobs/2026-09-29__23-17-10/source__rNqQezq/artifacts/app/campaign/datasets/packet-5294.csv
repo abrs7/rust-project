@@ -1,0 +1,3 @@
+obs_id,source_id,timestamp,quantity,magnitude,unit_symbol
+VO005,VSRC-B,1000,net_force,-5/1,lb_f
+VO001,VSRC-A,1000,net_force,10/1,lbf

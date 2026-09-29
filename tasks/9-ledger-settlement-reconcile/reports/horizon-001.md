@@ -1,23 +1,24 @@
-# Long horizon design: 9-ledger-settlement-reconcile
+# Horizon 001: revision-3 instruction + 1–2/8 target
 
-Target: median **>80** assistant turns at Stage 2.
+## Goal
 
-## Forcing exploration
+Align task 9 with [`INSTRUCTION-AUTHORING-RULE.md`](../../../proposals/INSTRUCTION-AUTHORING-RULE.md) and [`STAGE2_DIFFICULTY.md`](../../../docs/STAGE2_DIFFICULTY.md): self-contained semantics for Stage 0, solvability for **1–2 / 8**, seven-stage pipeline for **> 80** turns.
 
-- Seven stages; settle/reconcile cannot reread raw ledger shards.
-- Sparse examples (rounding ties, T+n calendar) — no settlement policy manual.
-- Multi-currency with half-away-from-zero FX in minor units.
-- T+n business-day lag with weekend/holiday calendar.
-- Partial reversals split across settlement batches.
-- Hidden-beta uses different holiday table and orphan lines.
+## Changes (iteration 002)
 
-## Estimated solver path
+| Change | Why |
+|--------|-----|
+| Revision-3 proposal — policies, outputs, verifier, interacting difficulty | Stage 0 Well-specified without deferring to spec alone |
+| Six-paragraph instruction — T+n, reverse-then-convert, trade-date FX, half-away, pending exclusion | G06 IT02 mapping; wrong orderings named for horizon |
+| Named nine JSON products mapped to settlement batch / totals / flags / dispositions | Agents know graded surface without a step list |
+| Smoke command retained | Avoid 0/8 from missing validation loop |
 
-1. Ingest + normalize ledger entries (~15 turns)
-2. Match postings to settlement batches (~20 turns)
-3. T+n calendar and lag application (~20 turns)
-4. FX rounding per contract (~15 turns)
-5. Reconcile balances vs settlement files (~15 turns)
-6. Hidden calendar/reversal traps (~25 turns)
+## Unchanged
 
-**Total:** ~110 turns with failed runs.
+- Oracle pipeline, frozen expected bytes, hidden campaigns
+- Seven Java stages and artifact graph in `/app/spec`
+
+## Expected Stage 2 outcome
+
+- **difficulty:** 1–2 / 8 (interacting payment-ops traps; strong rollouts with reconciliation experience may finish)
+- **long_horizon:** seven dependent stages + spec discovery; measure on first rollout

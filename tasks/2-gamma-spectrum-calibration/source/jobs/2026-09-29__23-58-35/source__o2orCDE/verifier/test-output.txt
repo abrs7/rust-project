@@ -1,0 +1,331 @@
+test_01_visible_full_run_frozen (__main__.Verifier.test_01_visible_full_run_frozen) ... FAIL
+test_02_visible_cli_staged_isolation (__main__.Verifier.test_02_visible_cli_staged_isolation) ... FAIL
+test_03_visible_api_staged_isolation (__main__.Verifier.test_03_visible_api_staged_isolation) ... FAIL
+test_04_exact_arithmetic_public_api (__main__.Verifier.test_04_exact_arithmetic_public_api) ... ok
+test_05_hidden_alpha_frozen (__main__.Verifier.test_05_hidden_alpha_frozen) ... FAIL
+test_06_hidden_beta_frozen (__main__.Verifier.test_06_hidden_beta_frozen) ... FAIL
+test_07_shuffled_shards_byte_identical (__main__.Verifier.test_07_shuffled_shards_byte_identical) ... FAIL
+test_07b_duplicate_channels_sum_before_downstream (__main__.Verifier.test_07b_duplicate_channels_sum_before_downstream) ... FAIL
+test_08_rejects_negative_histogram_count (__main__.Verifier.test_08_rejects_negative_histogram_count) ... ok
+test_09_rejects_malformed_campaign (__main__.Verifier.test_09_rejects_malformed_campaign) ... ok
+test_10_rejects_nonpositive_live_time (__main__.Verifier.test_10_rejects_nonpositive_live_time) ... ok
+test_11_rejects_missing_calibration_lines (__main__.Verifier.test_11_rejects_missing_calibration_lines) ... ok
+test_12_ingest_only_produces_normalized_input (__main__.Verifier.test_12_ingest_only_produces_normalized_input) ... FAIL
+test_13_peaks_requires_normalized_input (__main__.Verifier.test_13_peaks_requires_normalized_input) ... ok
+test_14_fit_cal_requires_peaks (__main__.Verifier.test_14_fit_cal_requires_peaks) ... FAIL
+test_15_correct_requires_deadtime_and_fit (__main__.Verifier.test_15_correct_requires_deadtime_and_fit) ... FAIL
+test_16_integrate_requires_corrected_spectrum (__main__.Verifier.test_16_integrate_requires_corrected_spectrum) ... FAIL
+test_17_provenance_counts_match_products (__main__.Verifier.test_17_provenance_counts_match_products) ... FAIL
+test_18_saturation_exclusion_present (__main__.Verifier.test_18_saturation_exclusion_present) ... FAIL
+test_19_rejects_unmatched_calibration_line (__main__.Verifier.test_19_rejects_unmatched_calibration_line) ... ok
+test_20_leaves_campaign_examples_and_spec_unmodified (__main__.Verifier.test_20_leaves_campaign_examples_and_spec_unmodified) ... FAIL
+test_21_delivered_output_artifact_matches_frozen_products (__main__.Verifier.test_21_delivered_output_artifact_matches_frozen_products) ... FAIL
+test_22_products_are_locale_invariant (__main__.Verifier.test_22_products_are_locale_invariant) ... FAIL
+
+======================================================================
+FAIL: test_01_visible_full_run_frozen (__main__.Verifier.test_01_visible_full_run_frozen)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 332, in test_01_visible_full_run_frozen
+    require_success(self.candidate.cli("run", campaign, output, hash_seed="11"), "visible full run")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 52, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: visible full run failed (2)
+stdout:
+
+stderr:
+gammacal: implement run
+
+
+======================================================================
+FAIL: test_02_visible_cli_staged_isolation (__main__.Verifier.test_02_visible_cli_staged_isolation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 338, in test_02_visible_cli_staged_isolation
+    require_success(self.candidate.cli("ingest", campaign, staged, hash_seed="41"), "ingest CLI")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 52, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: ingest CLI failed (2)
+stdout:
+
+stderr:
+gammacal: implement ingest
+
+
+======================================================================
+FAIL: test_03_visible_api_staged_isolation (__main__.Verifier.test_03_visible_api_staged_isolation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 350, in test_03_visible_api_staged_isolation
+    require_success(self.candidate.api("ingest", campaign, staged, hash_seed="97"), "ingest API")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 52, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: ingest API failed (1)
+stdout:
+
+stderr:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import sys; sys.path.insert(0, '/tmp/gammacal-verifier-0kph_5hb/app'); from gammacal.pipeline import ingest; ingest(r'''/tmp/gammacal-verifier-0kph_5hb/visible-api''', r'''/tmp/gammacal-verifier-0kph_5hb/visible-api-staged''')
+                                                                                                                 ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/gammacal-verifier-0kph_5hb/app/gammacal/pipeline.py", line 8, in ingest
+    raise NotImplementedError("implement ingest")
+NotImplementedError: implement ingest
+
+
+======================================================================
+FAIL: test_05_hidden_alpha_frozen (__main__.Verifier.test_05_hidden_alpha_frozen)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 370, in test_05_hidden_alpha_frozen
+    require_success(self.candidate.cli("run", campaign, output, hash_seed="123"), "hidden-alpha")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 52, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: hidden-alpha failed (2)
+stdout:
+
+stderr:
+gammacal: implement run
+
+
+======================================================================
+FAIL: test_06_hidden_beta_frozen (__main__.Verifier.test_06_hidden_beta_frozen)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 376, in test_06_hidden_beta_frozen
+    require_success(self.candidate.cli("run", campaign, output, hash_seed="456"), "hidden-beta")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 52, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: hidden-beta failed (2)
+stdout:
+
+stderr:
+gammacal: implement run
+
+
+======================================================================
+FAIL: test_07_shuffled_shards_byte_identical (__main__.Verifier.test_07_shuffled_shards_byte_identical)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 383, in test_07_shuffled_shards_byte_identical
+    require_success(self.candidate.cli("run", campaign, output_a, hash_seed="1"), "shuffled run seed 1")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 52, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: shuffled run seed 1 failed (2)
+stdout:
+
+stderr:
+gammacal: implement run
+
+
+======================================================================
+FAIL: test_07b_duplicate_channels_sum_before_downstream (__main__.Verifier.test_07b_duplicate_channels_sum_before_downstream)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 394, in test_07b_duplicate_channels_sum_before_downstream
+    require_success(self.candidate.cli("run", campaign, output), "duplicate channel merge run")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 52, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: duplicate channel merge run failed (2)
+stdout:
+
+stderr:
+gammacal: implement run
+
+
+======================================================================
+FAIL: test_12_ingest_only_produces_normalized_input (__main__.Verifier.test_12_ingest_only_produces_normalized_input)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 443, in test_12_ingest_only_produces_normalized_input
+    require_success(self.candidate.cli("ingest", campaign, output), "ingest only")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 52, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: ingest only failed (2)
+stdout:
+
+stderr:
+gammacal: implement ingest
+
+
+======================================================================
+FAIL: test_14_fit_cal_requires_peaks (__main__.Verifier.test_14_fit_cal_requires_peaks)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 454, in test_14_fit_cal_requires_peaks
+    require_success(self.candidate.cli("ingest", campaign, output), "ingest for fit")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 52, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: ingest for fit failed (2)
+stdout:
+
+stderr:
+gammacal: implement ingest
+
+
+======================================================================
+FAIL: test_15_correct_requires_deadtime_and_fit (__main__.Verifier.test_15_correct_requires_deadtime_and_fit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 460, in test_15_correct_requires_deadtime_and_fit
+    require_success(self.candidate.cli("ingest", campaign, output), "ingest")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 52, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: ingest failed (2)
+stdout:
+
+stderr:
+gammacal: implement ingest
+
+
+======================================================================
+FAIL: test_16_integrate_requires_corrected_spectrum (__main__.Verifier.test_16_integrate_requires_corrected_spectrum)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 468, in test_16_integrate_requires_corrected_spectrum
+    require_success(self.candidate.cli("ingest", campaign, output), "ingest")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 52, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: ingest failed (2)
+stdout:
+
+stderr:
+gammacal: implement ingest
+
+
+======================================================================
+FAIL: test_17_provenance_counts_match_products (__main__.Verifier.test_17_provenance_counts_match_products)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 477, in test_17_provenance_counts_match_products
+    require_success(self.candidate.cli("run", campaign, output), "provenance run")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 52, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: provenance run failed (2)
+stdout:
+
+stderr:
+gammacal: implement run
+
+
+======================================================================
+FAIL: test_18_saturation_exclusion_present (__main__.Verifier.test_18_saturation_exclusion_present)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 487, in test_18_saturation_exclusion_present
+    require_success(self.candidate.cli("run", campaign, output), "saturation run")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 52, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: saturation run failed (2)
+stdout:
+
+stderr:
+gammacal: implement run
+
+
+======================================================================
+FAIL: test_20_leaves_campaign_examples_and_spec_unmodified (__main__.Verifier.test_20_leaves_campaign_examples_and_spec_unmodified)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 506, in test_20_leaves_campaign_examples_and_spec_unmodified
+    require_success(self.candidate.cli("run", campaign, output), "immutable input trees run")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 52, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: immutable input trees run failed (2)
+stdout:
+
+stderr:
+gammacal: implement run
+
+
+======================================================================
+FAIL: test_21_delivered_output_artifact_matches_frozen_products (__main__.Verifier.test_21_delivered_output_artifact_matches_frozen_products)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 522, in test_21_delivered_output_artifact_matches_frozen_products
+    self.assert_frozen(delivered, EXPECTED / "visible")
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tests/test_outputs.py", line 113, in assert_frozen
+    self.assertEqual(set(PRODUCTS), {path.name for path in entries})
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Items in the first set but not the second:
+'corrected-spectrum.jsonl'
+'normalized-input.json'
+'final-report.jsonl'
+'deadtime-correction.json'
+'line-integrations.jsonl'
+'calibration-fit.json'
+'provenance.json'
+'line-exclusions.jsonl'
+'peak-candidates.jsonl'
+
+======================================================================
+FAIL: test_22_products_are_locale_invariant (__main__.Verifier.test_22_products_are_locale_invariant)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tests/test_outputs.py", line 529, in test_22_products_are_locale_invariant
+    require_success(
+    ~~~~~~~~~~~~~~~^
+        self.candidate.cli("run", campaign, output, hash_seed="22", locale=locale),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        f"locale {locale} run",
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/tests/test_outputs.py", line 52, in require_success
+    raise AssertionError(
+        f"{context} failed ({result.returncode})\nstdout:\n{result.stdout}\nstderr:\n{result.stderr}"
+    )
+AssertionError: locale C run failed (2)
+stdout:
+
+stderr:
+gammacal: implement run
+
+
+----------------------------------------------------------------------
+Ran 23 tests in 9.827s
+
+FAILED (failures=16)

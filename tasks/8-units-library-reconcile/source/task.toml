@@ -19,7 +19,7 @@ verification_explanation = "A separate Python verifier executes every stage and 
 category = "Science"
 subcategory = "chemistry"
 tags = ["java", "units", "dimensional-analysis", "data-merge"]
-expert_time_estimate_hours = 14
+expert_time_estimate_hours = 12
 relevant_experience = "Java, dimensional analysis, unit conversion, exact rational arithmetic, CSV ingestion, multi-stage pipelines, and conservation validation."
 
 [agent]

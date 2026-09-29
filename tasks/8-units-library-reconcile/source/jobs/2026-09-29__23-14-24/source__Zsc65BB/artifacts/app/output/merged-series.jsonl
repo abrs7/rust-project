@@ -1,0 +1,3 @@
+{"observation_count":4,"quantity":"net_force","si_sum":"0/1","timestamp":1000}
+{"observation_count":2,"quantity":"heat_in","si_sum":"8368/1","timestamp":2000}
+{"observation_count":2,"quantity":"stored_energy","si_sum":"12552/1","timestamp":3000}

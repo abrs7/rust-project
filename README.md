@@ -78,14 +78,14 @@ goes in the ZIP. See `docs/PREFLIGHT_INSTRUCTIONS.md`.
 ## Current upload candidates
 
 ```text
-tasks/1-ctd-cast-processing/iterations/008-pending/1-ctd-cast-processing.zip
-tasks/2-gamma-spectrum-calibration/iterations/005-pending/2-gamma-spectrum-calibration.zip
+tasks/1-ctd-cast-processing/iterations/009-pending/1-ctd-cast-processing.zip
+tasks/2-gamma-spectrum-calibration/iterations/009-pending/2-gamma-spectrum-calibration.zip   ← Stage 2 priority (v6 failed 3/8 + 76.5 turns)
 tasks/3-seismic-clock-catalog/iterations/002-pending/3-seismic-clock-catalog.zip
 tasks/4-telemetry-array-rebuild/iterations/005-pending/4-telemetry-array-rebuild.zip
 tasks/7-kafka-ingest-reconcile/iterations/001-pending/7-kafka-ingest-reconcile.zip
 tasks/8-units-library-reconcile/iterations/001-pending/8-units-library-reconcile.zip
-tasks/9-ledger-settlement-reconcile/iterations/001-pending/9-ledger-settlement-reconcile.zip
+tasks/9-ledger-settlement-reconcile/iterations/002-pending/9-ledger-settlement-reconcile.zip
 tasks/10-measurement-wal-recover/iterations/002-pending/10-measurement-wal-recover.zip
 ```
 
-Shared platform guidance is in `docs/`.
+Shared platform guidance is in `docs/`. Stage 2 target (**1–2 / 8** difficulty + **> 80** median turns): [`docs/STAGE2_DIFFICULTY.md`](docs/STAGE2_DIFFICULTY.md).

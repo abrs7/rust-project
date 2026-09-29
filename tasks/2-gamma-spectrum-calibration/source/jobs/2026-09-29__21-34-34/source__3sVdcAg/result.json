@@ -1,0 +1,115 @@
+{
+    "id": "d73d493d-13e4-4aa2-9052-1a86045dd459",
+    "task_name": "terminal-bench/gamma-spectrum-calibration",
+    "trial_name": "source__3sVdcAg",
+    "trial_uri": "file:///home/abraham/workspace/rustlabs/tasks/2-gamma-spectrum-calibration/source/jobs/2026-09-29__21-34-34/source__3sVdcAg",
+    "task_id": {
+        "path": "."
+    },
+    "source": null,
+    "task_checksum": "f3d10309cccc318326ab33dcfa3763a51ce23e13c61142b6c0b9921b9f42f115",
+    "config": {
+        "task": {
+            "path": ".",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "source__3sVdcAg",
+        "trials_dir": "jobs/2026-09-29__21-34-34",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "nop",
+            "import_path": null,
+            "model_name": null,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "5a8f5e52-455c-4556-b161-04a80aa0ae0a",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "nop",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "model_usage": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "verifier_environment_mode": "separate",
+    "exception_info": null,
+    "started_at": "2026-09-29T18:34:35.270195Z",
+    "finished_at": "2026-09-29T18:35:32.514568Z",
+    "environment_setup": {
+        "started_at": "2026-09-29T18:34:35.474850Z",
+        "finished_at": "2026-09-29T18:34:41.450519Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-09-29T18:34:41.450621Z",
+        "finished_at": "2026-09-29T18:34:41.450831Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-09-29T18:34:41.451084Z",
+        "finished_at": "2026-09-29T18:34:41.451375Z"
+    },
+    "verifier": {
+        "started_at": "2026-09-29T18:34:58.364527Z",
+        "finished_at": "2026-09-29T18:35:32.514544Z"
+    },
+    "step_results": null
+}

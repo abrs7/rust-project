@@ -1,0 +1,5 @@
+obs_id,source_id,timestamp,quantity,magnitude,unit_symbol
+VO007,VSRC-C,3000,stored_energy,2/1,cal
+VO008,VSRC-C,3000,stored_energy,1/1,calorie
+VO004,VSRC-B,1000,net_force,5/1,lb_f
+VO001,VSRC-A,1000,net_force,10/1,lbf

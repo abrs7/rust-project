@@ -1,0 +1,9 @@
+test_01_visible_full_staged_and_public_apis (__main__.Verifier.test_01_visible_full_staged_and_public_apis) ... ok
+test_02_hidden_frozen_outputs (__main__.Verifier.test_02_hidden_frozen_outputs) ... ok
+test_03_shards_duplicates_and_determinism (__main__.Verifier.test_03_shards_duplicates_and_determinism) ... ok
+test_04_rejects_bad_inputs_without_clobbering_output (__main__.Verifier.test_04_rejects_bad_inputs_without_clobbering_output) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 29.045s
+
+OK
